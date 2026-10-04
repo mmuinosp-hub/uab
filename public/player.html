@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>OIKOS — Simulador económico</title>
+<style>
+:root{--bg:#eef3f8;--card:#fff;--ink:#172033;--muted:#667085;--primary:#1769aa;--primary2:#0d47a1;--accent:#ff8a00;--line:#e4e7ec}
+*{box-sizing:border-box}body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Arial,sans-serif;color:var(--ink);background:radial-gradient(circle at 15% 10%,#fff 0,#eef3f8 38%,#e5edf6 100%)}
+main{max-width:1080px;margin:auto;padding:34px 18px 70px}.hero{padding:38px 30px;border-radius:24px;background:linear-gradient(135deg,#123b61,#1769aa);color:#fff;box-shadow:0 18px 45px #123b6130}.eyebrow{text-transform:uppercase;letter-spacing:.14em;font-size:.78rem;opacity:.75}.hero h1{font-size:clamp(2.5rem,7vw,5rem);margin:8px 0 0}.hero h2{font-weight:500;margin:0 0 16px;opacity:.9}.hero p{max-width:700px;line-height:1.6;color:#e8f2fb}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:25px}.btn{display:inline-block;text-decoration:none;border:0;border-radius:12px;padding:13px 18px;font-weight:750;cursor:pointer;background:#fff;color:#123b61}.btn.alt{background:#ff9f2e;color:#fff}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:18px}.card{background:#fff;border:1px solid var(--line);border-radius:17px;padding:20px;box-shadow:0 8px 24px #1018280d}.card h3{margin-top:0}.card p,.card li{color:var(--muted);line-height:1.55}.wide{margin-top:14px}.tag{display:inline-block;padding:5px 9px;border-radius:99px;background:#edf5ff;color:#1769aa;font-weight:700;font-size:.8rem}.footer{margin-top:24px;text-align:center;color:var(--muted);font-size:.85rem}@media(max-width:760px){.grid{grid-template-columns:1fr}.hero{padding:28px 20px}}
+</style>
+</head>
+<body><main>
+<section class="hero">
+<div class="eyebrow">Simulador económico</div>
+<h1>OIKOS</h1><h2>Con las cosas de comer no se juega.</h2>
+<p>Un juego de negociación, producción y decisiones económicas en el que varios jugadores intercambian recursos y eligen cómo producir en sesiones sucesivas.</p>
+<div class="actions"><a class="btn alt" href="/player.html">🎮 Entrar como jugador</a><a class="btn" href="/admin.html">⚙️ Consola del administrador</a></div>
+</section>
+
+<section class="card wide"><h3>📚 Cómo funciona</h3>
+<ul>
+<li>El juego consiste en un capitalismo puro simulado, en donde el objetivo de los jugadores es obtener el mayor beneficio al final del mismo.
+<li>Al inicio del juego cada jugador dispondrá de una cantidad de materiales (trigo y hierro).
+<li>El juego se desarrolla en sesiones sucesivas, con dos fases en cada una:
+<ul>
+<li>Fase 1: <b>Entregas</b>: El jugador negocia y contrata con otros jugadores. Cada jugador puede realizar hasta cinco entregas de los materiales de los que dispone a otros jugadores.
+<li>Fase 2: <b>Producción</b>: Cada jugador elige un único proceso de producción, que puede ser diferente en cada sesión:
+<ul>
+<li>Proceso 1: Usa 280 de trigo y 12 de hierro para producir 575 de trigo (o proporción equivalente).
+<li>Proceso 2: Usa 120 de trigo y 8 de hierro para producir 20 de hierro (o proporción equivalente).
+<li>Proceso 3: Los materiales disponibles se reducen a la mitad.
+</ul>
+En la producción se consumen todos los materiales, y en la siguiente sesión solo se dispone de la producción obtenida.
+</ul>
+<li>El ciclo de entregas y producción <b>se repite en cada sesión</b>.
+</section>
+
+<div class="footer">
+<p align ="Justify">
+OIKOS es un experimento para contrastar la teoría económica y también una herramienta didáctica. Puede utilizarse libremente, sin necesidad de registrarse o de participar en la investigación; pero agradeceríamos mucho que nos permitieran analizar los resultados y lo señalaríamos en las publicaciones que se deriven si así lo desean. El juego se inspiró en Alfons Barceló, «Juegos de simulación con modelos económicos reproductivos», <i>El Trimestre Económico</i>, Vol. 56, Nº 223(3) (1989), y los primeros resultados de la investigación se presentaron en las <i>X Jornadas de Análisis Input-Output</i> (2024) y en la <i>32nd International Input-Output Association Conference</i> (2026). Para más información, pueden contactarnos en <a href="mailto:mmuinosp@ucm.es">mmuinosp@ucm.es</a> .
+</p>
+
+OIKOS, con las cosas de comer no se juega © 2025, 2026 Manuel Muiños, <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">Creative Commons BY-NC-ND 4.0
+<img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/nc.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/nd.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"></A>
+
+</div>
+</main></body></html>
