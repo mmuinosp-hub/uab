@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>OIKOS · Superadministrador</title>
+<script src="/socket.io/socket.io.js"></script><script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
+<style>
+:root{--bg:#f4f7fb;--card:#fff;--text:#18212f;--muted:#64748b;--primary:#2563eb;--border:#e2e8f0;--ok:#15803d;--warn:#b45309}
+*{box-sizing:border-box}body{margin:0;font-family:Inter,Arial,sans-serif;background:linear-gradient(135deg,#eef4ff,#f8fafc);color:var(--text)}
+.wrap{max-width:1200px;margin:auto;padding:32px 20px}.hero{margin-bottom:22px}.hero h1{margin:0 0 7px;font-size:30px}.hero p{margin:0;color:var(--muted)}
+.card{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:22px;box-shadow:0 8px 30px rgba(15,23,42,.06)}
+#loginCard{max-width:460px;margin:70px auto}label{display:block;font-weight:600;margin-bottom:8px}
+input{width:100%;padding:12px;border:1px solid #cbd5e1;border-radius:10px;font-size:16px}
+button{border:0;border-radius:10px;padding:11px 16px;cursor:pointer;background:var(--primary);color:white;font-weight:600}
+button.secondary{background:#e2e8f0;color:#334155}button:hover{filter:brightness(.96)}
+.actions{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:18px}.error{color:#b91c1c;background:#fef2f2;border:1px solid #fecaca;padding:11px;border-radius:10px;margin-top:12px}
+.hidden{display:none!important}.summary{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:18px 0}
+.metric{background:#f8fafc;border:1px solid var(--border);border-radius:12px;padding:15px}.metric strong{display:block;font-size:24px;margin-top:4px}.metric span{color:var(--muted);font-size:13px}
+table{width:100%;border-collapse:collapse}th,td{padding:12px 10px;border-bottom:1px solid var(--border);text-align:left}th{font-size:12px;color:var(--muted);text-transform:uppercase}
+.badge{display:inline-block;padding:5px 9px;border-radius:999px;font-size:12px;font-weight:700}.ok{background:#dcfce7;color:var(--ok)}.warn{background:#fef3c7;color:var(--warn)}.neutral{background:#e2e8f0;color:#475569}
+.empty{text-align:center;color:var(--muted);padding:30px}.section-title{display:flex;justify-content:space-between;align-items:center;gap:10px}
+details{border:1px solid var(--border);border-radius:12px;margin:10px 0;background:#fff}summary{cursor:pointer;padding:14px;font-weight:700}
+.detail{padding:0 14px 14px}.mini{font-size:13px;color:var(--muted)}.back{margin-bottom:15px}
+@media(max-width:750px){.summary{grid-template-columns:repeat(2,1fr)}th:nth-child(5),td:nth-child(5),th:nth-child(6),td:nth-child(6){display:none}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<section id="loginCard" class="card">
+  <div class="hero"><h1>OIKOS · Superadministrador</h1><p>Consulta global de experimentos y datos agregados. Sin permisos de modificación.</p></div>
+  <label for="password">Contraseña</label>
+  <input id="password" type="password" placeholder="Contraseña de superadministrador">
+  <div style="margin-top:14px"><button id="loginBtn">Entrar</button> <button class="secondary" onclick="location.href='/'">Inicio</button></div>
+  <div id="loginError" class="error hidden"></div>
+</section>
+
+<section id="dashboard" class="hidden">
+  <div class="hero"><h1>Laboratorio OIKOS</h1><p>Experimentos terminados y partidas en curso.</p></div>
+  <div class="actions"><button id="refreshBtn">↻ Actualizar</button><button class="secondary" onclick="location.href='/'">Inicio</button></div>
+
+  <div class="summary">
+    <div class="metric"><span>Experimentos</span><strong id="totalExperimentos">0</strong></div>
+    <div class="metric"><span>Terminados</span><strong id="totalTerminados">0</strong></div>
+    <div class="metric"><span>Participantes</span><strong id="totalParticipantes">0</strong></div>
+    <div class="metric"><span>Sesiones realizadas</span><strong id="totalSesiones">0</strong></div>
+  </div>
+
+  <div id="listaCard" class="card">
+    <div class="section-title"><h2>Experimentos</h2><span class="mini">Selecciona uno para consultar sus datos.</span></div>
+    <table><thead><tr><th>Sala / experimento</th><th>Estado</th><th>Participantes</th><th>Sesiones</th><th>Entregas</th><th>Última actualización</th></tr></thead>
+    <tbody id="experimentosBody"></tbody></table>
+    <div id="empty" class="empty hidden">No hay experimentos.</div>
+  </div>
+
+  <div id="detalleCard" class="card hidden" style="margin-top:18px">
+    <div class="back"><button class="secondary" id="backBtn">← Volver a experimentos</button> <button id="downloadBtn">⬇️ Descargar Excel</button></div>
+    <div id="detalle"></div>
+  </div>
+</section>
+</div>
+
+<script>
+const socket=io();let autenticado=false;
+const $=id=>document.getElementById(id);
+function err(msg){$("loginError").textContent=msg;$("loginError").classList.remove("hidden")}
+function esc(v){return String(v??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#039;"}[c]))}
+function fecha(v){if(!v)return"—";const d=new Date(v);return Number.isNaN(d.getTime())?esc(v):d.toLocaleString("es-ES")}
+function nv(n,d){return d?.nombresVisibles?.[n]||n}
+function render(lista){
+ lista=Array.isArray(lista)?lista:[];
+ $("totalExperimentos").textContent=lista.length;
+ $("totalTerminados").textContent=lista.filter(x=>x.terminado).length;
+ $("totalParticipantes").textContent=lista.reduce((n,x)=>n+(+x.participantes||0),0);
+ $("totalSesiones").textContent=lista.reduce((n,x)=>n+(+x.sesionesRealizadas||0),0);
+ const body=$("experimentosBody");body.innerHTML="";$("empty").classList.toggle("hidden",lista.length>0);
+ lista.forEach(x=>{
+  const tr=document.createElement("tr");
+  tr.innerHTML=`<td><button onclick="ver('${esc(x.sala).replace(/'/g,"\\'")}')">${esc(x.sala)}</button></td>
+  <td><span class="badge ${x.terminado?"ok":"warn"}">${x.terminado?"Terminado":"En curso"}</span></td>
+  <td>${+x.participantes||0}</td><td>${+x.sesionesRealizadas||0}</td><td>${+x.totalEntregas||0}</td><td>${fecha(x.actualizadaAt)}</td>`;
+  body.appendChild(tr);
+ });
+}
+window.ver=sala=>socket.emit("superadminVerExperimento",sala);
+$("loginBtn").onclick=()=>socket.emit("entrarSuperadmin",$("password").value);
+$("password").addEventListener("keydown",e=>{if(e.key==="Enter")$("loginBtn").click()});
+$("refreshBtn").onclick=()=>socket.emit("superadminListarExperimentos");
+$("backBtn").onclick=()=>{$("detalleCard").classList.add("hidden");$("listaCard").classList.remove("hidden")};
+
+socket.on("superadminEntrado",()=>{autenticado=true;$("loginCard").classList.add("hidden");$("dashboard").classList.remove("hidden");socket.emit("superadminListarExperimentos")});
+socket.on("experimentosSuperadmin",render);
+socket.on("experimentoSuperadmin",d=>{
+ if(!d)return;
+ window.experimentoActual=d;
+ $("listaCard").classList.add("hidden");$("detalleCard").classList.remove("hidden");
+ const sesiones=Array.isArray(d.sesiones)?d.sesiones:[],ediciones=Array.isArray(d.ediciones)?d.ediciones:[];
+ let html=`<div class="hero"><h2>${esc(d.sala)}</h2><p>${+d.participantes||0} participantes · ${+d.sesionesRealizadas||0} sesiones realizadas</p></div>`;
+ html+=`<details open><summary>📚 Historial de sesiones (${sesiones.length})</summary><div class="detail">`;
+ html+=sesiones.length?sesiones.slice().reverse().map((x,i)=>{
+  const n=x.numeroSesion??x.sesion??i+1,r=x.recursosIniciales||{};
+  const rr=Object.entries(r).map(([k,v])=>`<tr><td>${esc(k)}</td><td>${esc(v.nombreVisible||nv(k,d))}</td><td>${v.trigo??0}</td><td>${v.hierro??0}</td></tr>`).join("");
+  const ee=(x.entregas||[]).map(v=>`<tr><td>${esc(v.deNombreVisible||nv(v.de,d))}</td><td>${esc(v.paraNombreVisible||nv(v.para,d))}</td><td>${v.trigo??0}</td><td>${v.hierro??0}</td><td>${fecha(v.timestamp)}</td></tr>`).join("");
+  const pp=Object.entries(x.produccion||{}).map(([k,v])=>`<tr><td>${esc(v.nombreVisible||nv(k,d))}</td><td>${v.trigoInicioSesion??0}</td><td>${v.hierroInicioSesion??0}</td><td>${v.trigoDespuesEntregas??v.trigoInicial??0}</td><td>${v.hierroDespuesEntregas??v.hierroInicial??0}</td><td>${esc(v.proceso??"—")}</td><td>${v.trigoProducido??0}</td><td>${v.hierroProducido??0}</td><td>${v.trigoFinal??0}</td><td>${v.hierroFinal??0}</td></tr>`).join("");
+  return `<details><summary>Sesión ${esc(n)} · ${fecha(x.iniciadaAt)} → ${fecha(x.finalizadaAt)}</summary><div class="detail"><p class="mini">Entregas abiertas: ${fecha(x.entregasAbiertasAt)} · Entregas cerradas: ${fecha(x.entregasCerradasAt)} · Producción abierta: ${fecha(x.produccionAbiertaAt)} · Producción cerrada: ${fecha(x.produccionCerradaAt)}</p><h4>📦 Recursos al comenzar</h4>${rr?`<table><tr><th>Usuario</th><th>Jugador</th><th>Trigo</th><th>Hierro</th></tr>${rr}</table>`:"<p class='mini'>Sin datos.</p>"}<h4>📜 Entregas</h4>${ee?`<table><tr><th>De</th><th>Para</th><th>Trigo</th><th>Hierro</th><th>Hora</th></tr>${ee}</table>`:"<p class='mini'>Sin entregas.</p>"}<h4>⚙️ Producción</h4>${pp?`<table><tr><th>Jugador</th><th>Trigo al inicio</th><th>Hierro al inicio</th><th>Trigo después de entregas</th><th>Hierro después de entregas</th><th>Proceso</th><th>Trigo producido</th><th>Hierro producido</th><th>Trigo final</th><th>Hierro final</th></tr>${pp}</table>`:"<p class='mini'>Sin producción.</p>"}</div></details>`;
+ }).join(""):"<p class='mini'>No hay sesiones registradas.</p>";
+ html+=`</div></details>`;
+ const ed=ediciones.map(x=>{const a=x.anterior||{},b=x.posterior||{};return `<tr><td>${fecha(x.timestamp)}</td><td>${esc(x.sesion??"—")}</td><td>${esc(x.accion||"Edición")}</td><td>${esc(a.usuario??x.usuarioAnterior??"—")}</td><td>${esc(b.usuario??x.usuario??"—")}</td><td>${esc((a.trigo??"—")+" → "+(b.trigo??"—"))}</td><td>${esc((a.hierro??"—")+" → "+(b.hierro??"—"))}</td><td>${esc((a.proceso??"—")+" → "+(b.proceso??"—"))}</td></tr>`}).join("");
+ html+=`<details><summary>✏️ Ediciones del administrador (${ediciones.length})</summary><div class="detail">${ed?`<table><tr><th>Hora</th><th>Sesión</th><th>Acción</th><th>Usuario anterior</th><th>Usuario nuevo</th><th>Trigo</th><th>Hierro</th><th>Proceso</th></tr>${ed}</table>`:"<p class='mini'>No hay ediciones registradas.</p>"}</div></details>`;
+ $("detalle").innerHTML=html;
+});
+window.descargarExperimento=()=>{
+ const d=window.experimentoActual;if(!d)return alert("Selecciona un experimento primero.");if(typeof XLSX==="undefined")return alert("No se ha podido cargar el módulo Excel.");
+ const sesiones=Array.isArray(d.sesiones)?d.sesiones:[],ediciones=Array.isArray(d.ediciones)?d.ediciones:[];
+ const t=[["Sesión","Sesión abierta","Entregas abiertas","Entregas cerradas","Producción abierta","Producción cerrada","Sesión finalizada"]],e=[["Sesión","De","Nombre visible de","Para","Nombre visible para","Trigo entregado","Hierro entregado","Hora"]],p=[["Sesión","Usuario","Jugador","Trigo inicial","Hierro inicial","Trigo después de entregas","Hierro después de entregas","Proceso","Producción de trigo","Producción de hierro"]],ed=[["Hora","Acción","Sesión","Usuario anterior","Usuario nuevo","Nombre visible anterior","Nombre visible nuevo","Trigo anterior","Trigo nuevo","Hierro anterior","Hierro nuevo","Entregas anteriores","Entregas nuevas","Proceso anterior","Proceso nuevo","Contraseña"]];
+ sesiones.forEach((x,i)=>{const n=x.numeroSesion??x.sesion??i+1;t.push([n,x.tiempos?.sesionAbiertaAt||x.iniciadaAt,x.entregasAbiertasAt,x.entregasCerradasAt,x.produccionAbiertaAt,x.produccionCerradaAt,x.finalizadaAt]);(x.entregas||[]).forEach(v=>e.push([n,v.de,v.deNombreVisible||nv(v.de,d),v.para,v.paraNombreVisible||nv(v.para,d),v.trigo,v.hierro,v.timestamp]));Object.entries(x.produccion||{}).forEach(([k,v])=>p.push([n,k,v.nombreVisible||nv(k,d),v.trigoInicial??"",v.hierroInicial??"",v.trigoDespuesEntregas??"",v.hierroDespuesEntregas??"",v.proceso??"—",v.trigoProducido??0,v.hierroProducido??0]));});
+ ediciones.forEach(x=>{const a=x.anterior||{},b=x.posterior||{};ed.push([x.timestamp,x.accion||"Edición",x.sesion??"—",a.usuario??x.usuarioAnterior??"—",b.usuario??x.usuario??"—",a.nombreVisible??x.nombreVisibleAnterior??"—",b.nombreVisible??x.nombreVisible??"—",a.trigo??"—",b.trigo??"—",a.hierro??"—",b.hierro??"—",a.entregas??"—",b.entregas??"—",a.proceso??"—",b.proceso??"—",b.contraseña??"—"])});
+ const wb=XLSX.utils.book_new();XLSX.utils.book_append_sheet(wb,XLSX.utils.aoa_to_sheet(t),"Tiempos");XLSX.utils.book_append_sheet(wb,XLSX.utils.aoa_to_sheet(e),"Entregas");XLSX.utils.book_append_sheet(wb,XLSX.utils.aoa_to_sheet(p),"Producción");XLSX.utils.book_append_sheet(wb,XLSX.utils.aoa_to_sheet(ed),"Ediciones");XLSX.writeFile(wb,`OIKOS_superadmin_${d.sala}.xlsx`);
+};
+$("downloadBtn").onclick=()=>window.descargarExperimento();
+
+socket.on("errorJuego",d=>{if(!autenticado||d?.codigo?.startsWith("LOGIN_")||d?.codigo==="SUPERADMIN_DESACTIVADO")err(d?.mensaje||"No se ha podido iniciar sesión.")});
+socket.on("error",m=>{if(!autenticado)err(m)});
+</script>
+</body>
+</html>
