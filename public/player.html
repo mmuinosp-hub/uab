@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>OIKOS — Jugador</title>
+<title>Capital — Jugador</title>
 <script src="/socket.io/socket.io.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
 <style>
@@ -13,13 +13,13 @@
 </head>
 <body><main>
 <section id="login" class="box login">
-<h2>OIKOS — Entrar a la sala</h2>
+<h2>Capital — Entrar a la sala</h2>
 <input id="room" placeholder="Sala" required><input id="name" placeholder="Jugador" required><input id="pass" type="password" placeholder="Contraseña" required>
 <div class="row"><button id="loginBtn">Entrar</button><a href="/"><button type="button" class="secondary">🏠 Inicio</button></a></div><p id="msg" class="bad"></p>
 </section>
 
 <section id="game" class="hidden">
-<div class="box"><div class="top"><div><h2>OIKOS — Consola del jugador</h2><p>Sala: <b id="roomName"></b> · Jugador: <b id="playerName"></b></p></div><a href="/"><button type="button" class="secondary">🏠 Volver al inicio</button></a></div>
+<div class="box"><div class="top"><div><h2>Capital — Consola del jugador</h2><p>Sala: <b id="roomName"></b> · Jugador: <b id="playerName"></b></p></div><a href="/"><button type="button" class="secondary">🏠 Volver al inicio</button></a></div>
 <div class="stats"><div class="stat"><small>Trigo</small><b id="wheat">-</b></div><div class="stat"><small>Hierro</small><b id="iron">-</b></div><div class="stat"><small>Entregas realizadas</small><b id="count">0</b></div></div><p id="phase" class="notice"></p></div>
 
 <div id="deliveryBox" class="box"><h3>Enviar entrega</h3><p id="deliveryMsg" class="bad"></p><form id="delivery"><select id="to" required></select><input id="sendWheat" type="number" min="0" step="any" placeholder="Trigo"><input id="sendIron" type="number" min="0" step="any" placeholder="Hierro"><button>Enviar</button></form></div>

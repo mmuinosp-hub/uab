@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>OIKOS — Player</title>
+<title>Capital — Player</title>
 <script src="/socket.io/socket.io.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
 <style>
@@ -13,13 +13,13 @@
 </head>
 <body><main>
 <section id="login" class="box login">
-<h2>OIKOS — Enter the room</h2>
+<h2>Capital — Enter the room</h2>
 <input id="room" placeholder="Room" required><input id="name" placeholder="Player" required><input id="pass" type="password" placeholder="Password" required>
 <div class="row"><button id="loginBtn">Enter</button><a href="/indexeng.html"><button type="button" class="secondary">🏠 Home</button></a></div><p id="msg" class="bad"></p>
 </section>
 
 <section id="game" class="hidden">
-<div class="box"><div class="top"><div><h2>OIKOS — Player Console</h2><p>Room: <b id="roomName"></b> · Player: <b id="playerName"></b></p></div><a href="/indexeng.html"><button type="button" class="secondary">🏠 Back to home</button></a></div>
+<div class="box"><div class="top"><div><h2>Capital — Player Console</h2><p>Room: <b id="roomName"></b> · Player: <b id="playerName"></b></p></div><a href="/indexeng.html"><button type="button" class="secondary">🏠 Back to home</button></a></div>
 <div class="stats"><div class="stat"><small>Wheat</small><b id="wheat">-</b></div><div class="stat"><small>Iron</small><b id="iron">-</b></div><div class="stat"><small>Deliveries made</small><b id="count">0</b></div></div><p id="phase" class="notice"></p></div>
 
 <div id="deliveryBox" class="box"><h3>Send delivery</h3><p id="deliveryMsg" class="bad"></p><form id="delivery"><select id="to" required></select><input id="sendWheat" type="number" min="0" step="any" placeholder="Wheat"><input id="sendIron" type="number" min="0" step="any" placeholder="Iron"><button>Send</button></form></div>
