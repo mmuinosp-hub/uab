@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>OIKOS — Simulador económico</title>
+<title>Capital — Simulador económico</title>
 <style>
 :root{--bg:#eef3f8;--card:#fff;--ink:#172033;--muted:#667085;--primary:#1769aa;--primary2:#0d47a1;--accent:#ff8a00;--line:#e4e7ec}
 *{box-sizing:border-box}body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Arial,sans-serif;color:var(--ink);background:radial-gradient(circle at 15% 10%,#fff 0,#eef3f8 38%,#e5edf6 100%)}
@@ -12,63 +12,48 @@ main{max-width:1080px;margin:auto;padding:34px 18px 70px}.hero{padding:38px 30px
 <body><main>
 <section class="hero">
 <table border=0 width=100%><tr><td width=100%><div class="eyebrow">Simulador económico</div><td align=right>[<a href="indexeng.html"><font color=ffffff>English</font></a>]</table>
-<h1>OIKOS</h1><h2>Con las cosas de comer no se juega.</h2>
+<h1>Capital</h1><h2>Con las cosas de comer no se juega.</h2>
 <p>Un juego de negociación, producción y decisiones económicas en el que varios jugadores intercambian recursos y eligen cómo producir en sesiones sucesivas.</p>
 <div class="actions"><a class="btn alt" href="/player.html">🎮 Entrar como jugador</a><a class="btn" href="/admin.html">⚙️ Consola del administrador</a></div>
 </section>
 
 <section class="card wide">
 <p align="Justify"><font size=-1 color=ff0000>Atención: ésta es una plataforma en desarrollo, y el servidor gratuito en el que está ubicada se reinicia sin guardar los datos si deja de usarse durante 15 minutos.</font>
- 
-<p align ="Justify">OIKOS incluye tres juegos económicos: <i>Capital</i>, <i>Anarquía</i> y <i>Plan</i>. 
-<p align ="Justify">En los juegos se puede actuar como administrador y/o como jugador: 
-<ul>
-<li>El jugador negocia y contrata con otros jugadores, realiza entregas y produce.
-<li>El administrador inicia el juego, incorpora a los jugadores, gestiona las fases de cada sesión y valida contratos. 
-</ul>
-</section>
 
-<section class="card wide">
+
+<p align ="Justify">Simulamos un capitalismo en su forma más esencial: agentes que <b>intercambian</b> y producen para maximizar su <b>beneficio</b>.
+
+
 <h3>📚 Cómo funciona</h3>
-<p align ="Justify">En los tres juegos cada jugador comienza disponiendo de unas cantidades de trigo y hierro.
+<p align ="Justify">Cada jugador comienza disponiendo de unas cantidades de trigo y hierro.
 <p align ="Justify">El juego se desarrolla en <b>sesiones sucesivas, con dos fases</b> en cada una:
-<ul>
-<li>Fase 1: <b>Entregas</b>: El jugador negocia y contrata con otros jugadores. Cada jugador puede realizar hasta cinco entregas de los materiales de los que dispone a otros jugadores.
-<li>Fase 2: <b>Producción</b>: Cada jugador elige un único proceso de producción, que puede ser diferente en cada sesión:
+
+<p align ="Justify">Fase 1: <b>Entregas</b>: El jugador negocia y contrata con otros jugadores. Cada jugador puede realizar hasta cinco entregas de los materiales de los que dispone a otros jugadores.
+
+<p align ="Justify">Fase 2: <b>Producción</b>: Cada jugador elige un único proceso de producción, que puede ser diferente en cada sesión:
 <ul>
 <li>Proceso 1: Usa 280 de trigo y 12 de hierro para producir 575 de trigo (o proporción equivalente).
 <li>Proceso 2: Usa 120 de trigo y 8 de hierro para producir 20 de hierro (o proporción equivalente).
 <li>Proceso 3: Los materiales disponibles se reducen a la mitad.
 </ul>
-</ul>
 <p align ="Justify">En la producción se consumen todos los materiales, y en la siguiente sesión solo se dispone de la producción obtenida.
+
+
 <p align ="Justify">El ciclo de entregas y producción <b>se repite en cada sesión</b>.
-</section>
 
-<section class="card wide">
-<h3>Juego 1: Capital</h3>
-
-<p align ="Justify">Simulamos un capitalismo en su forma más esencial: agentes que <b>intercambian</b> y producen para maximizar su <b>beneficio</b>.
 <p align ="Justify">Gana el que obtenga la mayor cantidad <i>trigo·a + hierro·b</i> en la última sesión, donde los <i>a</i> y <i>b</i> los establece el administrador y no se hacen públicos hasta finalizar el juego. Tampoco se anuncia la última sesión.
 <p align ="Justify">Pueden suscribirse contratos para garantizar entregas y formar empresas. 
-
-<h3>Juego 2: Anarquía</h3>
-
-<p align ="Justify">Simulamos un mercado con objetivos diferentes: agentes que <b>intercambian</b> y producen para maximizar sus <b>objetivos particulares</b>.
-<p align ="Justify">Los objetivos pueden establecerse:
-<ul>
-<li>Iguales para todos los jugadores: por ejemplo, gana el que consiga la mayor suma de sus cantidades consumidas de trigo en todas las sesiones.
-<li>Diferentes para cada jugador: entonces un jugador no se contrasta con los demás sino consigo mismo, en comparación con otros juegos o sesiones anteriores.
-</ul>
-<p align ="Justify">Pueden suscribirse contratos para garantizar entregas y formar cooperativas.
-
-<h3>Juego 3: Plan</h3>
-<p align ="Justify">Simulamos una planificación extrema: el planificador asigna <b>sin mercado</b> para alcanzar <b>un objetivo</b> dado.
-<p align ="Justify">Las entregas se realizan entre los procesos de producción bajo control de cada planificador, sin negociación ni entregas con otros planificadores. Para cada planificador hay que crear una sala independiente con tres jugadores virtuales, para que pueda usar todos los procesos de producción.
-<p align ="Justify">El objetivo puede definirse como en <i>Capital</i> o en <i>Anarquía</i>.
 </section>
 
 
+
+<section class="card wide">
+ 
+<p align ="Justify">En el juego se puede actuar como administrador y/o como jugador: 
+<ul>
+<li>El administrador inicia el juego, incorpora a los jugadores, gestiona las fases de cada sesión y valida contratos. 
+<li>El jugador negocia y contrata con otros jugadores, realiza entregas y produce.
+</ul>
 
 
 <section class="card wide">
@@ -88,21 +73,24 @@ main{max-width:1080px;margin:auto;padding:34px 18px 70px}.hero{padding:38px 30px
 <p align ="Justify">Si en el juego está abierta la producción, podrá accederse a un apartado que permite elegir uno de los tres procesos de producción. Una vez elegido el proceso, éste no puede cambiarse. Si no se señala ninguno se supone que se usa el tercero.
 </section>
 
+</section>
+
 
 <section class="card wide">
 <h3>Contratos</h3>
-<p align ="Justify">En <i>Capital</i> y <i>Anarquía</i> pueden suscribirse contratos con hasta 4 jugadores. Los contratos para ser efectivos deben ser entregados al administrador, por los medios que éste establezca para ser válidados (emails identificados, por ejemplo). 
+<p align ="Justify">Pueden suscribirse contratos con hasta 4 jugadores. Los contratos para ser efectivos deben ser entregados al administrador, por los medios que éste establezca para ser válidados (emails identificados, por ejemplo). 
+
 <p align ="Justify"><b>Contratos de entregas</b>:
 
-<p align ="Justify">Los contratos especificarán el nombre de los participantes, las cantidades entregadas por cada uno, y las sesiones en las que se efectuarán las entregas; pueden acordarse entregas en sesiones futuras. 
-<p align ="Justify">Si un contrato especifica entregas en una sesión posterior a la que resulta ser la última, las entregas posteriores son ignoradas.
+<p align ="Justify">Los contratos especificarán el nombre de los participantes, las cantidades entregadas por cada uno, y las sesiones en las que se efectuarán las entregas; pueden acordarse entregas en sesiones futuras. Si un contrato especifica entregas en una sesión posterior a la que resulta ser la última, las entregas posteriores son ignoradas.
 <p align ="Justify">Sin contrato está permitido no corresponder a una entrega. 
 </ul>
-<p align ="Justify"><b>Contratos de empresas y cooperativas</b>:
 
-<p align ="Justify">Pueden formarse una empresa o cooperativa con un contrato que especifique el nombre de los participantes (hasta 4) y el de la empresa o cooperativa. Los participantes seguirán jugando como antes, haciendo entregas y contratos de forma individual, pero:
+<p align ="Justify"><b>Contratos de empresas</b>:
+
+<p align ="Justify">Pueden formarse una empresa con un contrato que especifique el nombre de los participantes (hasta 4) y el de la empresa o cooperativa. Los participantes seguirán jugando como antes, haciendo entregas y contratos de forma individual, pero:
 <ul>
-<li>A la hora de medir el cumplimiento del objetivo, se considerará que las cantidades de trigo y hierro de las que dispongan todos los participantes en cada sesión se dividen por igual entre ellos. Por ejemplo, en <i>Capital</i> se considerará el trigo y el hierro de todos los participantes en la última sesión dividido por igual entre ellos. 
+<li>Se considerará el trigo y el hierro de todos los participantes en la última sesión como dividido por igual entre ellos. 
 <li>Los participantes responderán solidariamente de los contratos de entregas que suscriban cualquiera de los miembros.
 </ul>
 <p align ="Justify">Un jugador solo puede pertenecer a una empresa o cooperativa. 
@@ -113,6 +101,31 @@ main{max-width:1080px;margin:auto;padding:34px 18px 70px}.hero{padding:38px 30px
 
 <section class="card wide">
 <h3>Variantes</h3>
+
+
+<section class="card wide">
+
+<h3>Juego 2: Anarquía</h3>
+
+<p align ="Justify">Simulamos un mercado con objetivos diferentes: agentes que <b>intercambian</b> y producen para maximizar sus <b>objetivos particulares</b>.
+<p align ="Justify">Los objetivos pueden establecerse:
+<ul>
+<li>Iguales para todos los jugadores: por ejemplo, gana el que consiga la mayor suma de sus cantidades consumidas de trigo en todas las sesiones.
+<li>Diferentes para cada jugador: entonces un jugador no se contrasta con los demás sino consigo mismo, en comparación con otros juegos o sesiones anteriores.
+</ul>
+<p align ="Justify">Pueden suscribirse contratos para garantizar entregas y formar empresas.
+
+</section>
+
+
+<section class="card wide">
+
+<h3>Juego 3: Plan</h3>
+<p align ="Justify">Simulamos una planificación extrema: el planificador asigna <b>sin mercado</b> para alcanzar <b>un objetivo</b> dado.
+<p align ="Justify">Las entregas se realizan entre los procesos de producción bajo control de cada planificador, sin negociación ni entregas con otros planificadores. Para cada planificador hay que crear una sala independiente con tres jugadores virtuales, para que pueda usar todos los procesos de producción.
+<p align ="Justify">El objetivo puede definirse como en <i>Capital</i> o en <i>Anarquía</i>.
+</section>
+
 
 <p align ="Justify">Se pueden <b>contrastar</b> los juegos, por ejemplo <i>Plan</i> con <i>Capital</i>, de manera que una parte de los jugadores juega a <i>Capital</i> mientras el resto intenta superar sus resultados con <i>Plan</i>. También <b>combinarlos</b>, de forma que algunos jugadores jueguen a <i>Anarquía</i> mientras que los demás a <i>Capital</i>, intercambiando todos en el mismo mercado.
 
@@ -131,10 +144,10 @@ main{max-width:1080px;margin:auto;padding:34px 18px 70px}.hero{padding:38px 30px
 
 <div class="footer">
 <p align ="Justify">
-OIKOS es un experimento para contrastar la teoría económica y también una herramienta didáctica. Puede utilizarse libremente, sin necesidad de registrarse o de participar en la investigación; pero agradeceríamos mucho que nos permitieran analizar los resultados y lo señalaríamos en las publicaciones que se deriven si así lo desean. El juego se inspiró en Alfons Barceló, «Juegos de simulación con modelos económicos reproductivos», <i>El Trimestre Económico</i>, Vol. 56, Nº 223(3) (1989), y los primeros resultados de la investigación se presentaron en las <i>X Jornadas de Análisis Input-Output</i> (2024) y en la <i>32nd International Input-Output Association Conference</i> (2026).
+<I>Capital</I> es un experimento para contrastar la teoría económica y también una herramienta didáctica. Puede utilizarse libremente, sin necesidad de registrarse o de participar en la investigación; pero agradeceríamos mucho que nos permitieran analizar los resultados y lo señalaríamos en las publicaciones que se deriven si así lo desean. El juego se inspiró en Alfons Barceló, «Juegos de simulación con modelos económicos reproductivos», <i>El Trimestre Económico</i>, Vol. 56, Nº 223(3) (1989), y los primeros resultados de la investigación se presentaron en las <i>X Jornadas de Análisis Input-Output</i> (2024) y en la <i>32nd International Input-Output Association Conference</i> (2026).  
 </p>
 
-OIKOS, con las cosas de comer no se juega © 2025, 2026 Manuel Muiños, <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">Creative Commons BY-NC-ND 4.0
+Capital, con las cosas de comer no se juega © 2026 Manuel Muiños, <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">Creative Commons BY-NC-ND 4.0
 <img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/nc.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/nd.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"></A>
 </div>
 </main></body></html>
