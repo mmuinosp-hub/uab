@@ -34,6 +34,7 @@
 </section></main>
 <script>
 const s=io();let create=true,room='',state=null,historyCache=[],playerEditsCache=[],$=x=>document.getElementById(x),esc=x=>String(x??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c])),n=x=>Number(x??0).toFixed(2),dt=x=>x?new Date(x).toLocaleString('es-ES'):'-';
+s.on('connect',()=>{if(!$('dashboard').classList.contains('hidden')&&room&&$('password').value){s.emit('entrarAdmin',{sala:room,password:$('password').value})}});
 let accessKind='create';
 function setAccessMode(v){
   accessKind=v?'create':'login';
