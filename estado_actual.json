@@ -1,12 +1,12 @@
 {
   "aula": {
-    "adminPassword": "scrypt$547b92d16af8b211850c9552fdcc0e15$e783052766578ddd905a5970d3e00a2ce9e0b7f818e1211b4dac3d6c0d2bc0e54f480485b68a84882cb5fe4390c873bec8c57c2fc0ce3107feac6472de6c7eb6",
-    "adminId": null,
-    "adminSessionId": "f9b43f6f-ba43-4708-8c01-f2b47f4f6397",
+    "adminPassword": "scrypt$f771024775f2bf0ea2d18c5d479dc722$895b7b9a4a63c38e15476ac77d9aa74b6ee31492182b52214b21cf1e5bb0af68e4f6c9a76c4a5cc05962ded4ce920e4efd6b6d1375bfad400e59e9582418f3a1",
+    "adminId": "e5aNAbXujiDiCwo1AAAD",
+    "adminSessionId": "0bcd14ca-bc5b-4c01-94dc-eb96208fa6ed",
     "jugadores": {
       "1371068": {
-        "id": "fd47b73b-0974-4517-8617-4bae745ce9b0",
-        "password": "scrypt$f0f01cf063f21d91ac07f236000ed03e$5a838d490fe2944c73d66f6412a0eed683ea0ba62e528f7dc4f56853fd4816d57e1746e1076234c104adc3b829e33ec4657f6fb6d04bce0b77bee770dbb82321",
+        "id": "27630d2e-c1f0-44dd-a486-b200008c987f",
+        "password": "scrypt$956744601efaa4aa4f4c6b0ce702872f$4b9f06fb9609a9eefd222ca38a2d132aa5ce0b6d0b2303c199031389cf1eb5fe7fcf00073d8257868694d2046cb0021bca4f942be2718d9cbb92c62e82e756a0",
         "nombreVisible": "Victor Pizarro Martiartu",
         "trigo": 1000,
         "hierro": 100,
@@ -19,8 +19,8 @@
         "hierroProd": 0
       },
       "1570433": {
-        "id": "51554841-e5d2-4b47-b82e-61b5038b445f",
-        "password": "scrypt$f8c5fa0fe5335080dbe4d78e3c2a19ef$a76a9a1d8a5d2ecdea6e02f140f6f14ab3b6ba3932ca80b262cf95c81d4c2fd81b59856a858e6adaf37576454b360c98c3392cbcb8747decccb906ba55371c9a",
+        "id": "ace168b2-2ecc-4955-ba0c-092392b812af",
+        "password": "scrypt$6d6c61a1d0ddc28331ae4b76ca7f83ee$c57dd354c5935fb49aa558deae02fef59dd9849b382180022be0409bee35ec8da5e355598b4cd376560fe343bc67da5e003be72307cdc1ec96c9d6e1eb7bf835",
         "nombreVisible": "Alex Justicia Sanchez",
         "trigo": 1000,
         "hierro": 100,
@@ -33,8 +33,8 @@
         "hierroProd": 0
       },
       "1667791": {
-        "id": "6b3871e0-62a7-4e30-9ded-37650cd2cff3",
-        "password": "scrypt$d2aed4e945c3dc19d76bcc6acc645b8c$ead164ca89899a8b36d2b7d788768a85a87c15b54a02bda117f6d6ba8fa101ab35874417dd02924fd255ba464eee98b72b8fbcc2e87a9a79ac848fbc075f8a53",
+        "id": "48b3c18d-fd00-4bdf-8a92-021b029e7a6e",
+        "password": "scrypt$1fae4593fa0119f11bcd5ddffb2a8f2e$0b92078ba7d50d572a5e44c1ebcc7fc1e71b8506350ea923a5572664b89fbdacf6bac6eb4f3e5e78649d76e6b696e08b9b515767a3815c79ade1745bf7a7c91f",
         "nombreVisible": "Kevin Daniel Hernandez Zamora",
         "trigo": 1000,
         "hierro": 100,
@@ -47,8 +47,8 @@
         "hierroProd": 0
       },
       "1708827": {
-        "id": "a8ec123c-186a-4529-b1e0-decd3e667317",
-        "password": "scrypt$0ddbc4c947b309ab3572dc6055ba9fdb$7d077332784e9dd5f3580cc3d966f2508c4dd83cd5a827449324408abceadd8189552ac4608a5f269278b3097392ebfddaf7a6ee5783e4fa31c5e62f3afd3229",
+        "id": "090f66e3-5537-4ac2-b852-254fb7c1258c",
+        "password": "scrypt$6d28c36862ec024ea4ab7510ef24b179$a41d6c2df46e78db7f4d01c1dde04cf7b8d44bfde626a2b33efbaa573aa11f38821ec4b0874599eb12049eb8bec2151906ce12d6db67fb98dbd032b3b554e4da",
         "nombreVisible": "Paula Valentina Correa Ortiz",
         "trigo": 1000,
         "hierro": 100,
@@ -61,8 +61,8 @@
         "hierroProd": 0
       },
       "1708892": {
-        "id": "aed199ac-03a2-43a4-a345-b031d535a16b",
-        "password": "scrypt$1c31dcc2e610d445cc11d3dc560e76ee$ad30557453c963cc213ce995703d3e7a035845216287712bf332a20e0e565dadf85be26e3041af407606ad21c06d1af83dd37d861eee4fe07ca4202247f65b8f",
+        "id": "9e01c5b9-8a9e-41ce-85d4-a86970d43661",
+        "password": "scrypt$0756abb7bdaef9ca940d72d851b6e04b$3fb9106c6c039b6845ae6fa733d38e93270c62eea8a500df093a056a3587499bde08c3972fc17ea0eb7f77e657dd926405c9c532d58cfc38e707709e17b8e570",
         "nombreVisible": "Sebastian Parapar Restovic",
         "trigo": 1000,
         "hierro": 100,
@@ -75,8 +75,8 @@
         "hierroProd": 0
       },
       "1713979": {
-        "id": "b738f19e-b23d-4803-871c-e79f8077407a",
-        "password": "scrypt$1b1d09e0a7a9b79dd168c37bba586960$07970b97b7e8d295b80fb0a5eb2c50087c6869b5e0e180a166f2fd97e7aaaec9b53c862c1efb61c117072d1444eb50d1444040b937233d6c262e7e84048efb8f",
+        "id": "de6876f8-96e4-4218-bb4e-bd1c311a7467",
+        "password": "scrypt$a23a6974cfe383f23912a75f0202ad6c$deb2f9667b7834937636badf1b510a3f1049840f6c34d857812d1f83fbde5703c375d4671af2b14ca58862fe662632905e75d80c005bdf792353364d331a8882",
         "nombreVisible": "Jose Nelson Maldonado Agama",
         "trigo": 1000,
         "hierro": 100,
@@ -89,8 +89,8 @@
         "hierroProd": 0
       },
       "1746709": {
-        "id": "44eed0f7-c30e-494a-96be-727d0efb710e",
-        "password": "scrypt$191a01ce72aff77b1a978cfa1e9156a3$b82dd4b8b553ac7da0d35e50b1e91f988706eb7450c5705c1a3158b10ab53f9b714c00191918701dc987831da1aa3bd139047476198e140f49417a3d78b5dfe1",
+        "id": "46aa8d7c-8599-4a85-af1c-424521c5ab0d",
+        "password": "scrypt$d7df553efc570fe64b602ac741ec78b4$04d879763f8d726bd389d606ebc30b80a6dec398ef60adac6568428be4c021ddcb425d68553fa3fcc4941c042958dbe2f28ac6c57b5c20b48e9ff9b1b27c974b",
         "nombreVisible": "Karla Aviles Baena",
         "trigo": 1000,
         "hierro": 100,
@@ -103,8 +103,8 @@
         "hierroProd": 0
       },
       "1747757": {
-        "id": "784b6337-2199-4e4f-96af-c7e0d0dea4d4",
-        "password": "scrypt$f1e3daf33a471f69c26b19cc29611f20$a977f4f029b280a118c03b89bf850276a5901f1b648bb9349e15da9e63e442f72e9e4df380db9897558328717a680ce59d5c2153baa47ffb2772d62812cafc60",
+        "id": "d8b5290e-ba7d-422e-bbf9-52796ff73468",
+        "password": "scrypt$1fc85ce8922e8ed3f56940283bd83586$ecf531491e973e6888c87ae85fdd7263127206f0321c4d5f02b8690664d1c3f5a012a7de716edec48239a8237ebf53c62d7bbb7f1438377d0ac0c45db64c2dd8",
         "nombreVisible": "Ming Lin",
         "trigo": 1000,
         "hierro": 100,
@@ -117,8 +117,8 @@
         "hierroProd": 0
       },
       "1747890": {
-        "id": "93e3e9b1-005c-4e09-b39b-dedd79d74936",
-        "password": "scrypt$9664ee23824af0fc3be5ae16da0cd256$20d6e25a11fdf58620ae1d5060bfb78fad7a3db9eb6e3bfa0b6eb8e1285ff9383d1c201b54143af76f51ec66f516d1c64aa75332d2f6ef17b3ba90eb630d6e76",
+        "id": "7018241f-9b88-4437-82d6-c3a5a2de1aab",
+        "password": "scrypt$06fc3252ab0e57233282304a9edb0c2e$5283bf22a14b6ae0887d161005d6106e2f3b75dc567a6c801812dc55cbe02dc6473b1a370e6f3c944bffd9c73660510160591c6a81b4022670b0bf7e51b8323f",
         "nombreVisible": "Natalia Cruz Castro",
         "trigo": 1000,
         "hierro": 100,
@@ -131,8 +131,8 @@
         "hierroProd": 0
       },
       "1750040": {
-        "id": "a2cb1f21-8dc3-4a96-b3d9-66e29e89a59d",
-        "password": "scrypt$d219e53e125aabc6d67407d8ca34eabf$a4a2197e79a8b426a735546f7859fe1547fcda4cc306f051638cb6ca27784d7152f4928d52f257c7224d073141ca246bf3519eed9c7cbeb2d726259b000db9de",
+        "id": "554ae1a4-c3a0-4ed3-a3c2-07d0d8cee946",
+        "password": "scrypt$260699b8c8442233d14cacadb4c0db87$ef4ac1f2f79480e97187b0839139e64768660f79593bd4401e9c91be324123e4452486480158a797d4a19f2a517ffc69e086b5c73f4f8c1a008d49f6a178b76e",
         "nombreVisible": "Joan Galera Segura",
         "trigo": 1000,
         "hierro": 100,
@@ -145,8 +145,8 @@
         "hierroProd": 0
       },
       "1751222": {
-        "id": "9230f021-d844-48cb-b50d-b07ccd5a9248",
-        "password": "scrypt$0b026faa341ec95e88a876f339ef0c65$975eb5cc6726bca64a400fab7a6d9d15dec54a5de57d0dc965cc8a957563e28394027dfdcfafa25aec57ef91c9f83705529942d04bbc17cfa3e908b151a3c497",
+        "id": "6d189e55-5d46-415f-a8b6-836e3a5e5dfe",
+        "password": "scrypt$1292e775b1c2212007d99285a558e11e$0043d693c175a903dd8b390acaf8cfec046cac2b31672a130b4178c8deb563b6d9a35bac8a5897834dfa5bd0778c3db57e8a80032c5fa43906749f8b520be9c4",
         "nombreVisible": "Arnau Castillo Gasco",
         "trigo": 1000,
         "hierro": 100,
@@ -159,8 +159,8 @@
         "hierroProd": 0
       },
       "1751774": {
-        "id": "7e143093-d0a6-4c40-9194-1915b2969d53",
-        "password": "scrypt$c73e3b984c5723841e47539819cce71f$9270b64daf9c49c09fff3a56f709cc2756724c0a9d09bdef0a99a812d77b929bbe76e368913c324b4cd5b769f5a4e0e63d37b3c5ddb244e895030cee2c9b1362",
+        "id": "9e0c85c6-e93d-4c52-9601-f33f00d84c16",
+        "password": "scrypt$35894f7869297601de25c3c8dd98accb$7bb4178021d731c14ffae2388cfee5d3265a2a7181c2017447ca24d81d042f29ba6f3c5b475540056b6984dd25d990d66d8cf1511bef0417e27d550a9143ac8c",
         "nombreVisible": "Huiqin Ye",
         "trigo": 1000,
         "hierro": 100,
@@ -173,8 +173,8 @@
         "hierroProd": 0
       },
       "1755201": {
-        "id": "66a494a5-2911-4e33-aced-badd72a6d0c5",
-        "password": "scrypt$c1d2c5978fa1cc266bec842430069f76$9cc4f02dd82e8194a94ef59be4baa9077fc7e58dcbb1b2add7beed1a72eea1bc29f92b620675d90d1f04e07437b017d4f2af71c26deae8d8f8f47099e6eed676",
+        "id": "8800b204-a746-4ba7-8478-28ea2f0276f0",
+        "password": "scrypt$463d3b008461613c65ec4283b1532b18$638e4c068f1987f3d70d55e09da22d92bc6c1b991f67023f1b1cb7cb67e1dc6c141ae2e9435bb01e0f74210ff033cde153353606744ed185b118fcd02152f329",
         "nombreVisible": "Pau Freixa Guitart",
         "trigo": 1000,
         "hierro": 100,
@@ -187,8 +187,8 @@
         "hierroProd": 0
       },
       "1759074": {
-        "id": "ebf8672e-6718-4a61-a824-5bd5cae69639",
-        "password": "scrypt$07e20323a53390e04ac2ff35776509fd$54b37419de1e2d04cd0528d421cbdf727ba9587ebfb1b6049cab67ed6e82f0d8fa8369a931514da9baaa2d5f3bb50934df88caa190f51004da71133697da0ad5",
+        "id": "ab50fef9-a6af-4311-ad81-77d6199a72cb",
+        "password": "scrypt$139a34e9d558934195102279b3c0ea1d$0ab2436f8a0b16c351e7d4ffdf19cd87bb7dcc471b0704baa31a5e36f2ead3a5eb940753ebb8516f486e8959acc205552b3affbb029c1dde70c8d53e1b2c7928",
         "nombreVisible": "Iratxe Vazquez Lopez",
         "trigo": 1000,
         "hierro": 100,
@@ -201,8 +201,8 @@
         "hierroProd": 0
       },
       "1777092": {
-        "id": "d44309dc-8dbb-4356-8e99-4333f40b9b61",
-        "password": "scrypt$9b3850e590e9168e9a5e3298c8119ac8$66e403afa63018b565be32c889f6561fd9127d11a1564830ac951a370df7a74d333677fce7d3b836f23ccbdf704be016791917becfa0c3c224ae32033d701981",
+        "id": "0f980b73-563e-4abf-bb21-75aac7cfbf5b",
+        "password": "scrypt$f7fdf2e8f25bae05655e2c371c836f56$6b343f8c49247e6f00979b68dfe6c58e856053b3a95c0cd98020dd69148ece9aac476f5553039ecd908e5bfa1aed38be176c068fe6831f7ffeddf2d784959457",
         "nombreVisible": "Anas Bouabdellah El Yamani",
         "trigo": 1000,
         "hierro": 100,
@@ -215,8 +215,8 @@
         "hierroProd": 0
       },
       "1789140": {
-        "id": "a86a67c8-1e4d-40ac-8da3-63c7b56bdca0",
-        "password": "scrypt$f9a5dd6b1a9c5f6a2a9b92b44900f43d$ff99c1050f5b3816c1180a78bea113ccdf1a79a6d591701b4783f0d9657eaa0bd6dae0f34a9f546d2a3e3edd7792370b9b20b6eedc80c78373b7c1f1d5c458d7",
+        "id": "e9fa3a88-b1fb-4201-a305-a313feb8f810",
+        "password": "scrypt$ed3731173e1847532ae027dd06ee1482$1f6b85a649257c72964f89da776d760aa139141fe285885b78b73112196b2580b16db6ad63c6f0c6b52b02cebe0af8b82c729a190ddada1aff03af9f9b017497",
         "nombreVisible": "Adrian Galvez Burgales",
         "trigo": 1000,
         "hierro": 100,
@@ -229,8 +229,8 @@
         "hierroProd": 0
       },
       "1789185": {
-        "id": "c219cf34-8d4d-46b0-83a5-f92a04b03980",
-        "password": "scrypt$28c48f0fd77866aa5737eee03b6f3a92$bd4d1c5cfd29230f2479c6c66d7bb9a871885b21bc2b6c3b20bc3c023ba621c398d4df5c6a443014f1bc6b64cc428d86a6ced527058fdcfa2561b10bf71c8961",
+        "id": "87aea6ad-b751-49fa-903d-97103db86be9",
+        "password": "scrypt$acbb802668c0fa80311b14e41662fd15$44811d81c2f48253c2068aaf004cfd9b498103bd1e5d6ca97ef54e6ba9b974b27e467b2764b1c41b928649b3cd03064949add56393dd358cb7992b164ddf81db",
         "nombreVisible": "Aiman Jimenez El Aguili",
         "trigo": 1000,
         "hierro": 100,
@@ -243,8 +243,8 @@
         "hierroProd": 0
       },
       "1789831": {
-        "id": "2090bb32-93fd-4d7e-8b80-1144132afa35",
-        "password": "scrypt$65536ba1648840490bca5a49dfb977a9$388dd7abbc13e94f5210ef92f647d9ddeabc3370ca414e3c81273569ff6b02426b764fd52bbcd8c155e7c28cd69eb2d31e9f7e32337ab4c318854d934d39d12b",
+        "id": "b9ea1511-988c-46ee-895f-0ef05dbd3094",
+        "password": "scrypt$cc97876634535f0a7ba9a34f6a8db3be$ea488546adfdf8e43d74fa1c1cfc7b7a16f0f05735e212119596141fb506f7ab660026a1c863d565fe52dddc2f59aa0750af4d358e9b591fd0af5463e595921e",
         "nombreVisible": "Ayoub El Khalfi Bouhali",
         "trigo": 1000,
         "hierro": 100,
@@ -257,8 +257,8 @@
         "hierroProd": 0
       },
       "1790255": {
-        "id": "c12caba0-42bc-45e5-b78b-8fcda64112cc",
-        "password": "scrypt$f235ce1a57221ed9b6324a7e2589495b$fa05f8eff5cd216919bd225db806a1125ecd6170dccca825b399ba8e06322f0ae68aa22db13df0416d4b3a646967765c2357550f5db226e26eb7146552a4ba2b",
+        "id": "dc829aef-820b-4fba-b376-d7e86a7b748d",
+        "password": "scrypt$eb514ba76e336952c6be0b46263dc60b$d2f0c09d5d4af35819551027fcb7d21281537403d5dcf87af6763098acec2e1a6ebd3871a763a43522744b031e5b59095664bea1be2bc4b4dc4f38d9aebf1ed8",
         "nombreVisible": "Daniel Frias Bonachera",
         "trigo": 1000,
         "hierro": 100,
@@ -271,8 +271,8 @@
         "hierroProd": 0
       },
       "1790607": {
-        "id": "693c5fad-9669-4ebe-8765-5a91ea74a20e",
-        "password": "scrypt$c3cf16bcc21c7e8ae4262004a01096b1$85ddec0045bcd50f06f076e3e8d7bb38e9c931632952c4c97ee1b3cfa9c67a692041de046e7aa15ab7ee5285ea72f26334b003563b7be802a2e454b3ed4589c7",
+        "id": "c5796362-0103-4f61-b968-f507354f8ec7",
+        "password": "scrypt$597e491c98107e0e7204b129ac3f1cfa$46bc7fabc426c887f6d92b83a6dc6d2f7112d8ce007d280ac24833e6edd716b70d921794dc0e37e0f8eb769b2f565cf28de7efd9e0d6550d65a8ac0decbd0b85",
         "nombreVisible": "Fabrizio Conde Castro",
         "trigo": 1000,
         "hierro": 100,
@@ -285,8 +285,8 @@
         "hierroProd": 0
       },
       "1790799": {
-        "id": "ae02f8db-dc15-4349-9ab0-d505f54b14ed",
-        "password": "scrypt$1d9026227bda46c2d87faca1118687ad$6a6f0dd11491382e90dbed824aa473c4c18927bdfc78099522bef975e14e709ad672bd9bd2d8e5e7d308533c1aa81b22a3d7fc6fefc5c6ac915ed8c2701dec4c",
+        "id": "2adadc2a-d0f5-4814-81bd-d16c34a6509d",
+        "password": "scrypt$d3924c30668e9c2450dfca6aa386f3df$e01bdea9348de8854a1099966e4c08e5e00811ab7950773c981edd8729456f6aeb1afb8a9de159a67befdbc8a30274f8762af897c5037b1104a814ca57923c10",
         "nombreVisible": "Hasley Yeimelis Peguero Mota",
         "trigo": 1000,
         "hierro": 100,
@@ -299,8 +299,8 @@
         "hierroProd": 0
       },
       "1791506": {
-        "id": "e850bba1-32e8-44d8-9ad1-98dad74798d0",
-        "password": "scrypt$40119c16d1ba893accf34d1349d76efb$3ee90cdfe8045dc4297d566711400b2e1268fc4881efb79723f55d17bb39682bc0ce9b38f0f2748716fbea98841aa4e74d10f37a075757ec0ef1086e97693245",
+        "id": "de114b64-eddd-4a3b-9280-1f82e3ec50c4",
+        "password": "scrypt$3fb8a12913853d1edb581ba156280551$2f3a1341f88ba7ae65ab08d51fa2386f41f7d9c6d29b28853b09a91c2909b883c15967b7aea16d57f9e05e07d776c0422c8bdc73c7c5f50c3be3160423b665ed",
         "nombreVisible": "Kiara Quispe Barrientos",
         "trigo": 1000,
         "hierro": 100,
@@ -313,8 +313,8 @@
         "hierroProd": 0
       },
       "1791836": {
-        "id": "561ef4d2-a53f-4b34-8329-56ed01973dea",
-        "password": "scrypt$e3a364dca86d605f72aa6199559a30e4$24985d5ae35fb05eaa4a8627ea61acd8cbb51f9d590c85229a6d397df1f7cde941237208f009cc713d9036b0f1a806880ce9627cd0eb2249c0ab7e068609ebc6",
+        "id": "bd7dbf4a-dfea-465d-bddd-64d5d9c005da",
+        "password": "scrypt$b2ff72d82e1ce98fa1ff1759b9a2ee86$281ed09e05fdd27bc543c46b374ec1e7f6c91f8beeda52246bf410aab4544b2d3dd7d53871cd483e4c8d020586937bd49f46c29e276c5e4185a59e568940eb63",
         "nombreVisible": "Luciana Ailen Longo Heredia",
         "trigo": 1000,
         "hierro": 100,
@@ -327,8 +327,8 @@
         "hierroProd": 0
       },
       "1791898": {
-        "id": "7a800d4c-2994-4dde-beb6-f3603b0b251d",
-        "password": "scrypt$64b5880879cc892a3cc5ebce08c8ffce$ef8eece46b9ff73496cb7941956abf6146b947fa1db89edd573e920fc0a91387f25f3945815036e226f16c9da4e0bb4603a0435e90680c44f6836bc2748fb964",
+        "id": "d1cb1e49-f768-4761-80a4-b915278b1cf7",
+        "password": "scrypt$ca2ced1a7308a7eba50bac494a573c05$67f6288d68ac70b0face7cac69449c75d1a4878190f49daaeb8ceda86fe9564639be16a60d9333e197ccdfb6768b28f7dd190a5e6c8df2f9ea2018eeb17967e1",
         "nombreVisible": "Manuela Sabry Batista Luis",
         "trigo": 1000,
         "hierro": 100,
@@ -341,8 +341,8 @@
         "hierroProd": 0
       },
       "1793255": {
-        "id": "7055f27e-24c5-4ee9-9c45-c5149430fd97",
-        "password": "scrypt$4b5afe5987c473729191d2178b264c9d$6ac3a9400f505c369e7b0599350712e0c8a6ff6e0497c1746d83780147df1532301266269fa71faf172e02327f8229b53448b6c7fb23aa4044e070fc89ed556f",
+        "id": "92378701-3b04-44ea-ae40-82be4779adc1",
+        "password": "scrypt$2a9f01d3eb0c792e48ebcf5fc1256994$f0b61db620715982807bf1dc014de810319749dddcf734ce0417e774cc90ea155040e7982fbc5e2bd0b6de7b654d44bd7111938f6f8230be77af95b7582993ee",
         "nombreVisible": "Sabry Manuela Batista Luis",
         "trigo": 1000,
         "hierro": 100,
@@ -355,8 +355,8 @@
         "hierroProd": 0
       },
       "1793484": {
-        "id": "9ab8e5e1-0faa-48e8-934b-67c1ae675719",
-        "password": "scrypt$cb3b2066112de87c918c2e4806cec33b$6468eef61a3ddc38f3627c5d4b0e0fe7c4ebe6337e197640af17aaf4bf240ec041b852ac09ca9dc9a2d7999cc58d4624bb20bcc4e3d3257fb1d18459d1c83629",
+        "id": "c5e2daf9-59c1-44c7-a6df-b3bae8e4870d",
+        "password": "scrypt$21f19336bbd5113636cb8e57896d4757$68f448119371f5f333f28d338a3815dbfe429842f5197fe1b9276116397f4818eca7fc3c5554b9cb745ca206fc51d982701b3d8cec44acceaac69df2be8c176b",
         "nombreVisible": "Unai Payet Cladellas",
         "trigo": 1000,
         "hierro": 100,
@@ -369,8 +369,8 @@
         "hierroProd": 0
       },
       "1794371": {
-        "id": "8f8b3f8a-f168-4859-8503-72006e74aac1",
-        "password": "scrypt$a056f312dd62902add8edc4a9b5c2c18$d44ad064d3d51d94efd9b7a8b6e040c85482c09a5f19e6e67fe19310887b103cffe41551ff0388b6e2b0d0d4b34903867395ae75e02d555ae4e3df8306f22372",
+        "id": "9dc8932d-517d-432e-bdf0-367c673f263d",
+        "password": "scrypt$e6f7a031aba5654551d878e55b9c1bf2$010e03875077ebb1cb9a0e92b7f84d88cbce752d0c9fd046c01a85d373c64f5ba56583887845041be09390569f0d5a415f90717b6d87fc82f550308049fb37a2",
         "nombreVisible": "Angeles Rodriguez Fuentes",
         "trigo": 1000,
         "hierro": 100,
@@ -383,8 +383,8 @@
         "hierroProd": 0
       },
       "1794538": {
-        "id": "3e5ec80c-27fb-4396-8a16-549e8cfec041",
-        "password": "scrypt$7612bd40cb6675eca6502c4390b0277d$7312cef88e9620e216426f182ec2c1c6cd4ae254cbcbc2cc9c7c424d90cc4421a2594a6a2b140a12d7c3aa386215bb92755f437aab61ef160a858d62f50542dd",
+        "id": "cd71f768-736a-4493-b803-60086978defb",
+        "password": "scrypt$2bcfcacebf32b67b2fb1effe3f63925c$eff2ea3fb22f6e80fa5ada929cd0e2c651657d722e396e9f5708015a3346714bc046f42a84684b3dd9a11ef7cadb7f5ccc5ac7b0166d989c1089b6573af380ec",
         "nombreVisible": "David Morillo Perez",
         "trigo": 1000,
         "hierro": 100,
@@ -397,8 +397,8 @@
         "hierroProd": 0
       },
       "1795444": {
-        "id": "b8d2d590-1d95-47d9-ad2a-fc06faa8aaaa",
-        "password": "scrypt$77349982b026cf72744eb4772b75c383$6615825f6c3f3cd1b0d38604b3ba9b77f4522f8df1bb56b270a2e66381ca6891a27e4ac751786393a03555f9c10492f9ef7ddcf5c8f7896ae95d150a8584e5ae",
+        "id": "a2e44cf8-0f50-429f-a26e-0520299e02b8",
+        "password": "scrypt$f0c2a68158b3cf7a4dfe2b11d9b99fec$fe4a400fd8c39b6ed087a7d28429cfd6fcb22184100992608f348281959e4d58332c3f834e264a20bdfc3b76199c5ec51b4b294bb28560cb1a69486a4cea2671",
         "nombreVisible": "Roc Llados Lozano",
         "trigo": 1000,
         "hierro": 100,
@@ -411,8 +411,8 @@
         "hierroProd": 0
       },
       "1798157": {
-        "id": "768edac4-5162-4f66-a80c-df39bf22aa14",
-        "password": "scrypt$d774e436d4c62edb588b810a8ffb367b$479ed85b9ec0179a66614582a35cb587a2d59cd97e82ac8e7ba2edb1d11b265aacc69a52263e852f1cb3854839ed3e14f0ada4d2758c632596e84fd2953386f2",
+        "id": "bcbca351-9dc9-4646-bc6a-65f39bca3b5d",
+        "password": "scrypt$8ac457a02476f78de786087d1978dd5f$eb8e243d560420e96dc76e5e7ef9483c7884a54d696b91e51e5ecef9714321b27c012a398b90b05fc52824338d792f2e1927c238fa353d29bcb56d59570e0b62",
         "nombreVisible": "Oriol Feixat Cardero",
         "trigo": 1000,
         "hierro": 100,
@@ -425,8 +425,8 @@
         "hierroProd": 0
       },
       "1798505": {
-        "id": "4c412170-8a02-49dd-a112-6671486e4791",
-        "password": "scrypt$3fb0ec661d612d20b5588d841cdff012$44df23e0d76eff959974f6dce04927a5e749542aef6bb5afb344b2fd6e038abe53b4e1cc86bb42921acd430edb01b4f17161be722cdac5d5694cf95b7bdb899c",
+        "id": "5d72520d-05f8-4e8f-a2dc-1ead446db229",
+        "password": "scrypt$b191332e65db6edf271be695a55db300$e5f0c8b1af3ccf59fb10acd0016c4bb1a2313dae7cd59a49690bc47b5991991a176a3f76693bbc0ecb92f4214559b8638574e5c793ddf794ffdf3f660cfd5310",
         "nombreVisible": "Unai Rius Vega",
         "trigo": 1000,
         "hierro": 100,
@@ -439,8 +439,8 @@
         "hierroProd": 0
       },
       "1801120": {
-        "id": "931a8b57-135b-4fda-bddc-f1ca3035b18b",
-        "password": "scrypt$3ca7fa6b6ddec083e4a90a01ae98b9a7$aee5c7fad4fc911781576cf1070bad78bde9864e94b3675d0b736e608f62689ab72d1bb1dbd12d66eb8445b9751b8ea29bae32e734e673e1a56730e9d143ff25",
+        "id": "a5271a9f-f2ab-43a0-86e8-f337eeb29b18",
+        "password": "scrypt$d3491f714b344b1bde0ac45e5bdb73eb$21ed84291188e38e4cb29953327f845f79faf07fc7ba092271c5667b8e30b97ddada9fa72bd12d30cf2d969c4442a3536e93b150e71fad3db17730f33a061ec2",
         "nombreVisible": "Heidy Melisa Limas Medina",
         "trigo": 1000,
         "hierro": 100,
@@ -453,8 +453,8 @@
         "hierroProd": 0
       },
       "1802530": {
-        "id": "126163b0-4a77-455c-9424-03a692db7293",
-        "password": "scrypt$c8cfd9020934663397b4e1ee928fa717$c39faf6a866410ff65d6b62c4feb58c039bd0a5082ab1423ff4e074d5f295ce6caeb076b00bee1e23bcf762478aa395e54698001879cd80e339a509ef3b2b776",
+        "id": "8a5bfe60-8e81-40c7-9160-95ec2aa64c34",
+        "password": "scrypt$e38f1311d53061a60de40472ccc45fcf$dba785c1732fda70445db5f39d7dbc21a5bf82829fbe2507c57eb525637ded80a324436581104f428ac65297c6a14a776ab9b6b984b5885518d8f632b43348b4",
         "nombreVisible": "Keithian Akemi Delgado Molina",
         "trigo": 1000,
         "hierro": 100,
@@ -467,8 +467,8 @@
         "hierroProd": 0
       },
       "1803683": {
-        "id": "6ce98162-7b31-4a68-aa0d-f3c77ed3cbf2",
-        "password": "scrypt$0fc99562cc2a013fa3143d66972f9948$5cb1dad06f9a5a5c4feb3593f6a30d5b4065b3e4cfb979bff0b52bcda97af6751d37da5d8f9379dabb36185f93fc70f400d308499a09c85e64358857e36a97e4",
+        "id": "7f0c15ad-7c1e-43ae-b29c-ad298519ae75",
+        "password": "scrypt$a3912c2507f9249bda817fa2a668be7e$651cb720fa1c9358041e16ecd63ec164d1ec5e74ab8d68aa31d77054708f9d5c260f2931612f22815ab12d4713d7a49c6118e7619573b0b90811cbcd6746af2e",
         "nombreVisible": "Abel Nunez Auge",
         "trigo": 1000,
         "hierro": 100,
@@ -481,8 +481,8 @@
         "hierroProd": 0
       },
       "1835174": {
-        "id": "c897f364-0a83-4e47-8cf8-bb644d286184",
-        "password": "scrypt$2432de2384e6351c20f94ddc828886d8$506d9007cdca7eb2419584bff4284547cf2978084ebef59c20fb7ae08a87aab23e7c2f7c8d84ce7f5dcc13f9d398926e90f949b7d6c45f35b04c7dfc62a03e85",
+        "id": "ed130c27-942d-41c6-bb89-63ee416ad8a0",
+        "password": "scrypt$5b5d69d060e4c6455b3c22536f66307e$c50c94e601041129ab418e78efb7a7b7c0aa07facfa6026c8e4eb4a5be5b3874adc051c48bcbfcd6ab85359e7e2ff871dbe7f428225bbb7074a30876de0d5cc2",
         "nombreVisible": "Angela Morote Moya",
         "trigo": 1000,
         "hierro": 100,
@@ -495,8 +495,8 @@
         "hierroProd": 0
       },
       "1835238": {
-        "id": "cf476b8a-ada9-4683-8a11-d54c9be45722",
-        "password": "scrypt$eb4b73d19d5488a16a3a00b379d81a51$939da914e8f0d0252db40ce24ef096a4d49b5733be2b43c5ccb2e2d3d5ca835e47f9dd087f6b1da298c93df16e36878d834a80886cd26bd74c8261cc4af07ae3",
+        "id": "fe586a95-4c0b-4b74-adbd-fdc128148580",
+        "password": "scrypt$2701cc532f7369aaa38d65090dc46c42$4e195bb80e3718bac0330c47944d21732293bc4df27ae8a7464de32d0e60e54f842da5954c7d12c7c741bc2de43dcb37ed3db1bbbb2de9562865ff9fc763152d",
         "nombreVisible": "Antonio Ortiz Folk",
         "trigo": 1000,
         "hierro": 100,
@@ -509,8 +509,8 @@
         "hierroProd": 0
       },
       "1835308": {
-        "id": "1b5bef6c-510c-4109-8bc8-019d7695cbda",
-        "password": "scrypt$dc7724d73bafd6707ab135ec6c92873f$6e196321c154e7785e2244dfdedf37e24d5da225a79c7e1b5b502543842e1f01ecd12b495aba2ed543144cd27af2f98da47f0d9a3b294c3728a02a728db52664",
+        "id": "9e65df8e-13f5-4f24-8932-3b8d32e511f8",
+        "password": "scrypt$dfe6c68be06edb219236d0fbe161e41a$2124edb4ac61e49648b46ff253b10a0c7861f9d7a432a3cf7eef08915dbd73a1bb0b4fede8c64283cdd0aa250b958cf2e0dcdfcb130170048bd4dccf041c3783",
         "nombreVisible": "Arnau Aguilar Basets",
         "trigo": 1000,
         "hierro": 100,
@@ -523,8 +523,8 @@
         "hierroProd": 0
       },
       "1835556": {
-        "id": "8c3c959a-7be0-4e4c-8086-4496b67d704a",
-        "password": "scrypt$a3c70d6162616052d5677617e82521a1$96a7b9e36c03f912901800d5a2a3cc3f680b8a7064b6b7bbdcce35214d7f0416c8aa6aea54c1505d8f1e3eaf409b1c15dcca5a67463d755cf16fb97e209db29f",
+        "id": "b835e487-a025-4d28-8c7e-9dbafd1d786d",
+        "password": "scrypt$cafb421864b527dd2988b5a3674cd82d$6af964212465299486e61936fe096c9748d268a2e7443cdd2d167b0ee17197c072082687484df82d827b637cf94e92f7a37ab656e9fcece19645c48e177a7da5",
         "nombreVisible": "Carla Bellisco Granero",
         "trigo": 1000,
         "hierro": 100,
@@ -537,8 +537,8 @@
         "hierroProd": 0
       },
       "1835756": {
-        "id": "74c213a4-ed87-4179-8f2a-d31ec4bfc8d9",
-        "password": "scrypt$c2a2178249dec5ae2081b03dddb74685$1fc074b236625853940daf72bc171fd69e62f77369d1e1f86b9be13e3163bf401d883c79c5b70cadd4cb6234c621f97c82526bf2b206a762705a27576cdc7be8",
+        "id": "4c1e0694-33fa-40e0-9a20-78dcce63a112",
+        "password": "scrypt$a671a4e13b4c9dbe49a23fcea7b62246$178ab22f5629d6e7c24b36a1a62f3f741e89957c8b12b905850961d119f6c40c005d43a8ee09a6c7fe26f513b3dc8ea9ece78e5962bc240bf19ae9e0fd9ee3c4",
         "nombreVisible": "Claudia Rodriguez Ramos",
         "trigo": 1000,
         "hierro": 100,
@@ -551,8 +551,8 @@
         "hierroProd": 0
       },
       "1835846": {
-        "id": "ed1870f9-6e8e-467f-b41d-a04c573a53ea",
-        "password": "scrypt$5d721eb86a2984701a5bfa9b45f6df26$14cd2e9b2994a7618974397224ff62a429378fbe3a6d7661d0ab374cc4593df3148970e81fd1b8a958deee9711eec81da0fce12a1bb4bccb8b9b869adce6d9e3",
+        "id": "a3df8028-9ebe-4d2f-aca3-eb4984a939f9",
+        "password": "scrypt$2658c43b966eca9d1e1d850833a22dad$f623adc92453f6a58bb2da0dcdc5bd59d528fa84d2b12ed610241c44a3479f4bad59ff58546d7ffb4f51d05c09d75dfe18f3352247868ddc55de4257e5f119dc",
         "nombreVisible": "Daniel Camargo Rodriguez",
         "trigo": 1000,
         "hierro": 100,
@@ -565,8 +565,8 @@
         "hierroProd": 0
       },
       "1835852": {
-        "id": "b548ac57-bde8-4e13-8828-a0d7c2e1907b",
-        "password": "scrypt$7dd639283b350b9a250d31c6a47dd29e$c28fd9db6c420bc7a84af77fe7e205841cd61a2167c0fb863e2d9b9aa15989a80982e51dc4317dc5a22cb65fb47adb766b7414344db337edbf9b78baffe28960",
+        "id": "b01eb848-444f-47e5-ae2e-a1f83289b9e3",
+        "password": "scrypt$7aacdf010f695d8f1bb64cbc212c32dc$e383cebc87d65e39e483a06ecffdffd38b42a43e313cb58395c9fc41b1e1c64f1eecd0cc8c7d8d9c6c6d2340333febc2a834ed4323a53c979e50097672231047",
         "nombreVisible": "Daniel Garcia Sanchez",
         "trigo": 1000,
         "hierro": 100,
@@ -579,8 +579,8 @@
         "hierroProd": 0
       },
       "1836127": {
-        "id": "305adc7e-57b7-45f5-82f5-95149a9d6e11",
-        "password": "scrypt$9a975adafd790e0670fb31aa11f4858f$4c07bf9e0cc810372fb26ff3076ddad54eef9ab525c397cd62d3340d43ffca0093905be21483507bcc622657762f12a870932bf8dacd3650d3a846c44e485e59",
+        "id": "2106e511-f799-4550-bb6c-38417c71dcb7",
+        "password": "scrypt$a9a69f3f3eb2efce849e6cdf58202fc6$c00fec03aa490ecfbcd4cda4e3adc1c8e81e8d4a1a700a99c6ddab1f4335e70475286da7d89bee9e1ca7bbbd0b58cc4bd77b271abe4c530d33728065589bc2bd",
         "nombreVisible": "Eric Osuna Fernandez",
         "trigo": 1000,
         "hierro": 100,
@@ -593,8 +593,8 @@
         "hierroProd": 0
       },
       "1836198": {
-        "id": "ec2e383f-b689-491b-9c90-285258c57a8f",
-        "password": "scrypt$dd2985b9af661e4221ea605abe7582e4$43092aebf001a19622d902d612949be134754340c57d0aafaccdf088bbe2429a901bf39687d116a994681ff6ed665e3e8e5f541829ed8632544ff5aca81a84e1",
+        "id": "00b561d7-6bf3-4f0a-b9c9-09a84a53aaaf",
+        "password": "scrypt$770f46f56e7b66e3f8d3d943c033a2a6$f0b8e09f47dd0e610248cea60a449ee9a22bb7d313faf1ffd97fb7f8d4f32e0abdc2b747941e661a00e9c51d888adb20c81befbe52c0507f79a24764343b01e5",
         "nombreVisible": "Fabricio Lola Justiniano",
         "trigo": 1000,
         "hierro": 100,
@@ -607,8 +607,8 @@
         "hierroProd": 0
       },
       "1836315": {
-        "id": "76ee9a3d-685d-41ce-ab4f-fbb561e43ab8",
-        "password": "scrypt$ba9047360d84d76e9dd4807b8f0f084f$ee647d50e4f68df40990a3c1b9bfd077e4a2a786be643603fea44ea8cc08a843d315e34e0f6fa33793d228a508c0382ca48ece3a4d6aa6e5df8cf9d740cce94b",
+        "id": "ae035a77-68c5-49d0-baea-dc664e6fffb1",
+        "password": "scrypt$86cb5e9e0b57bea9e47924d985c2903c$be6621d1d6a0e082ad77d0ac489f2e7b1ebf4b07a405797eeeb5327dd33f1b000baded68d71c9ec1937ee669a6d3091a5b0f354f9753c200a799c16d2d90a411",
         "nombreVisible": "Gisela Andres Subirats",
         "trigo": 1000,
         "hierro": 100,
@@ -621,8 +621,8 @@
         "hierroProd": 0
       },
       "1836529": {
-        "id": "5dbfef80-1854-4d19-acf1-e65560d6fcc2",
-        "password": "scrypt$4dc309330713650df0e04cdfc2445269$e708a54236f0807c98ecc9d8717100e36bbd967a1159400e48aadbc9d7122525b50b0e466cd1651f0d9cbe3a77614905222ff8e52140e38b9b9d704f97bc1d84",
+        "id": "1526af54-d69b-454e-8662-47b0db004b7a",
+        "password": "scrypt$72384dc506321a2d7c00d5c72ed6b3b3$5f7e85b09c95c0db111f0fc78abf104bfa978b319c3e311b7d962688e5eba5cc62ce90dff0058709c738c6b1c30349614721803c80125d665c41b588205fc155",
         "nombreVisible": "Irene Lopez Salgado",
         "trigo": 1000,
         "hierro": 100,
@@ -635,8 +635,8 @@
         "hierroProd": 0
       },
       "1836879": {
-        "id": "41ec471e-ad28-480a-b198-4a857ee31e0f",
-        "password": "scrypt$c0660171dc4cce2b846568a799063fe7$eb24470e7299ea3ef2cc0509dcc0887bd2f67708153b075374bffa6599474119e4d0394225ba4996ee64a831b9f54da6821cdafd16f9bcd285d2c9abde3f0583",
+        "id": "14f79f09-7295-4c38-a5fa-f33de4f27712",
+        "password": "scrypt$27d33b50b2d694c4a3418a9dd93f5d5f$ddd4f8008f73329603d2eb6336cbd1752485f20c045b6db0a79a1318dcda7c0bac6db90ae0d3ed55df05d163a8eb73fa14adbac4023a08423a2987778356edc8",
         "nombreVisible": "Johana Mateo Rodriguez",
         "trigo": 1000,
         "hierro": 100,
@@ -649,8 +649,8 @@
         "hierroProd": 0
       },
       "1837174": {
-        "id": "cc0f2b1d-8662-4290-8eb0-9115760568e2",
-        "password": "scrypt$1bd4d64b177788a33248a5566d7c192b$92dbdafd8defc34535947a0943e835f23b11bb7c1f79e31e2005024ec23fb09895047d04829a6b480386c51a0f82f778d26142daeb5b4bc4c9849c479b214f7b",
+        "id": "430cf26d-6a87-4e56-935d-04fc7731d1b2",
+        "password": "scrypt$9ac9990eda7633d91275357d5796c44e$651c201859cc7da45678678143d1ce803e5b3d5833364ccea8ae2c06d0d5866754fcbf566b3f25a1e1b9d2790cfac5e979c0fc4fa9b207e990ec365ab1d0bc64",
         "nombreVisible": "Laia Morales Garcia",
         "trigo": 1000,
         "hierro": 100,
@@ -663,8 +663,8 @@
         "hierroProd": 0
       },
       "1837258": {
-        "id": "d44674a7-3967-4cd5-aa4c-7f36a841f054",
-        "password": "scrypt$5b1ad32d7da7b71ea403fe5ef505dd40$79d091279f6fc34e447b2779213d66e0ee2329f82bb89a38029b84c1a2028b04f2956c5e58b67cc5012d3ce8f5e164279672a1923e9c880420d9194aa4d2ee57",
+        "id": "58739340-e0be-43f7-b027-028807d945b9",
+        "password": "scrypt$3d61ff76dad0a1d0fa3891c940486c68$a87752e615beb26cfe02c597b044137e9a9ce456705c0526444bb3e316a4ec5d6b9f50cafb8e7f944fc4066070ee2ec11aa5d9d8aa4d0d735bdc6b63a53d1af2",
         "nombreVisible": "Laura Lopez Cuadrado",
         "trigo": 1000,
         "hierro": 100,
@@ -677,8 +677,8 @@
         "hierroProd": 0
       },
       "1837345": {
-        "id": "b18286bf-8152-450d-953f-c17e014185f9",
-        "password": "scrypt$99daca3589de1c757931f6b55a8c8f06$3fca83334e99d127746fedb033bc408c5b9c59d8ec049977511527e1b742fd4bea21f5eeee3ca833a518610de38bc03c4cb599c8ff34a21a41271328019dfc43",
+        "id": "17795d08-14ab-4b46-9c1e-28da31408dc1",
+        "password": "scrypt$cdf7076209c1698957482d884e29317f$caa60a675164b32a4a92027f71e34568b6516a42d4a24de11623af85fae8ec01fb7accb7a06c57230460823bf91e75b82bf0d65cf9ccf9ea2a8bc551d6e94534",
         "nombreVisible": "Lizbeth Margarita Gejano Zanabria",
         "trigo": 1000,
         "hierro": 100,
@@ -691,8 +691,8 @@
         "hierroProd": 0
       },
       "1837558": {
-        "id": "c48317c2-7f43-466d-8b12-0aad102053a3",
-        "password": "scrypt$784f5a9843de69c4da151603c246abdc$74e90f386f51d1d5d6a8d6c645087a79b54ba05fd37945a9361692642adc2a938a4e9f04c923931251c212d2d0f030fad23bda9e99780334025af681e3b3a2e3",
+        "id": "c679c740-59ff-4dc2-b84b-6fc567c6f93a",
+        "password": "scrypt$9ed82e4fd4a28e2f11da0c44781c8cf4$48addd472621fdfbdde38849bcfdebadc5a01c110e6bc07a31d171fb107c473c396924f1040e0e5826f6fc51fd671e150b2597dca419400eabb4bdd8407efe97",
         "nombreVisible": "Marc Gomez Martinez",
         "trigo": 1000,
         "hierro": 100,
@@ -705,8 +705,8 @@
         "hierroProd": 0
       },
       "1837848": {
-        "id": "05ccd462-9403-4151-ae10-6feeb293bf84",
-        "password": "scrypt$e5200af453042f63c8aecb9b6c0f989f$70f8b9f0b53e2a577342941b59e844469126b58dd14526ad73c2a113e1c374417945e9cdf338cb1a70c8ff8451ccfcc80725e1fd95b999c4cd88b2fb266ac3b7",
+        "id": "f12d91b0-fe93-4522-bde1-45b2cd0a408f",
+        "password": "scrypt$c6a4a27605b2e93adbd21a99938e16b2$37605aa3facb76a885e0f02fd3feca148f11ea9e426053ac73a46057c30a7bb3f6c231c6dd58e6db503151cf5fa4f01fd2f70cbdaf4a631f6b046cce332d0bbf",
         "nombreVisible": "Marta Martin Rodriguez",
         "trigo": 1000,
         "hierro": 100,
@@ -719,8 +719,8 @@
         "hierroProd": 0
       },
       "1838117": {
-        "id": "5a451867-a514-40c0-a20e-ef37f1e47fbe",
-        "password": "scrypt$2f7011c106d20443ea3d22d0c8093056$1d53cc8163bafd7d3e769725730c70018c64c48800aecbc195f5e54a85c90066371e1abdcd9bee2284620153fcad05adb4f8b37c80424c46254290ef806fe8bc",
+        "id": "295a2da8-f8f4-4d24-85b4-f876b0984184",
+        "password": "scrypt$1094b6a1342629bd96566523b49147fc$d195acddb9c514aee2df00e4e38f509d24cd1a4b360c52e5ded1bd2e82c46186e5b8ef41a01653ee1cb3b672bf7fb1a29cd346ccc228aafae511562da327b26f",
         "nombreVisible": "Mohamed Rayane Chrigui Zguerdeh",
         "trigo": 1000,
         "hierro": 100,
@@ -733,8 +733,8 @@
         "hierroProd": 0
       },
       "1838408": {
-        "id": "7fe21ef1-7166-4aaa-89c5-fadf21ff1f7f",
-        "password": "scrypt$d7de1cd026f485f8b36f30f6fdecc0f9$d2c93410787ec60941fa815ce38ed75e8f9e1d7f2dbf88aaa557f096e03a6223503ebf3a2d6cf497a5fdc26ab15961627b3bb84b70bc884bf3c6a22ebbdbb00e",
+        "id": "bd31ad09-d276-4b9f-bedb-0a3285eb1bfa",
+        "password": "scrypt$bce70de76bdcf3db3ce58af72e94ec35$4f786861c733590d76e5628ea61329262a229e4e3299851cff8f610a19a7cb2f4e876cea197ec143a0811b20b8a9f317a64ef9a809c8c00d6f0a6e14f0cc525f",
         "nombreVisible": "Olaf Castilla Fius",
         "trigo": 1000,
         "hierro": 100,
@@ -747,8 +747,8 @@
         "hierroProd": 0
       },
       "1838871": {
-        "id": "aca4c7cf-da56-4841-82e9-5b25bd391f9b",
-        "password": "scrypt$063634418cca6bba168eb00d25a58d43$1832488db1a4f3132563e353a8065ae8b4b8b50b6b312d91d444ff732cd43c736dec76a5f1447e046b4a72a4c97f845818527996b6aa5d4388638475c07f31e5",
+        "id": "04f6d5d8-dd26-4587-a6d8-54482f44291e",
+        "password": "scrypt$a94105db8094785e5cd8721095fa4c6f$173f89bb1977077ee20e2d75c3d363bc0719390d665f312abceab977707adf8ea8f3a1edc18c76eef88bf1c93f82087367c7c4be660c54a95a5cd3f32d960b6c",
         "nombreVisible": "Ruben Torres Ramos",
         "trigo": 1000,
         "hierro": 100,
@@ -761,8 +761,8 @@
         "hierroProd": 0
       },
       "1839022": {
-        "id": "f376f28e-ebcc-48f6-9522-9fa1f11bc7ea",
-        "password": "scrypt$c6ae14112bc7efad8b549daceb96764d$e99c717d5d52ff42a0d5bc37238faad35b411a9e7ba9b8e7b33cfd1617c19e38dd86aab6530048f91108c99de365821555283c5a38521204b5b26b083c069cd9",
+        "id": "060e330c-a844-4ca5-a836-ea0c9a74cf76",
+        "password": "scrypt$06644d11ce43e2c8839d1141083cabee$3dbb6816ed24c950e1667c3f874c746b98b6f49162695dc43667987c8b296f4503e09c059d1e5755c8a245793a8baa25a1d43944bc9997954fff02f6e4402f4e",
         "nombreVisible": "Set Rovira Navarro",
         "trigo": 1000,
         "hierro": 100,
@@ -775,8 +775,8 @@
         "hierroProd": 0
       },
       "1839190": {
-        "id": "8f2c2755-33a0-4c49-bf6e-5e1b871fd8eb",
-        "password": "scrypt$53f8900c3161c7700e16a3469fce3d0f$c162c5b8cbdcd6980e3b877f18105411c1a1b6c1c816520c8752adbe43eae7e4bcf8abd0cc5470fd092f51dcd7569bf40d2ce109b0df2236ea23c8e1dfa2e7d2",
+        "id": "fd1021ef-e090-44e6-a08e-16e22112ee39",
+        "password": "scrypt$d63d3d110a05ba8b1c774a8ac0eaa604$5f88447644fdff241e5d76693c8c75576163e06e5eb13405fc6a4f9e9e188daad7839abce334658684c88b8e188d2d8e94e1634ced01e60c5e1884ff8e5636b8",
         "nombreVisible": "Victor Mendez Chevallay",
         "trigo": 1000,
         "hierro": 100,
@@ -789,8 +789,8 @@
         "hierroProd": 0
       },
       "1839517": {
-        "id": "13c73a67-65ee-48e9-bc50-9fdfba3bd093",
-        "password": "scrypt$17f5d1b51c4a8992e9bf8801db2f5c49$57176b4b89d73834d94d929ff71171b886fb4ebe58eb0dab361b7dd136880dbe68574937749a5ff43de9c79fec08f09f9236a76ca90803a8bf4d380af49cba98",
+        "id": "78e40e3e-da1b-4a24-9eb9-e0838017960d",
+        "password": "scrypt$a485e1d715392426471a6834faefa526$7cf0d960e3fc34ce676b9dc3688cb3c7af342ac9325e7ca63c137585ed65b17a4e0ee2bdf078fbc4348a52b2ca27431976b84e9a7958b6ed8e57524f178f86a8",
         "nombreVisible": "Silvia Perea Ramos",
         "trigo": 1000,
         "hierro": 100,
@@ -803,8 +803,8 @@
         "hierroProd": 0
       },
       "1839967": {
-        "id": "8d80b284-db50-4cd8-b5e5-aef1f164278e",
-        "password": "scrypt$e2abfc0d61e7c1a60c2514561fb3c235$03baec73e4ff465bda7f1cd30f8a1a6ee05d823e344ebb78a559a4c588e46ded9afe3b4ab680670791fd71bce468579028594b8b742b08f44be457cc7c244ec5",
+        "id": "8c7bd12a-cb54-487a-b402-d531d5e7a939",
+        "password": "scrypt$bef5d6a008e3e0ae5d1b4dd8b30d8d4f$ba408b2645ca888f81e6f0f90ddc7003e9008170001656652a5a00ddb1756f878e62dfd707d1e5900ec03e4a5c8473dc68c12c2f74290b0aa1fbc06fcbffd360",
         "nombreVisible": "Aaron Portero Marin",
         "trigo": 1000,
         "hierro": 100,
@@ -817,8 +817,8 @@
         "hierroProd": 0
       },
       "1840133": {
-        "id": "a03b4571-6021-44dd-8ff8-c0f31e4a3dd4",
-        "password": "scrypt$898d89200217a2a2ebd6d3d86e2402eb$c61f5c9e95ebfcc3c51940639b629b79e6ef3c629066659f416ee8c62decdab8dee967d4c6cacc1a282fb528f63184952c0883d2270efc50cb6413a50947b09b",
+        "id": "c2dd8666-f6f9-42a7-a77a-fd62305288fd",
+        "password": "scrypt$0558449fb8cedc2b0a3e8b91adfbeda5$e0a1ccb8d19abe589c7e02d8d7e0dc11834449efa89b0f7a48ac5dd08186dc33950f1fb02846c02e9c78b6565421382bccfd07c328ddc798fa48c624d0914c82",
         "nombreVisible": "Arnau Funes Tuduri",
         "trigo": 1000,
         "hierro": 100,
@@ -831,8 +831,8 @@
         "hierroProd": 0
       },
       "1840239": {
-        "id": "e3547081-d066-4596-97c6-25b195be74d5",
-        "password": "scrypt$ad93d9ae08da278e6f2285825cbc8f87$966376e2c2e14ce94a6892bdcdd942d870e1145a3dabef37bfe0d98dd1032eb605697fa3385e9b7106d2f714cef3ca8961485ae9af5ada92f290ee411ac77307",
+        "id": "ffea2767-225d-46f5-a115-90f5b67b056c",
+        "password": "scrypt$91dbb3fb752406fa1657191ec630c856$6e5bab196792fdc8e3275a2392a3090f751cc8001ab63cb963f4d9f455d251a746bf3889826d69995849e2b38e70f5e4a41707cecbc933c6608c834994aa4d34",
         "nombreVisible": "Daniel Arnal Lamelas",
         "trigo": 1000,
         "hierro": 100,
@@ -845,8 +845,8 @@
         "hierroProd": 0
       },
       "1840288": {
-        "id": "3acfd5ff-4a11-450c-9e36-1b944848bae5",
-        "password": "scrypt$88719a0d9e9e2f4cb16be82e19d91d63$ec3dc4379aab6f7f3aec47c59d44fa6b1a722fad47f5731e379a7aac8daac1ebecf6292c25e8183be577db6b74ff7c5bbead40b744249232135d35fd121001f2",
+        "id": "f8263cde-23c9-404b-aab5-7125ae0a0f12",
+        "password": "scrypt$7e5c50275311fc8caefe77e9bfa2bfe2$eccbca8ee3386681c4021cfb95ce1c3f6eff5936fff488d485d978833c62cec587556d37cb5dc165a580dc80f5c8451a0ba10ecd0bd7fa5aa74c55498df96ca8",
         "nombreVisible": "Eizan Sevillano Arocha",
         "trigo": 1000,
         "hierro": 100,
@@ -859,8 +859,8 @@
         "hierroProd": 0
       },
       "1840369": {
-        "id": "f3fff6f7-dd94-41af-aa1f-7cd625ec6f77",
-        "password": "scrypt$fe856d4f73f35244f9b3d0661b9e951b$e1346d0330d1170ef675ae23587c75fbaba3149300933a07ef047015190d00b06549bc511b826ee4fb0664a80f6786517c54cef7057f1bff7063d317956a7a9c",
+        "id": "f99ce177-bde1-49de-83dc-5f0f834ba1de",
+        "password": "scrypt$7f06675e7448eb82da783eb6da6d9bd1$3fc3295e5de53c78237bdab00d1e5d1a91c5867fee2ef2a187d4f0c3db231caecf4bc4c893e906380f8755dd770df805643acf19d7b12db7c57b338c7d90b9c0",
         "nombreVisible": "Gemma Lisseth Vaca Quesquen",
         "trigo": 1000,
         "hierro": 100,
@@ -873,8 +873,8 @@
         "hierroProd": 0
       },
       "1840383": {
-        "id": "05b487cf-4726-4e2f-a177-75831c3a094d",
-        "password": "scrypt$65ed98a82989e3c9ab0d364ad738fc60$40f42d8d7163b2a863c6fe853166fa6df8a932cb2e9530c5d2deabe42690756fbfdf7d282093dc3ae0b2925cad571a7aa56d20f0606bf950ebc78258c2507ce3",
+        "id": "07ac070e-25e3-42c2-a84d-872121944989",
+        "password": "scrypt$ec0909b933ef66402337cc5d2068f5c1$ceb1605b72d55f9fbbe30e979f67cc27121a25539ba5a6e3ee08c91022b246132e9edf628756c45ab4545c689c0da432b081edbda6aa8f6ef26ac66a16573a90",
         "nombreVisible": "Greysi Gloria Morales Ochante",
         "trigo": 1000,
         "hierro": 100,
@@ -887,8 +887,8 @@
         "hierroProd": 0
       },
       "1840515": {
-        "id": "6a7aa02b-1775-45b4-b35c-77e7bdf80401",
-        "password": "scrypt$94fe44506d7243f1317ebd6075d5fc5c$1a9edd3ea730151e44ca1f62e529e7d706926f6d44273e0ef63f4476ca37785272ca4a82f1c2beec72a385f334c7b85ff0f888971c0e6949bff701ebce58f6e2",
+        "id": "977edfe1-a50b-49c8-aa3e-4eca5f04d218",
+        "password": "scrypt$5d0d5beb93c87c0c935eea95d80cf3d4$c5eb219496d14a13c47dbf7d860af3b684d4ed6722569799c46bc2aa54ceb71f8008ea6fbc28a8ab9974cd4fbbbaef95de0e1e349555f50abc539aa56f62c4d8",
         "nombreVisible": "Jose Antonio Rubio Rodriguez",
         "trigo": 1000,
         "hierro": 100,
@@ -901,8 +901,8 @@
         "hierroProd": 0
       },
       "1840632": {
-        "id": "6e7c30bf-d36f-4a04-af10-5e04223d0c94",
-        "password": "scrypt$81ea8920f8b7ae6f30e9deefc713e249$db4e5183c86ab9d4db51df177201c43a4a70ae2e3fec83fe7a8d5f3c4bb3421cad78c658eb16ff01b941486be266b0d056e06d91e0d364f23ce6b2ac91179d76",
+        "id": "307870b6-6a07-4663-865e-a2ff29b7342c",
+        "password": "scrypt$e8886747acc16a1d6d46ac3268264324$d58c15b7c5f0c176814c8ebb4c4920b3eb84f047187439c4efabdeb6fb9919284f79fbbf932f311aa08f9e8e9b2e259fad745dfeb1ca573c3559fbfbcb243ecc",
         "nombreVisible": "Luca Rivero Torres",
         "trigo": 1000,
         "hierro": 100,
@@ -915,8 +915,8 @@
         "hierroProd": 0
       },
       "1840688": {
-        "id": "75d3f728-e20b-4d1a-9e3d-a6c1044d649b",
-        "password": "scrypt$b742b7aadab745709c9c736dbc284652$932a0fed1bca8bbed1057d7094905175d90f5fcfe40a6153af6c05fda88478403b6618edb5895e5c49a4150180d5b9e95eb8ec28bb6f1c1194edfb30e9448f8c",
+        "id": "89c07d45-34ff-498d-aa8d-0cf45a5e47e1",
+        "password": "scrypt$158ed0001dfddc28508e7b36238e21d8$04e35e0015cb220dbe8ed0d46c42bb3937c4c1c8a5a2fe8f544b4d018287b0927334d11730b34dc787dc69801f4d6b226a5624fecf8112c7a7ac46cd39e47401",
         "nombreVisible": "Marc Ros Moreno",
         "trigo": 1000,
         "hierro": 100,
@@ -929,8 +929,8 @@
         "hierroProd": 0
       },
       "1840757": {
-        "id": "4084225d-bf2d-4070-8afe-b1e7f03e8c07",
-        "password": "scrypt$d8e4b76ba9a0dc5c06523f36d93b7ca5$6766e28040717e5bf1500810120d990a5cde8af8e26ff545221311828684b698c8b4a5925b261f46f903be303f259002507885df541be252bb73f02902b4e5f2",
+        "id": "77f2a110-331a-4b56-a8c3-da02689f068f",
+        "password": "scrypt$bf3fa707ddb935502c5b1a2198c395e2$d81004cedb5f0c5bc4f7102bf2cdf8afe5af17fb670e8a0ebe7462eef2670885fe7de1404f64d518a58862813da799288aeb6d005299018ec5335e475cf0fa0b",
         "nombreVisible": "Marti Bayona Illamola",
         "trigo": 1000,
         "hierro": 100,
@@ -943,8 +943,8 @@
         "hierroProd": 0
       },
       "1840841": {
-        "id": "cdca2dbb-2b61-46aa-9d15-056b9db6b276",
-        "password": "scrypt$984fb0c3c1d3f10395f5a2970ef3124c$0004eee631713bbb3b4faf45d155cf1c4c251c01f09838b0b0da7c8ad074079fa7f82317739b75868f5ba975924d9b75ebc724ec1f968c29eb94ec9fabe94b81",
+        "id": "9417c7bd-61b0-494f-a0a0-c600e5bbd59e",
+        "password": "scrypt$4af4bbfdca66caf646ed0de07ec637b4$d97fae8928a8fdf6d183a54ffe017fb59155fc85db11543098abb6a5c2d694a22078a9a9aa8573def182ea537bc8eef0774adf2e587d0dc9484b76aa4329f90d",
         "nombreVisible": "Natally Nunez Barrientos",
         "trigo": 1000,
         "hierro": 100,
@@ -957,8 +957,8 @@
         "hierroProd": 0
       },
       "1840855": {
-        "id": "94ed221b-496d-43f2-acb6-f1dc7db8ae89",
-        "password": "scrypt$fe60a05a7e563d72cf21012e021506bd$06ad8fb5d0b95d8d498f2267a840833b32c50b44a2722e3ef7b88944d84ba4e5f44eba8d243fbb467ea782a5d67c5159f3b55bb070725e005d0f1f233f016971",
+        "id": "41231680-e9b2-4467-b5b9-298e9c03b8f0",
+        "password": "scrypt$8afac7ca218fe68927b8b4e9d4469415$804ce79a4cd2640589e4ba23c77ca15148d76cb33e958a515fc8d61a49e52a9e835cbe5b4358c7de39e77516e4b871eedb8e20eb29f68f0dc665f2d41dece938",
         "nombreVisible": "Nicole Alexandra Penalo Heredia",
         "trigo": 1000,
         "hierro": 100,
@@ -971,8 +971,8 @@
         "hierroProd": 0
       },
       "1840862": {
-        "id": "96c67144-acf4-4354-8670-f18ee572311c",
-        "password": "scrypt$39e7af5c14ab42dd71e7ba375da22c56$68e3a75890c04c679c74083c11f352ba82fae3145f1f257f04c416b5190433cb60dd270e3f7eb13fb9a9be893d4ae5fb821935eb23a4efaee775284add7b7480",
+        "id": "ab0f4e95-1f7d-435a-852b-0bdc69d9625f",
+        "password": "scrypt$3bc1ce664a436a62f0c7668a5e54c75d$14355e9b070fadb8db68e750449b513d5606cda961a8eee6a79f90ba214d0b959bc7ed0c59f51c937c4012ae4ac7e710f9ad534851c76dfed716acfa88612e39",
         "nombreVisible": "Nil Ortiz Fargas",
         "trigo": 1000,
         "hierro": 100,
@@ -985,8 +985,8 @@
         "hierroProd": 0
       },
       "1840976": {
-        "id": "8540f9a1-dde6-4315-8149-db231290fd1f",
-        "password": "scrypt$fb80736cab8a991dc4848faf063d59e3$60b3a46972f818cd1ca059aa19746a3725ec146db055d34135875b435b99772b4e5d03ad62592ac546a88d841f8cb44dfe5d8216ab60a34c85a67788171d88fa",
+        "id": "ed0be5b9-24d4-4e65-8be2-4aa1856d8013",
+        "password": "scrypt$f389dd5b4030f01203c5f1ec0ea05d4e$9848475cbbf2d2f9f2a5017387358180e1ce5607aa913717ab053e259a368feff24caa7a9a7b7675af42eb25526aaeb7fac734b51c3b19a9cdb015755f6e5eee",
         "nombreVisible": "Ricard Martinez Torres",
         "trigo": 1000,
         "hierro": 100,
@@ -999,8 +999,8 @@
         "hierroProd": 0
       },
       "1841004": {
-        "id": "47d571bf-64cf-46df-b356-6c5a876e7511",
-        "password": "scrypt$9efaef3761470b687c71b7f73c5d8c60$600e0980d8633434a3a577e3b65bbda5cd6313dca3612f5a048810ae83e0deaf2e941d05eb9c1b38a778279c52ef7031ac17a6154ae3493548fff7d55ef87e61",
+        "id": "ec35f9e5-148f-4efa-8ee5-5b562475a886",
+        "password": "scrypt$46fb10e0e6618e21264df27d4bdc325f$d8a17448f459e1377d1cfac036b11f79e949fd20b4148d83d79cd06336398500e78e075fbc35f32022745107a0ec1d33a9f00df2519e134157458a19118b0db6",
         "nombreVisible": "Sandra Rubio Gomez",
         "trigo": 1000,
         "hierro": 100,
@@ -1013,8 +1013,8 @@
         "hierroProd": 0
       },
       "1841018": {
-        "id": "4f9f4f08-65ad-4133-8f61-42ef36516db6",
-        "password": "scrypt$602f05c626626f2ad6d0e39f6e3fd8b0$204999f1f94f558fe61596b2743848ccda47ce0158344ff3b141b256a443231581628f371bc33195775eed1c7794e7fd40e285c9d5032c3628a8693ee40b1b7d",
+        "id": "5e2de4ec-ab34-4fe5-83a2-2a7f3c4b3951",
+        "password": "scrypt$209a34ac94ef43dc5711724fcbdf9572$ea4783308153a26ac5ed9c3783f30472e33c2443d33d8a2ca55e696371edaf38973e83dada70ed51a530be00ced9ee99221b3c0ade10cff5f6e558c7da700832",
         "nombreVisible": "Sergi Domenech Molina",
         "trigo": 1000,
         "hierro": 100,
@@ -1027,8 +1027,8 @@
         "hierroProd": 0
       },
       "1841034": {
-        "id": "a056e922-31f6-4e5e-a7c0-670debdb4476",
-        "password": "scrypt$1d33f7f866a9ca7f28a1c633fda1cf25$f5ea1c952912888ee01a65df1191d359c4ca61ed55df6991362e7aa519191c46dfbe06a1fc90fa6d543685f24caf294c131b777b8d3d3572c5a196f94cd5ef76",
+        "id": "2a6814d1-3a6b-42e4-a4f8-dd6b9cf2fb04",
+        "password": "scrypt$ae46df6d555ec2bffdb5951b4b56e792$d6c47f75f366e7774bac350bd7d63b81d6efabfee26ab08bfd86950ef550af87fb2d78c877882c35ddde8bd209ff3b7495994b593743087ea2f22cb314353b61",
         "nombreVisible": "Sofia Gabriela Acevedo Rodriguez",
         "trigo": 1000,
         "hierro": 100,
@@ -1041,8 +1041,8 @@
         "hierroProd": 0
       },
       "1841071": {
-        "id": "ef4e25fb-f023-45f9-a4b1-39f32191b1b0",
-        "password": "scrypt$9552683d5c70b357226e4523a4c005b5$c3b641f3fbe2efefc59484a920c8e2d4703f83e0cc1b077f6c11c73fd98479dd1f0dfb60c47084cd87a55b2ca15f8af9f07291d7e1ced494ac01bdebcc70b8ee",
+        "id": "0da9c76b-0973-4837-a23c-ad5a6e6dbce9",
+        "password": "scrypt$6913d1ee870631f0e7da235da7181563$a3a8ebce47709da1ac99a3b0e12a976b0877f636917e3d091178fe4c30a501f84336f283b1b3655add8ea983cd6875a2c069e49ae4f2d14f58db0f1bfe71503c",
         "nombreVisible": "Violeta Manchon Perez",
         "trigo": 1000,
         "hierro": 100,
@@ -1055,8 +1055,8 @@
         "hierroProd": 0
       },
       "1841696": {
-        "id": "c7bc3241-701c-481e-936a-1408fcb67a5c",
-        "password": "scrypt$f084994447de2c90aa4f4515fa642583$a81828c533fcc8fd7e131e0cf2010b6603e0e979b1710b81861e4f2f89ed5e9de03b0d9c2f7288bffba7301dc41d87f7d7e2cc7025db109ed750b5b4b5fbd265",
+        "id": "8f4f8b4e-9d2e-4752-accf-bc25a12ceaa6",
+        "password": "scrypt$8db6cbae3297626ebe3a5e3868c4cca1$533269762dc194d4efd4c0095d158af7081f93a227a7e02959ed50a493ff86e6ff5960fc11b811e7b777bb1046adbdae121effc8a84fe3369e06460e00c7ca2e",
         "nombreVisible": "Alan Saldana Martinez",
         "trigo": 1000,
         "hierro": 100,
@@ -1069,8 +1069,8 @@
         "hierroProd": 0
       },
       "1841754": {
-        "id": "2e3a4cd4-274b-4ffc-8ce1-0963726d976d",
-        "password": "scrypt$1f0bde370122287a32d79e8fade2e1a3$5e39465386c3cb3a8cedb005326de325c5b1fafa1c3eadbeb3f9d7de6131cf83a31471a13d879560e790b22aaa663dc0d92a6838ddcec17b2c73b04cc40b439d",
+        "id": "a869a55a-c3d7-4d7d-886a-97eb26ba251f",
+        "password": "scrypt$a901a7168ba389e98f20efaf84b6bf15$3f319bb7b7627992a270bf2297d2571157edfb88a0596a7ef9e1fdf6f9af12e160ae92d6aa2bf1758a577f1a6edb6919950f078a8799a717bc149e3333962f8b",
         "nombreVisible": "Alex Pardo Abello",
         "trigo": 1000,
         "hierro": 100,
@@ -1083,8 +1083,8 @@
         "hierroProd": 0
       },
       "1841793": {
-        "id": "d8748bc8-14c0-40e0-aec4-dbd8d492c30e",
-        "password": "scrypt$850359c1cd85c2b85748c820f6018eb6$d1e21d82b5c3fd3d5674e1c3b33411a74d5ed314cc97ae619281937dd654fa03297591969930a62ab4d638f7701b3dd171af3c32908411f5cdbe1c57de7f6b37",
+        "id": "0902d581-f309-42e7-82cd-25c7c43be1ca",
+        "password": "scrypt$ea9b6f77905c052972c34a192673f969$aac05067b47ed9fa2913095cd69e0767dc5bd7af6cbf36bab945568022d6ded0d3e8fc7ec0e07c80094ce14813e6a645d7d498bfd456a8116eb49165b9d5309e",
         "nombreVisible": "Amanuel Pau Jofre Sol",
         "trigo": 1000,
         "hierro": 100,
@@ -1097,8 +1097,8 @@
         "hierroProd": 0
       },
       "1841869": {
-        "id": "fe0ed13b-17ad-4050-84f0-11555fd72baf",
-        "password": "scrypt$15bed68a7b20ef857cbe719d27ac6345$a7b1fdc7c4ea108e918bb993a7ecb3945fd7e5e77bf7c27a071e4d2a93a61f8b4c28127062f8a22d85d1932e6187053a6f65030a5b715d271b1a155b352fc0ac",
+        "id": "dcce301a-50b2-4711-93fe-d1a842628ba8",
+        "password": "scrypt$f5f659b589779a710089c9639aab87eb$aabcf28d808f94450d9696d0eb99f79643b111ad5ab1a150642e1cf4554a35e3d6513e9b50d42602f77054e6cb6d5450d42137b3862b3b659dbce4d8285128b8",
         "nombreVisible": "Anqi Yang",
         "trigo": 1000,
         "hierro": 100,
@@ -1111,8 +1111,8 @@
         "hierroProd": 0
       },
       "1841896": {
-        "id": "c2935931-2774-4505-9506-4d8847f69af0",
-        "password": "scrypt$6e496e561ff49282f1dd509d6c3dc7be$ecc53af43bf1ebc3e89512e49d4066d1d4a2e3b9b8d50a89f917854794c8af88bdf59cbd6a761cea4fa60ad8055ffecf6b9f5a6203e47001507c53334d36abf9",
+        "id": "5252053b-d279-4dc3-9837-847e93c6e7e2",
+        "password": "scrypt$d71ee881c228423518f96af0a7d20bcc$b6fba0eba3131fb4330c956b1469e249fb999736ef47fff3e26fe4775783e61a1f05baebd7f29878fb7e8bab0b5085682351758768a70455b7bcd6902f699449",
         "nombreVisible": "Ario Jordi Ledezma Fuentes",
         "trigo": 1000,
         "hierro": 100,
@@ -1125,8 +1125,8 @@
         "hierroProd": 0
       },
       "1842028": {
-        "id": "88030d2a-efc2-4434-ac8f-bfea7331afbc",
-        "password": "scrypt$ccce46e1192bc65d256f1729e566fdff$4059cfb8e9821c3fb4a800c37bf48534c345109815d6e6678a8e7a8cfbf9c81793a924cca5c3c74878c8a7db7c4a6de04458f300b4e8810600e3eb325aa6a428",
+        "id": "b40c614a-3fda-4b6a-90d3-d0785287a665",
+        "password": "scrypt$04ff32930a97af44605d3bb42aeb014d$ad004ef4b8df947630129728c8423b3b6e2e550704dec340025889d755eff83358e5e009d458779c5838907c1c50ce4c904d29fdb294ea26129f694cf5f21127",
         "nombreVisible": "Carla Jimenez Macia",
         "trigo": 1000,
         "hierro": 100,
@@ -1139,8 +1139,8 @@
         "hierroProd": 0
       },
       "1842151": {
-        "id": "b8f2e831-134b-42c4-8bea-ce98684b93e3",
-        "password": "scrypt$0aca88b819d2a9c7386364dff3336e1e$30fe10ec8dd2c121c9e1f9a0d7ab05df179c4c1d4fe7ef4b88326aac3c26b177e78ec29bdeedf64a7ecced576e8fc81b2ee623d8705f45cfc8a29673e88bdcf9",
+        "id": "ca78309c-2273-4524-ba37-d4daf1d5b17b",
+        "password": "scrypt$62d771e1936a83707228f080fc1202d3$1bca0ab5b2a3a8bb02c6ae345ee50111683a12441ce0ec16fa70764676f02f068e3b870f774a3cee7b645ac385edf132e611330cce5b8b92252d9e61bf0b3502",
         "nombreVisible": "Daniela Espinosa Prat",
         "trigo": 1000,
         "hierro": 100,
@@ -1153,8 +1153,8 @@
         "hierroProd": 0
       },
       "1842243": {
-        "id": "4b7050e9-1f10-411a-9843-b10f4a9c00ce",
-        "password": "scrypt$33b88efc780872378e3e66e7b18fef4d$893c93feb35a974c8ead47ffb99c3f6220ffca51f7b0e15f45d88c8d7e2e2d5ceb7aa70369ccfbdef7673accd3f8649d1e3b5df7397a75c7925d97582b4d01a0",
+        "id": "b4bfa4b5-6c3f-4af0-898c-007e153a8cae",
+        "password": "scrypt$35d5efb6cb1f9a6dea053fccc6ba6449$4c8c9de4e1b166121821c415dfee3f67fd64f027c5ceabf2b72f607a04d7edc4e85fcc1ee74225ccc3ade90b27e9ec185ad561fe1ef66db55a623611087ed6a6",
         "nombreVisible": "Eloi Canellas Duran",
         "trigo": 1000,
         "hierro": 100,
@@ -1167,8 +1167,8 @@
         "hierroProd": 0
       },
       "1842304": {
-        "id": "c498b07d-7471-4194-a6c6-7118e28293ff",
-        "password": "scrypt$1863490265b3d045f058aa283fec72f1$9d1dcb175a3f996d707afd84dc742b29af72df5b576ac6da71f9b7ce99b21a845711edba97ee45de1d57138cdfedac25305914f3841a91ec07dfd805d0fb7a3e",
+        "id": "db5c1d5e-c3d1-44f3-bd1e-781b27457272",
+        "password": "scrypt$eb236b7fb53758c40c9c091047274161$07b1d69c5c1366c3f82672c49bf27c2bd5ff439ad27a219a045d1fb65a4883e7323f2e4f712e484b2009294868b410bee12235d1a075b39a5a3b99516549111f",
         "nombreVisible": "Ernest Rique Ejarque",
         "trigo": 1000,
         "hierro": 100,
@@ -1181,8 +1181,8 @@
         "hierroProd": 0
       },
       "1842385": {
-        "id": "1ef938e1-fb27-48df-961c-24f5c85c4651",
-        "password": "scrypt$969f017168437d1ceb33fb50f30c137d$07f1f070b6b771727ef7ab56f7bf7e65d7f3d85bd1f0bfa51b450aa41f260345185d710c528bd88b9ea453178105245c335c906c4d21108d067aad27dba04d56",
+        "id": "7cf09397-e65f-4810-9112-a8cc5fd8be47",
+        "password": "scrypt$f351beb34525d6a704b1d2bb24103841$9ecc7030a0deb71f74bd297422e719fa201535ef60eacd100fa76f182ca523b58ed8389c07d7bc7dc2fbd8e6535fdf18143ad099875d086f34945ebbb524601b",
         "nombreVisible": "Gerard Santiago Ortega",
         "trigo": 1000,
         "hierro": 100,
@@ -1195,8 +1195,8 @@
         "hierroProd": 0
       },
       "1842580": {
-        "id": "f95a4b0d-7f35-4965-bdd2-f91feea6b9cf",
-        "password": "scrypt$9ae14e34b3a00a176aa051243d476793$7b3c93e507cbb738eeeb08df144a3f0c4845f42c316d459d753273241afd1c4797c009c976f9c0434bd7b6828e117cc29daca0e8933d54b4299ad6812e613bbb",
+        "id": "230665b7-9d92-4628-b86d-8246bbf3c56a",
+        "password": "scrypt$d7fdaf2dfb73f00dff0ffa2a0865aa78$23cad30a8be91ef119d8435443c72fa4cd4434f768fd38a448631b46156875acf4a17e9983b043f8cae7265d18ef8fe53f5491a3e95d6e4d7a50411477ca65ed",
         "nombreVisible": "Javier Chafer Tercero",
         "trigo": 1000,
         "hierro": 100,
@@ -1209,8 +1209,8 @@
         "hierroProd": 0
       },
       "1842650": {
-        "id": "827ecb12-c13d-414a-a2e5-240786494494",
-        "password": "scrypt$5f549e67c486a1a3e3e850bbe819fb25$930768ed2664e8cf97137dc9333ecaf71b5c7f8b1ad57a9ab972501ef78eb2808ac63768fb750550ad1ea7b1da9b95acf031d642425b3000f9bedc1c4a8319a3",
+        "id": "c33c0ee9-bf5e-4f6c-b644-05db2b823d74",
+        "password": "scrypt$668d8d4d157efd522372ebe4afd2babb$b66c8e7a2f27f79f7d40967e00dd4f82e9731685d180c1a58a34846fff61a81676cb46860bb4ca6e391bbdca5fe09c329233644bee828d3c51b112a665dfeba9",
         "nombreVisible": "Jose d'Alessandro Condori Huayhua",
         "trigo": 1000,
         "hierro": 100,
@@ -1223,8 +1223,8 @@
         "hierroProd": 0
       },
       "1842703": {
-        "id": "1f069aff-e09b-42df-b121-20f16935492a",
-        "password": "scrypt$bd75f62e284d3161aaef9cdc3f1e6d2c$5f332444d2d5e031e2d2ef26e9497cee72ad4228691eedcb99708775107e93e2d5b4ed8bb67a9c1f25eda7085b75e9da52622d3ffab86a3f6df1efa17d761fe3",
+        "id": "013d15a7-d92b-4c3a-a65a-62d7f1f39b7a",
+        "password": "scrypt$f2dfab85bbb0af960e14c321d4e576f6$68f5b40504c7791c4550db0b520dbded84a917c21aeb1d41e00619bd0fe90e70652c7b8507843370a1e57b06af04b3ab8fde9edcc17dd9a69af07f308e2eb2d8",
         "nombreVisible": "Julia Vilchez Domingo",
         "trigo": 1000,
         "hierro": 100,
@@ -1237,8 +1237,8 @@
         "hierroProd": 0
       },
       "1842887": {
-        "id": "1aaceb96-ebcd-4d5f-b9d8-8a674f198c69",
-        "password": "scrypt$e95169ef67f83b7bcc29dda3bd8d9cbc$7a02c7b5d50f13562d468779bc5ac6ace955907945015f4146ab98ab79169517f7437369f04c0355acebcc93685f0a48401ef65d74e5946c9411373996ff2ac3",
+        "id": "56e8e1a1-7e52-46f0-a4aa-51b8fc3885b3",
+        "password": "scrypt$eb3b2a674e958af44d54096e42a6a859$b359e4cc5ab8c0b4168108f2103f5f625683810e3c553bd486ac5ce4dae3d23d710357183e79c2a5f7551d14db4591ef9f8f562e5a25688f3d361cf9bd80935f",
         "nombreVisible": "Manel Camara Alonso",
         "trigo": 1000,
         "hierro": 100,
@@ -1251,8 +1251,8 @@
         "hierroProd": 0
       },
       "1843015": {
-        "id": "fce813e0-13b3-48b9-a2ac-1ceacc1a7245",
-        "password": "scrypt$d5482e4f0b5efc01dea2672a57357299$fd08df08fe5b05028741b5f6d99a8f330937ab45aef643d37b85a444028e62a54c32e9ea099ffc4f1bbf25993e2ecff831860580cba76f9ecab59a083478c538",
+        "id": "c0b2bf87-8a29-4cf3-9a05-9ea22e099673",
+        "password": "scrypt$dbaae3940abd0f5b000daf50755f4abd$b82534899928caa3097121bea078101aa1ac00df1c42ded8d908ee6f5226d23362f5cd5728e5d97c2c78fdb6bf94bd3ea88dae7fac7210d08dbf7f8633896745",
         "nombreVisible": "Marina Massa Serra",
         "trigo": 1000,
         "hierro": 100,
@@ -1265,8 +1265,8 @@
         "hierroProd": 0
       },
       "1843115": {
-        "id": "4d7dc1dd-66d5-4687-b422-2763ec34e19a",
-        "password": "scrypt$f5acf5351dae8c46f193291f0af37c0e$72da210610b9f9bab53e80dd65d607ba92fb350834b04b73838c68faa6c19f6231aa9ff358b270c84b38e329b52dd7805d80e76f4a8e8980df52afabf7bbf394",
+        "id": "b88b0635-e029-43f2-8a0e-1ff8a0eded1d",
+        "password": "scrypt$ae31c48cbd40781e438274e62993826e$981c9aee1656a0fe797899beb582f8a856bd3dc7537b9316f2f7de615488683973dcd67e50e2d4579677d8a3a8bf4a754b7376d2884b4977f1e4300f6f5c368e",
         "nombreVisible": "Mateu Luis Faixa",
         "trigo": 1000,
         "hierro": 100,
@@ -1279,8 +1279,8 @@
         "hierroProd": 0
       },
       "1843483": {
-        "id": "73b1dfdd-cd91-4315-99a5-32d5192dafa2",
-        "password": "scrypt$517c44c736fdc9ab8ddddd58379707ab$e11b0590fd57bccaaab949a6e431954b17143290e512a94377e477415715d03600c039f471cd0f7f251b8300c53c5bcacf346cbf4d8ec430330b25f88da40a6e",
+        "id": "8e81746f-0a74-42b4-8aba-4bd86ce275f5",
+        "password": "scrypt$d05f0e269a6c558d51dc34d41d502276$e3580c3b8a209d9e89d9f4dd4e8df8c9ba5fc5b2b02371621a02d7f0f955040d007a64adcd8fd0c5fec3cda0919256894bd53b1b7b422ab469282258b3b3fa71",
         "nombreVisible": "Santiago Borrell Perez",
         "trigo": 1000,
         "hierro": 100,
@@ -1293,8 +1293,8 @@
         "hierroProd": 0
       },
       "1843676": {
-        "id": "b5387f7c-70ec-419f-979f-ebcc36044ff5",
-        "password": "scrypt$e40254ec2967b04d89f1c82ec6f18013$061668c817da638ab371fbdae98f65563cf538af56bc74647e87686974b296628357ece2df2e36c0b71a18906e42938eb1184fb47ea5b15ac873fe3d0407656a",
+        "id": "2a15c34e-ad68-4475-af1c-b14b20a3590e",
+        "password": "scrypt$362deca9797785a3744c49816402a8bd$c2493b5a8b179ebbd21af2bcbb4d9ca4af500c3b5e315cc6935673637335f213846b43d71fd94b26ad4acc00fac4819489c5576457d172c1a5982d40e5ee5201",
         "nombreVisible": "Yongsheng Aran Ley Altimira",
         "trigo": 1000,
         "hierro": 100,
@@ -1307,8 +1307,8 @@
         "hierroProd": 0
       },
       "1845651": {
-        "id": "76ae3512-5ad7-4eaf-9210-6268883056ff",
-        "password": "scrypt$ece6d53c560365a3cf5c0319e735d8d8$4fbecdfe96a2b4d66eee1d1e766bc5bcaf876a6d6c78b25d585d7bba665a10d10336e6dc4c6758251f81e09af39da53d95a623bf4a072451ba22eeac98348f37",
+        "id": "a0e33ef7-f7e8-46cd-94d9-0c091928f845",
+        "password": "scrypt$c5d47a29a7a5945fa5b8520d9f4a19db$6ddb707c7625c8e61175ba5e19ae97b41d5ea60a4b7d7116e3a4ff06f3f248ba454da3a15d938ca00c87d6178f39a68fce4b07a17a8e14bb8ba202a15f58a352",
         "nombreVisible": "Pol Berenguer Moya",
         "trigo": 1000,
         "hierro": 100,
@@ -1321,8 +1321,8 @@
         "hierroProd": 0
       },
       "1845685": {
-        "id": "4203b9cc-6e44-4e4a-a4a0-b092e641d88b",
-        "password": "scrypt$d78b640599293b6f1b4c402e726b052b$0f2c4d5030e9b690742bda0eb563576ea3d4a6c4d600a0cd0af0deb7eae3fa2c261169bec61dfed8937734541f006f2cdcdb1afa0ec3a5eb4b2e60bfb5215a62",
+        "id": "771306ce-8144-4eba-bca2-f901f3901070",
+        "password": "scrypt$afbe790ec09cea28b94de37b86312d75$215f931d1746bd7fa2612cbd414118480bfdfa5a0e3c93c9d9be5df33d4320eb33711386ad2c55c93e85603ffd441c63c6a4147f565e4b78badeb726f24f6560",
         "nombreVisible": "Zixuan Yang",
         "trigo": 1000,
         "hierro": 100,
@@ -1335,8 +1335,8 @@
         "hierroProd": 0
       },
       "1846265": {
-        "id": "5c6f74f1-254f-453c-9cd2-d4d884605ee8",
-        "password": "scrypt$a76158a4d8d485712aeb5264f92a7b7a$24b58bce1535b1c3e88467d686f68e5ee5364ae12a1cd817f75f5607e054809d1c15e6b5dea9f840c453bee23821d28ccfc6d89cc43d67fb5032714927523bbc",
+        "id": "50073363-cb0f-44cf-8754-41a3452331a2",
+        "password": "scrypt$ba8000262890e21d0975cf35dcff00d8$4730a7b7c51b4d018a27ccc43535f83c9ebb18b83cb3ba717c93cae6a79ee116add20877005c9f81228245168609224f45fcdeab126ea9a9979c80cb6c1c3c0d",
         "nombreVisible": "Ignacio Saperas Comas",
         "trigo": 1000,
         "hierro": 100,
@@ -1349,8 +1349,8 @@
         "hierroProd": 0
       },
       "1846304": {
-        "id": "b75b67c9-5dcf-4820-9917-7e95dadcd50c",
-        "password": "scrypt$85b016dcccb24023bb1ad46b278b8bb2$3dd39a2cd11622a068f882794f1ea8a9919479420a949ed793df6b87d9845a3f5a2900c3ee6c92ae27a7d3e0b952ef33a7d03a9a8445f16f2b03e7a537e1bf87",
+        "id": "c6c63eaf-e5ec-47f1-96f2-30a77e744a71",
+        "password": "scrypt$878c21422fde483313bf496657106184$5c2c7a62416669f7d6ba73f7888e4a075d21ff00a068cb4d6506205c0d3a49b1e2166209dd9582b3e9c8f37f9773b13405e30f98d13904c0ac759b3a45782544",
         "nombreVisible": "Zaira Valentina Ariza Sierra",
         "trigo": 1000,
         "hierro": 100,
@@ -1363,8 +1363,8 @@
         "hierroProd": 0
       },
       "2104350": {
-        "id": "a7e6b032-8b11-402d-93de-1763ee40ecc5",
-        "password": "scrypt$0c2ab39afdd28b14dc446c32672b13c9$9e23015df57b83f2848ce0cd8f56a93112d4cb2180e1d50ade29f7ff50bed25b63e90380b4ce4f53e29ec27924ea21caa78b86627126eb2fa3c4f317b2143a65",
+        "id": "d45bc318-e60c-445d-bb33-065d4debeb3b",
+        "password": "scrypt$9387f86f530d24721286203c44e47a8b$db2328af18ab218c6d99015523beaf8d2ecf5f58f4e2222fcb3b5fd3457f432a91e3ea06ad3feff5df4a28847d20e2abd6333cd7af3af9336d00258810039953",
         "nombreVisible": "Susana Santana Munoz",
         "trigo": 1000,
         "hierro": 100,
@@ -1382,8 +1382,8 @@
     "historialEdicionesJugadores": [],
     "historialAuditoria": [
       {
-        "id": "2789fd72-fcdd-4195-9011-a50b09e53ca5",
-        "timestamp": "2026-10-08T15:08:02.912Z",
+        "id": "041f7c26-1dc1-430e-afa1-8f74f08acbce",
+        "timestamp": "2026-10-08T16:26:39.964Z",
         "sesion": 1,
         "tipo": "altaJugador",
         "accion": "Alta",
@@ -1399,8 +1399,8 @@
         }
       },
       {
-        "id": "e7a311a1-d08c-452d-aa1f-05dc1a9c9d8a",
-        "timestamp": "2026-10-08T15:08:03.033Z",
+        "id": "a4cf4593-0b44-48b9-bd29-98326e0950e6",
+        "timestamp": "2026-10-08T16:26:40.246Z",
         "sesion": 1,
         "tipo": "altaJugador",
         "accion": "Alta",
@@ -1416,8 +1416,8 @@
         }
       },
       {
-        "id": "6d2689a9-60aa-4da2-9266-17a68a17c1a2",
-        "timestamp": "2026-10-08T15:08:03.154Z",
+        "id": "1022dfa0-0cab-44ab-9aa4-deca50fe6ee3",
+        "timestamp": "2026-10-08T16:26:40.508Z",
         "sesion": 1,
         "tipo": "altaJugador",
         "accion": "Alta",
@@ -1433,8 +1433,8 @@
         }
       },
       {
-        "id": "8f740da7-a7cc-4ac1-a363-fa9f46aeb3c4",
-        "timestamp": "2026-10-08T15:08:03.280Z",
+        "id": "b043d49a-1742-48e6-8f3e-5765314c5759",
+        "timestamp": "2026-10-08T16:26:40.760Z",
         "sesion": 1,
         "tipo": "altaJugador",
         "accion": "Alta",
@@ -1450,8 +1450,8 @@
         }
       },
       {
-        "id": "15d2c417-b4d9-41c6-a8a7-f289594a1b40",
-        "timestamp": "2026-10-08T15:08:03.432Z",
+        "id": "99e8600e-0971-4645-a0ca-06d5c79d8179",
+        "timestamp": "2026-10-08T16:26:41.020Z",
         "sesion": 1,
         "tipo": "altaJugador",
         "accion": "Alta",
@@ -1467,8 +1467,8 @@
         }
       },
       {
-        "id": "a4ab64b9-92fd-49c2-ab89-108c036187f6",
-        "timestamp": "2026-10-08T15:08:03.542Z",
+        "id": "f71ca46a-4c86-4471-a21f-dbb5320ded7e",
+        "timestamp": "2026-10-08T16:26:41.279Z",
         "sesion": 1,
         "tipo": "altaJugador",
         "accion": "Alta",
@@ -1484,8 +1484,8 @@
         }
       },
       {
-        "id": "ff509266-77d2-42ad-b994-014caf9487f8",
-        "timestamp": "2026-10-08T15:08:03.641Z",
+        "id": "67b062f6-ac2c-4b14-b95a-813a18a31585",
+        "timestamp": "2026-10-08T16:26:41.527Z",
         "sesion": 1,
         "tipo": "altaJugador",
         "accion": "Alta",
@@ -1501,8 +1501,8 @@
         }
       },
       {
-        "id": "8a568372-5860-4315-9c84-1c69a9d204dc",
-        "timestamp": "2026-10-08T15:08:03.746Z",
+        "id": "8c4f8eee-d2ca-473a-ba31-fb135e274ad3",
+        "timestamp": "2026-10-08T16:26:41.757Z",
         "sesion": 1,
         "tipo": "altaJugador",
         "accion": "Alta",
@@ -1518,8 +1518,8 @@
         }
       },
       {
-        "id": "3d91fac2-15a8-4c8f-b1df-f6e42da9e205",
-        "timestamp": "2026-10-08T15:08:03.850Z",
+        "id": "ad3cdaba-01b0-4d35-aa79-b2c14061aaf7",
+        "timestamp": "2026-10-08T16:26:41.989Z",
         "sesion": 1,
         "tipo": "altaJugador",
         "accion": "Alta",
@@ -1535,8 +1535,8 @@
         }
       },
       {
-        "id": "fa504ad7-fc7a-401b-bbe9-62a9b4d8a30e",
-        "timestamp": "2026-10-08T15:08:03.951Z",
+        "id": "42475cdc-7a3e-4e0b-b478-3c708b0e5962",
+        "timestamp": "2026-10-08T16:26:42.194Z",
         "sesion": 1,
         "tipo": "altaJugador",
         "accion": "Alta",
@@ -1552,8 +1552,8 @@
         }
       },
       {
-        "id": "459fb54b-e551-45bb-86d5-19abf05be2d9",
-        "timestamp": "2026-10-08T15:08:04.059Z",
+        "id": "375cc391-8041-46d2-976b-5d9d2712017f",
+        "timestamp": "2026-10-08T16:26:42.407Z",
         "sesion": 1,
         "tipo": "altaJugador",
         "accion": "Alta",
@@ -1569,8 +1569,8 @@
         }
       },
       {
-        "id": "71750795-5832-4854-ad83-a650b4c9de4b",
-        "timestamp": "2026-10-08T15:08:04.165Z",
+        "id": "9bc75bbf-1ee8-4aa3-825a-902f80e19840",
+        "timestamp": "2026-10-08T16:26:42.620Z",
         "sesion": 1,
         "tipo": "altaJugador",
         "accion": "Alta",
@@ -1586,8 +1586,8 @@
         }
       },
       {
-        "id": "7b8332f1-7931-4577-9da4-ffba73490e04",
-        "timestamp": "2026-10-08T15:08:04.273Z",
+        "id": "e66f1baf-590a-490a-98f7-9f64fde84b2d",
+        "timestamp": "2026-10-08T16:26:42.839Z",
         "sesion": 1,
         "tipo": "altaJugador",
         "accion": "Alta",
@@ -1603,8 +1603,8 @@
         }
       },
       {
-        "id": "66da2092-2d1c-41ab-9bb9-5cf69db6a8eb",
-        "timestamp": "2026-10-08T15:08:04.376Z",
+        "id": "bbdcd5cd-2f6c-4cf7-9ca3-8db141011486",
+        "timestamp": "2026-10-08T16:26:43.095Z",
         "sesion": 1,
         "tipo": "altaJugador",
         "accion": "Alta",
@@ -1620,8 +1620,8 @@
         }
       },
       {
-        "id": "b678aa49-d9b8-443c-b2d1-03759a1a9149",
-        "timestamp": "2026-10-08T15:08:04.480Z",
+        "id": "5be26325-1031-4b94-8308-e7aefb649e62",
+        "timestamp": "2026-10-08T16:26:43.351Z",
         "sesion": 1,
         "tipo": "altaJugador",
         "accion": "Alta",
@@ -1637,8 +1637,8 @@
         }
       },
       {
-        "id": "31350953-73d3-4a20-baef-2eae94a45a4a",
-        "timestamp": "2026-10-08T15:08:04.578Z",
+        "id": "9a10fedb-2926-4d82-b2d7-55bb030f013a",
+        "timestamp": "2026-10-08T16:26:43.609Z",
         "sesion": 1,
         "tipo": "altaJugador",
         "accion": "Alta",
@@ -1654,8 +1654,8 @@
         }
       },
       {
-        "id": "b2cf14e3-5273-46a5-9457-520360303109",
-        "timestamp": "2026-10-08T15:08:04.679Z",
+        "id": "8fa6730c-e2d8-4f73-a563-75eb1a7a5049",
+        "timestamp": "2026-10-08T16:26:43.864Z",
         "sesion": 1,
         "tipo": "altaJugador",
         "accion": "Alta",
@@ -1671,8 +1671,8 @@
         }
       },
       {
-        "id": "fcbdfccc-4081-4ed3-8158-88c3654f894e",
-        "timestamp": "2026-10-08T15:08:04.790Z",
+        "id": "fd91ba54-eaf6-4883-a377-8f5ca18b6923",
+        "timestamp": "2026-10-08T16:26:44.118Z",
         "sesion": 1,
         "tipo": "altaJugador",
         "accion": "Alta",
@@ -1688,8 +1688,8 @@
         }
       },
       {
-        "id": "0ffa7a9e-a838-4307-a77a-f62af6fddaa1",
-        "timestamp": "2026-10-08T15:08:04.913Z",
+        "id": "3c59f7d7-01ab-47ba-82ab-d273bfb7328d",
+        "timestamp": "2026-10-08T16:26:44.379Z",
         "sesion": 1,
         "tipo": "altaJugador",
         "accion": "Alta",
@@ -1705,8 +1705,8 @@
         }
       },
       {
-        "id": "ac9b133e-254b-4c42-bde6-34bd38256c04",
-        "timestamp": "2026-10-08T15:08:05.038Z",
+        "id": "f9563774-d68a-4efa-8ab7-4f243d565860",
+        "timestamp": "2026-10-08T16:26:44.636Z",
         "sesion": 1,
         "tipo": "altaJugador",
         "accion": "Alta",
@@ -1722,8 +1722,8 @@
         }
       },
       {
-        "id": "e21544ec-bd13-49d3-b22c-28acc9348407",
-        "timestamp": "2026-10-08T15:08:05.150Z",
+        "id": "55fa6ce6-298a-4479-a3c5-f3454373cdbc",
+        "timestamp": "2026-10-08T16:26:44.892Z",
         "sesion": 1,
         "tipo": "altaJugador",
         "accion": "Alta",
@@ -1739,8 +1739,8 @@
         }
       },
       {
-        "id": "c5a3765b-e8da-4ef7-9925-e85ceb7b5c6d",
-        "timestamp": "2026-10-08T15:08:05.261Z",
+        "id": "524fa2a3-f43c-435d-9587-5e29b188455e",
+        "timestamp": "2026-10-08T16:26:45.142Z",
         "sesion": 1,
         "tipo": "altaJugador",
         "accion": "Alta",
@@ -1756,8 +1756,8 @@
         }
       },
       {
-        "id": "fd4af428-86db-4dcf-85b0-25a4ba6bb985",
-        "timestamp": "2026-10-08T15:08:05.378Z",
+        "id": "0f68fc50-965b-491e-beae-1c9bc5ba8907",
+        "timestamp": "2026-10-08T16:26:45.399Z",
         "sesion": 1,
         "tipo": "altaJugador",
         "accion": "Alta",
@@ -1773,8 +1773,8 @@
         }
       },
       {
-        "id": "1e8ea9f5-15ae-4039-9c32-c0e9d3f20364",
-        "timestamp": "2026-10-08T15:08:05.504Z",
+        "id": "26543975-f708-4c6f-a070-badefe4a3dab",
+        "timestamp": "2026-10-08T16:26:45.653Z",
         "sesion": 1,
         "tipo": "altaJugador",
         "accion": "Alta",
@@ -1790,8 +1790,8 @@
         }
       },
       {
-        "id": "3e6e406e-6da8-4680-a547-e2e9b0daa9b3",
-        "timestamp": "2026-10-08T15:08:05.631Z",
+        "id": "93d2562c-8ec4-4770-af4b-99ca4175904b",
+        "timestamp": "2026-10-08T16:26:45.900Z",
         "sesion": 1,
         "tipo": "altaJugador",
         "accion": "Alta",
@@ -1807,8 +1807,8 @@
         }
       },
       {
-        "id": "6215cd41-7bb5-4dc0-bbdc-234d82f379a0",
-        "timestamp": "2026-10-08T15:08:05.762Z",
+        "id": "fa580295-b53c-4690-9878-338757aa496a",
+        "timestamp": "2026-10-08T16:26:46.153Z",
         "sesion": 1,
         "tipo": "altaJugador",
         "accion": "Alta",
@@ -1824,8 +1824,8 @@
         }
       },
       {
-        "id": "66c138af-f903-47c0-b899-aaa545d07f30",
-        "timestamp": "2026-10-08T15:08:05.906Z",
+        "id": "f7922965-ad98-4901-845b-ac7f9357dea2",
+        "timestamp": "2026-10-08T16:26:46.410Z",
         "sesion": 1,
         "tipo": "altaJugador",
         "accion": "Alta",
@@ -1841,8 +1841,8 @@
         }
       },
       {
-        "id": "16afec98-9cf9-43f6-819c-7ff85088b1e0",
-        "timestamp": "2026-10-08T15:08:06.051Z",
+        "id": "5f1d829e-bb4c-4205-bec5-825bd51181e0",
+        "timestamp": "2026-10-08T16:26:46.686Z",
         "sesion": 1,
         "tipo": "altaJugador",
         "accion": "Alta",
@@ -1858,8 +1858,8 @@
         }
       },
       {
-        "id": "09216fb8-5870-4bd0-8f7b-15cc138b72aa",
-        "timestamp": "2026-10-08T15:08:06.196Z",
+        "id": "b9f5032d-22ed-415d-9fea-ba60455e6aa6",
+        "timestamp": "2026-10-08T16:26:46.955Z",
         "sesion": 1,
         "tipo": "altaJugador",
         "accion": "Alta",
@@ -1875,8 +1875,8 @@
         }
       },
       {
-        "id": "6a84ab92-e6b4-4b38-b61a-c1c83f7ef443",
-        "timestamp": "2026-10-08T15:08:06.349Z",
+        "id": "15d647f4-56f9-449c-8f5f-95030b58edd6",
+        "timestamp": "2026-10-08T16:26:47.223Z",
         "sesion": 1,
         "tipo": "altaJugador",
         "accion": "Alta",
@@ -1892,8 +1892,8 @@
         }
       },
       {
-        "id": "ddeb0775-bf41-43d7-bec7-dea4f3e96680",
-        "timestamp": "2026-10-08T15:08:06.499Z",
+        "id": "b5e3d034-22d5-488d-952e-c3d52a528588",
+        "timestamp": "2026-10-08T16:26:47.481Z",
         "sesion": 1,
         "tipo": "altaJugador",
         "accion": "Alta",
@@ -1909,8 +1909,8 @@
         }
       },
       {
-        "id": "dbf1ff82-4bbd-4a8a-af0e-9386bf0df10f",
-        "timestamp": "2026-10-08T15:08:06.649Z",
+        "id": "ad8dc6d7-abe6-42a6-bef9-305704e8ebd1",
+        "timestamp": "2026-10-08T16:26:47.742Z",
         "sesion": 1,
         "tipo": "altaJugador",
         "accion": "Alta",
@@ -1926,8 +1926,8 @@
         }
       },
       {
-        "id": "f112bfb9-7f02-414a-bbcd-ce57a3675987",
-        "timestamp": "2026-10-08T15:08:06.802Z",
+        "id": "55c07994-1f42-4c47-a6de-2ec30232abc6",
+        "timestamp": "2026-10-08T16:26:47.988Z",
         "sesion": 1,
         "tipo": "altaJugador",
         "accion": "Alta",
@@ -1943,8 +1943,8 @@
         }
       },
       {
-        "id": "3feb3e4f-33d5-472c-b071-8468407931b3",
-        "timestamp": "2026-10-08T15:08:06.953Z",
+        "id": "f53b3390-d17b-4854-8ce9-253ad6fc5e50",
+        "timestamp": "2026-10-08T16:26:48.246Z",
         "sesion": 1,
         "tipo": "altaJugador",
         "accion": "Alta",
@@ -1960,8 +1960,8 @@
         }
       },
       {
-        "id": "e966f59d-b8d2-486c-a7ba-5519db9a7946",
-        "timestamp": "2026-10-08T15:08:07.096Z",
+        "id": "59f68f9f-d9f7-4a44-bd76-f3348328458f",
+        "timestamp": "2026-10-08T16:26:48.519Z",
         "sesion": 1,
         "tipo": "altaJugador",
         "accion": "Alta",
@@ -1977,8 +1977,8 @@
         }
       },
       {
-        "id": "3feab7b2-0179-4374-8421-354d58f60179",
-        "timestamp": "2026-10-08T15:08:07.239Z",
+        "id": "dfaee34a-524e-419a-b91e-071b19788589",
+        "timestamp": "2026-10-08T16:26:48.787Z",
         "sesion": 1,
         "tipo": "altaJugador",
         "accion": "Alta",
@@ -1994,8 +1994,8 @@
         }
       },
       {
-        "id": "da75f078-2929-4105-a2ad-0a0687e534db",
-        "timestamp": "2026-10-08T15:08:07.379Z",
+        "id": "7d998d44-87a7-4049-b5ae-91464a33457a",
+        "timestamp": "2026-10-08T16:26:49.060Z",
         "sesion": 1,
         "tipo": "altaJugador",
         "accion": "Alta",
@@ -2011,8 +2011,8 @@
         }
       },
       {
-        "id": "f5bb094d-7ccc-4074-bcbb-45bdcc8ec7f2",
-        "timestamp": "2026-10-08T15:08:07.518Z",
+        "id": "eaf4dc41-ab9b-45c6-8555-10a752b47801",
+        "timestamp": "2026-10-08T16:26:49.324Z",
         "sesion": 1,
         "tipo": "altaJugador",
         "accion": "Alta",
@@ -2028,8 +2028,8 @@
         }
       },
       {
-        "id": "36c250b4-c540-4c54-a9b9-18b20138c6b0",
-        "timestamp": "2026-10-08T15:08:07.661Z",
+        "id": "4005a4c9-cc48-40b2-b901-bc222a4044d0",
+        "timestamp": "2026-10-08T16:26:49.583Z",
         "sesion": 1,
         "tipo": "altaJugador",
         "accion": "Alta",
@@ -2045,8 +2045,8 @@
         }
       },
       {
-        "id": "1f32cf2c-2f37-4bb6-98cd-a0caf434a4ea",
-        "timestamp": "2026-10-08T15:08:07.803Z",
+        "id": "da648d86-6cd4-4db5-afdb-659f0557b0bc",
+        "timestamp": "2026-10-08T16:26:49.832Z",
         "sesion": 1,
         "tipo": "altaJugador",
         "accion": "Alta",
@@ -2062,8 +2062,8 @@
         }
       },
       {
-        "id": "05ddbd21-1694-49e0-9ca5-a054afca9c90",
-        "timestamp": "2026-10-08T15:08:07.949Z",
+        "id": "e24c0046-62a8-4390-9180-7a46455cd66b",
+        "timestamp": "2026-10-08T16:26:50.109Z",
         "sesion": 1,
         "tipo": "altaJugador",
         "accion": "Alta",
@@ -2079,8 +2079,8 @@
         }
       },
       {
-        "id": "cf363a50-cf15-4b1b-9de8-3b34afb694f1",
-        "timestamp": "2026-10-08T15:08:08.091Z",
+        "id": "e738f82e-f96e-4452-acfe-2d6eeee43a7e",
+        "timestamp": "2026-10-08T16:26:50.378Z",
         "sesion": 1,
         "tipo": "altaJugador",
         "accion": "Alta",
@@ -2096,8 +2096,8 @@
         }
       },
       {
-        "id": "d5344217-7e7e-40a5-9d0d-17f375243c7d",
-        "timestamp": "2026-10-08T15:08:08.233Z",
+        "id": "3e380f3a-d1fa-45ed-af2d-37786241760f",
+        "timestamp": "2026-10-08T16:26:50.658Z",
         "sesion": 1,
         "tipo": "altaJugador",
         "accion": "Alta",
@@ -2113,8 +2113,8 @@
         }
       },
       {
-        "id": "5eccfc8b-7900-4753-9550-69540ec0f3b1",
-        "timestamp": "2026-10-08T15:08:08.374Z",
+        "id": "9525af38-0214-451d-9935-64d2c747bd40",
+        "timestamp": "2026-10-08T16:26:50.917Z",
         "sesion": 1,
         "tipo": "altaJugador",
         "accion": "Alta",
@@ -2130,8 +2130,8 @@
         }
       },
       {
-        "id": "f16ee7d8-bf77-4cb6-bd4c-0fa3dbf8a2d4",
-        "timestamp": "2026-10-08T15:08:08.516Z",
+        "id": "5d97f1fb-d913-4212-ad73-2b866c722aee",
+        "timestamp": "2026-10-08T16:26:51.182Z",
         "sesion": 1,
         "tipo": "altaJugador",
         "accion": "Alta",
@@ -2147,8 +2147,8 @@
         }
       },
       {
-        "id": "c0655088-fedd-4d38-81cb-94a960d3a598",
-        "timestamp": "2026-10-08T15:08:08.669Z",
+        "id": "76dcece7-b053-4f71-a076-2de3e0e5f551",
+        "timestamp": "2026-10-08T16:26:51.440Z",
         "sesion": 1,
         "tipo": "altaJugador",
         "accion": "Alta",
@@ -2164,8 +2164,8 @@
         }
       },
       {
-        "id": "7aa6b3d1-e4dc-44ce-b078-f940359e8b57",
-        "timestamp": "2026-10-08T15:08:08.811Z",
+        "id": "32d975a1-c740-4ce6-975a-a0cefcd82bf0",
+        "timestamp": "2026-10-08T16:26:51.697Z",
         "sesion": 1,
         "tipo": "altaJugador",
         "accion": "Alta",
@@ -2181,8 +2181,8 @@
         }
       },
       {
-        "id": "e6233eab-b70a-416d-ae28-776ef535b0e8",
-        "timestamp": "2026-10-08T15:08:08.953Z",
+        "id": "f9d322b9-8ebf-4a5b-b0dd-25f67001fa82",
+        "timestamp": "2026-10-08T16:26:51.953Z",
         "sesion": 1,
         "tipo": "altaJugador",
         "accion": "Alta",
@@ -2198,8 +2198,8 @@
         }
       },
       {
-        "id": "99e01de9-a38d-4d20-a2b1-fff94d61fdb3",
-        "timestamp": "2026-10-08T15:08:09.104Z",
+        "id": "06ec11e8-901e-4091-933a-cef231cbbd31",
+        "timestamp": "2026-10-08T16:26:52.200Z",
         "sesion": 1,
         "tipo": "altaJugador",
         "accion": "Alta",
@@ -2215,8 +2215,8 @@
         }
       },
       {
-        "id": "a1a80673-f01d-44eb-9ac2-f70462d4654f",
-        "timestamp": "2026-10-08T15:08:09.253Z",
+        "id": "7353b131-81fe-4a70-9ea0-f05b0a9d8d22",
+        "timestamp": "2026-10-08T16:26:52.457Z",
         "sesion": 1,
         "tipo": "altaJugador",
         "accion": "Alta",
@@ -2232,8 +2232,8 @@
         }
       },
       {
-        "id": "cf230104-fa51-4274-9350-1e6805a7b046",
-        "timestamp": "2026-10-08T15:08:09.395Z",
+        "id": "a14a8e03-9d78-48dc-8e0a-153b14a0dff9",
+        "timestamp": "2026-10-08T16:26:52.711Z",
         "sesion": 1,
         "tipo": "altaJugador",
         "accion": "Alta",
@@ -2249,8 +2249,8 @@
         }
       },
       {
-        "id": "52b004a4-662f-485c-8a05-0833a93ca8fd",
-        "timestamp": "2026-10-08T15:08:09.540Z",
+        "id": "a25dc708-5c8e-46ef-a440-cc1f069c5c62",
+        "timestamp": "2026-10-08T16:26:52.966Z",
         "sesion": 1,
         "tipo": "altaJugador",
         "accion": "Alta",
@@ -2266,8 +2266,8 @@
         }
       },
       {
-        "id": "25f5edea-c929-4ed2-b84a-b08578c10e52",
-        "timestamp": "2026-10-08T15:08:09.679Z",
+        "id": "92032e4b-ce19-4753-b058-64b81a856d4d",
+        "timestamp": "2026-10-08T16:26:53.222Z",
         "sesion": 1,
         "tipo": "altaJugador",
         "accion": "Alta",
@@ -2283,8 +2283,8 @@
         }
       },
       {
-        "id": "27315a12-2085-4166-8878-89e0c5418635",
-        "timestamp": "2026-10-08T15:08:09.819Z",
+        "id": "d117e8b6-0574-4d28-9529-d1a1b286190a",
+        "timestamp": "2026-10-08T16:26:53.482Z",
         "sesion": 1,
         "tipo": "altaJugador",
         "accion": "Alta",
@@ -2300,8 +2300,8 @@
         }
       },
       {
-        "id": "0b344c2c-0fb5-4d00-a225-285a4915a202",
-        "timestamp": "2026-10-08T15:08:09.961Z",
+        "id": "3ba82fc1-99cb-4f62-ace7-07cbddcfb659",
+        "timestamp": "2026-10-08T16:26:53.744Z",
         "sesion": 1,
         "tipo": "altaJugador",
         "accion": "Alta",
@@ -2317,8 +2317,8 @@
         }
       },
       {
-        "id": "768de00c-50cb-449a-be7d-f7cff795102b",
-        "timestamp": "2026-10-08T15:08:10.101Z",
+        "id": "b8c50d0f-e811-4b54-8db5-bcd0613c8bc7",
+        "timestamp": "2026-10-08T16:26:53.998Z",
         "sesion": 1,
         "tipo": "altaJugador",
         "accion": "Alta",
@@ -2334,8 +2334,8 @@
         }
       },
       {
-        "id": "e5d23d7c-b458-4747-b962-2ebfe2cb9f2f",
-        "timestamp": "2026-10-08T15:08:10.244Z",
+        "id": "a60aa02a-d2cd-4029-ac98-f58bf28b2f4f",
+        "timestamp": "2026-10-08T16:26:54.245Z",
         "sesion": 1,
         "tipo": "altaJugador",
         "accion": "Alta",
@@ -2351,8 +2351,8 @@
         }
       },
       {
-        "id": "2578042d-fd94-4e41-a515-55851ef9439f",
-        "timestamp": "2026-10-08T15:08:10.386Z",
+        "id": "5527b252-1efd-44a7-b112-7031f9a3a947",
+        "timestamp": "2026-10-08T16:26:54.504Z",
         "sesion": 1,
         "tipo": "altaJugador",
         "accion": "Alta",
@@ -2368,8 +2368,8 @@
         }
       },
       {
-        "id": "d1346cf2-1d72-49c2-8b0c-50ba0647b9d8",
-        "timestamp": "2026-10-08T15:08:10.527Z",
+        "id": "fd40829e-a406-4047-8065-d8df2d7fb1bd",
+        "timestamp": "2026-10-08T16:26:54.752Z",
         "sesion": 1,
         "tipo": "altaJugador",
         "accion": "Alta",
@@ -2385,8 +2385,8 @@
         }
       },
       {
-        "id": "f29b0648-c8a2-4b0d-87bb-14bd5e03c0cc",
-        "timestamp": "2026-10-08T15:08:10.668Z",
+        "id": "9aeb5d13-0efb-490c-acc8-ae3d742dc643",
+        "timestamp": "2026-10-08T16:26:55.010Z",
         "sesion": 1,
         "tipo": "altaJugador",
         "accion": "Alta",
@@ -2402,8 +2402,8 @@
         }
       },
       {
-        "id": "37d3c08c-bc21-480f-847e-21d7f9e8e59c",
-        "timestamp": "2026-10-08T15:08:10.824Z",
+        "id": "5b481605-0625-4327-b0d2-83fcf7f81518",
+        "timestamp": "2026-10-08T16:26:55.264Z",
         "sesion": 1,
         "tipo": "altaJugador",
         "accion": "Alta",
@@ -2419,8 +2419,8 @@
         }
       },
       {
-        "id": "4c26bf4d-3ec3-4ad9-9ea5-1df0ed61549e",
-        "timestamp": "2026-10-08T15:08:10.988Z",
+        "id": "75f43499-43f5-46b8-a12f-fa9ca81e6fa2",
+        "timestamp": "2026-10-08T16:26:55.523Z",
         "sesion": 1,
         "tipo": "altaJugador",
         "accion": "Alta",
@@ -2436,8 +2436,8 @@
         }
       },
       {
-        "id": "0698d395-d562-4191-9a4b-c7336e14bf9a",
-        "timestamp": "2026-10-08T15:08:11.161Z",
+        "id": "b5e866cf-37cc-463c-be18-4473076a11c5",
+        "timestamp": "2026-10-08T16:26:55.782Z",
         "sesion": 1,
         "tipo": "altaJugador",
         "accion": "Alta",
@@ -2453,8 +2453,8 @@
         }
       },
       {
-        "id": "e80e4269-c248-4791-8338-3234be540718",
-        "timestamp": "2026-10-08T15:08:11.339Z",
+        "id": "9e63a715-80eb-444a-9dcd-c80c72b159d0",
+        "timestamp": "2026-10-08T16:26:56.035Z",
         "sesion": 1,
         "tipo": "altaJugador",
         "accion": "Alta",
@@ -2470,8 +2470,8 @@
         }
       },
       {
-        "id": "0064984d-880a-472e-91fb-5cf62c3e1c2d",
-        "timestamp": "2026-10-08T15:08:11.544Z",
+        "id": "a697207d-3f3b-4d15-9576-7c1c6af1f305",
+        "timestamp": "2026-10-08T16:26:56.289Z",
         "sesion": 1,
         "tipo": "altaJugador",
         "accion": "Alta",
@@ -2487,8 +2487,8 @@
         }
       },
       {
-        "id": "8e54c812-50ee-4267-9562-79ace76e14af",
-        "timestamp": "2026-10-08T15:08:11.759Z",
+        "id": "8d9832e8-d583-4b3b-89eb-f6d64b6cd66c",
+        "timestamp": "2026-10-08T16:26:56.550Z",
         "sesion": 1,
         "tipo": "altaJugador",
         "accion": "Alta",
@@ -2504,8 +2504,8 @@
         }
       },
       {
-        "id": "e7e46fde-fdb8-4ba3-8576-3c41a5a68e87",
-        "timestamp": "2026-10-08T15:08:11.965Z",
+        "id": "c3917400-4dcd-4c0e-869c-6b09df276eaf",
+        "timestamp": "2026-10-08T16:26:56.805Z",
         "sesion": 1,
         "tipo": "altaJugador",
         "accion": "Alta",
@@ -2521,8 +2521,8 @@
         }
       },
       {
-        "id": "b0a172ca-63a9-4164-a7cb-6a11ec0d2095",
-        "timestamp": "2026-10-08T15:08:12.169Z",
+        "id": "b88ba6ff-ba30-474e-aaf3-b96ee7b468e5",
+        "timestamp": "2026-10-08T16:26:57.061Z",
         "sesion": 1,
         "tipo": "altaJugador",
         "accion": "Alta",
@@ -2538,8 +2538,8 @@
         }
       },
       {
-        "id": "38287cea-8235-4857-a79e-f2b80c91bd9f",
-        "timestamp": "2026-10-08T15:08:12.380Z",
+        "id": "75f0b896-6a7e-4324-96db-f5f6d9b9b500",
+        "timestamp": "2026-10-08T16:26:57.315Z",
         "sesion": 1,
         "tipo": "altaJugador",
         "accion": "Alta",
@@ -2555,8 +2555,8 @@
         }
       },
       {
-        "id": "9149ddf6-b0e2-4b30-a756-943874594129",
-        "timestamp": "2026-10-08T15:08:12.591Z",
+        "id": "83bace2f-a32d-40f1-a033-dc3ee497f52b",
+        "timestamp": "2026-10-08T16:26:57.564Z",
         "sesion": 1,
         "tipo": "altaJugador",
         "accion": "Alta",
@@ -2572,8 +2572,8 @@
         }
       },
       {
-        "id": "f7bb9f97-c064-40f4-94c3-a2c93a2c4604",
-        "timestamp": "2026-10-08T15:08:12.808Z",
+        "id": "aba968d3-7c87-4fdf-bb6c-43075ac51ee4",
+        "timestamp": "2026-10-08T16:26:57.821Z",
         "sesion": 1,
         "tipo": "altaJugador",
         "accion": "Alta",
@@ -2589,8 +2589,8 @@
         }
       },
       {
-        "id": "aec9e574-c59f-4fe6-ad77-a2680b7ce3ab",
-        "timestamp": "2026-10-08T15:08:13.058Z",
+        "id": "8490674b-cc7c-4db0-97b5-43b7475b832e",
+        "timestamp": "2026-10-08T16:26:58.079Z",
         "sesion": 1,
         "tipo": "altaJugador",
         "accion": "Alta",
@@ -2606,8 +2606,8 @@
         }
       },
       {
-        "id": "5c60594a-2453-48d8-861d-8c4f0f0cba40",
-        "timestamp": "2026-10-08T15:08:13.272Z",
+        "id": "8a116489-eba4-4a38-8c6e-18b4231159d9",
+        "timestamp": "2026-10-08T16:26:58.342Z",
         "sesion": 1,
         "tipo": "altaJugador",
         "accion": "Alta",
@@ -2623,8 +2623,8 @@
         }
       },
       {
-        "id": "4f8d922e-f548-47ff-9eae-f3e214d3e481",
-        "timestamp": "2026-10-08T15:08:13.484Z",
+        "id": "696470a4-9df9-4938-b863-a311a65bc73f",
+        "timestamp": "2026-10-08T16:26:58.602Z",
         "sesion": 1,
         "tipo": "altaJugador",
         "accion": "Alta",
@@ -2640,8 +2640,8 @@
         }
       },
       {
-        "id": "b0313c77-3570-4296-a2ff-5d50cf104319",
-        "timestamp": "2026-10-08T15:08:13.727Z",
+        "id": "7065a27f-4965-4b5b-9195-a2aa39647fd3",
+        "timestamp": "2026-10-08T16:26:58.864Z",
         "sesion": 1,
         "tipo": "altaJugador",
         "accion": "Alta",
@@ -2657,8 +2657,8 @@
         }
       },
       {
-        "id": "088733be-cabc-4f00-b0f5-ef52103ef363",
-        "timestamp": "2026-10-08T15:08:13.940Z",
+        "id": "f2916f01-3e4d-4562-8313-0461fb1b650b",
+        "timestamp": "2026-10-08T16:26:59.122Z",
         "sesion": 1,
         "tipo": "altaJugador",
         "accion": "Alta",
@@ -2674,8 +2674,8 @@
         }
       },
       {
-        "id": "7da52c2f-2b49-4aef-bd27-d4016844fe6b",
-        "timestamp": "2026-10-08T15:08:14.153Z",
+        "id": "e7b1eca5-4083-4d94-b3b9-289f815bd018",
+        "timestamp": "2026-10-08T16:26:59.384Z",
         "sesion": 1,
         "tipo": "altaJugador",
         "accion": "Alta",
@@ -2691,8 +2691,8 @@
         }
       },
       {
-        "id": "0808e609-6dfb-4ce6-941b-b6ad584e54a5",
-        "timestamp": "2026-10-08T15:08:14.361Z",
+        "id": "a949ebf7-4540-410b-9df4-99ce357b5fed",
+        "timestamp": "2026-10-08T16:26:59.643Z",
         "sesion": 1,
         "tipo": "altaJugador",
         "accion": "Alta",
@@ -2708,8 +2708,8 @@
         }
       },
       {
-        "id": "90be0a0b-f80b-407c-83a2-4d91f7397399",
-        "timestamp": "2026-10-08T15:08:14.584Z",
+        "id": "f348bc23-3fbc-4a34-82fd-1f3e26736b31",
+        "timestamp": "2026-10-08T16:26:59.905Z",
         "sesion": 1,
         "tipo": "altaJugador",
         "accion": "Alta",
@@ -2725,8 +2725,8 @@
         }
       },
       {
-        "id": "6b801fd8-45cd-4bbf-9861-a18935db4a23",
-        "timestamp": "2026-10-08T15:08:14.785Z",
+        "id": "ba99dbfe-69e4-481b-a1e5-e2c1459ea5ea",
+        "timestamp": "2026-10-08T16:27:00.216Z",
         "sesion": 1,
         "tipo": "altaJugador",
         "accion": "Alta",
@@ -2742,8 +2742,8 @@
         }
       },
       {
-        "id": "8d8ea045-b4bf-4513-8e76-707359972b0c",
-        "timestamp": "2026-10-08T15:08:14.991Z",
+        "id": "0bddfebb-5fe5-426e-877e-f8ee34d635ed",
+        "timestamp": "2026-10-08T16:27:00.484Z",
         "sesion": 1,
         "tipo": "altaJugador",
         "accion": "Alta",
@@ -2759,8 +2759,8 @@
         }
       },
       {
-        "id": "2142b8b2-7101-4db4-82e6-d5dd1ab40e62",
-        "timestamp": "2026-10-08T15:08:15.198Z",
+        "id": "8ab5f96f-795b-477f-9882-388d5361c5c0",
+        "timestamp": "2026-10-08T16:27:00.799Z",
         "sesion": 1,
         "tipo": "altaJugador",
         "accion": "Alta",
@@ -2776,8 +2776,8 @@
         }
       },
       {
-        "id": "50f746de-6c2f-45d2-96ee-186562ebf8e3",
-        "timestamp": "2026-10-08T15:08:15.405Z",
+        "id": "79362eb3-ae99-4849-b29b-c3c89abc6e6e",
+        "timestamp": "2026-10-08T16:27:01.072Z",
         "sesion": 1,
         "tipo": "altaJugador",
         "accion": "Alta",
@@ -2793,8 +2793,8 @@
         }
       },
       {
-        "id": "3be650ba-81c4-430e-bc91-c426556bcbb1",
-        "timestamp": "2026-10-08T15:08:15.627Z",
+        "id": "6154a8d6-ca4e-482e-9bd9-139591a5d3bb",
+        "timestamp": "2026-10-08T16:27:01.304Z",
         "sesion": 1,
         "tipo": "altaJugador",
         "accion": "Alta",
@@ -2810,8 +2810,8 @@
         }
       },
       {
-        "id": "1227e38c-e03d-41c9-aad9-62aebfb1f352",
-        "timestamp": "2026-10-08T15:08:15.839Z",
+        "id": "37d2b6cd-830c-467d-ae08-7591ff420c39",
+        "timestamp": "2026-10-08T16:27:01.514Z",
         "sesion": 1,
         "tipo": "altaJugador",
         "accion": "Alta",
@@ -2827,8 +2827,8 @@
         }
       },
       {
-        "id": "f11111f0-2465-442a-94ac-6fbfcf8b13b7",
-        "timestamp": "2026-10-08T15:08:16.036Z",
+        "id": "66cba5d1-799d-410c-899b-499dde8823ff",
+        "timestamp": "2026-10-08T16:27:01.719Z",
         "sesion": 1,
         "tipo": "altaJugador",
         "accion": "Alta",
@@ -2844,8 +2844,8 @@
         }
       },
       {
-        "id": "d70d04aa-ac5c-4e9f-99e4-6986187656f9",
-        "timestamp": "2026-10-08T15:08:16.221Z",
+        "id": "4080b007-203c-46be-9e5a-9a8466bf5252",
+        "timestamp": "2026-10-08T16:27:01.926Z",
         "sesion": 1,
         "tipo": "altaJugador",
         "accion": "Alta",
@@ -2861,8 +2861,8 @@
         }
       },
       {
-        "id": "fcb464c4-23ac-4c7d-acb1-8ef6059640bf",
-        "timestamp": "2026-10-08T15:08:16.397Z",
+        "id": "43c14cf9-b1ee-4601-bb2b-604877a47863",
+        "timestamp": "2026-10-08T16:27:02.145Z",
         "sesion": 1,
         "tipo": "altaJugador",
         "accion": "Alta",
@@ -2878,8 +2878,8 @@
         }
       },
       {
-        "id": "e64091b3-afff-417b-878e-87e9475c0465",
-        "timestamp": "2026-10-08T15:08:16.568Z",
+        "id": "cbc43ed6-a600-4910-a631-7693821b6eca",
+        "timestamp": "2026-10-08T16:27:02.401Z",
         "sesion": 1,
         "tipo": "altaJugador",
         "accion": "Alta",
@@ -2895,8 +2895,8 @@
         }
       },
       {
-        "id": "130cb5e7-c82d-499b-a0c1-0b67cb7df8b9",
-        "timestamp": "2026-10-08T15:08:16.729Z",
+        "id": "cdf02c4d-e712-4505-b65e-f0c90d9d344a",
+        "timestamp": "2026-10-08T16:27:02.658Z",
         "sesion": 1,
         "tipo": "altaJugador",
         "accion": "Alta",
@@ -2912,8 +2912,8 @@
         }
       },
       {
-        "id": "dda246ab-de76-4184-9016-67c6775f54e9",
-        "timestamp": "2026-10-08T15:08:16.887Z",
+        "id": "eb38f2ab-beea-4970-bc38-c3a603ed018f",
+        "timestamp": "2026-10-08T16:27:02.909Z",
         "sesion": 1,
         "tipo": "altaJugador",
         "accion": "Alta",
@@ -2929,8 +2929,8 @@
         }
       },
       {
-        "id": "7abdc7e5-870a-4179-913c-f87858d02614",
-        "timestamp": "2026-10-08T15:08:17.037Z",
+        "id": "25774d21-688b-4149-8988-35a2c0073c0f",
+        "timestamp": "2026-10-08T16:27:03.109Z",
         "sesion": 1,
         "tipo": "altaJugador",
         "accion": "Alta",
@@ -2946,8 +2946,8 @@
         }
       },
       {
-        "id": "795cbbb8-5a50-4d9e-84f5-85cc1d539dc6",
-        "timestamp": "2026-10-08T15:08:17.181Z",
+        "id": "583b6ab9-d226-45ed-aece-ce6f418455f8",
+        "timestamp": "2026-10-08T16:27:03.314Z",
         "sesion": 1,
         "tipo": "altaJugador",
         "accion": "Alta",
@@ -2963,8 +2963,8 @@
         }
       },
       {
-        "id": "d815ad6c-2b45-4ab8-a491-7ba8f43bbaa1",
-        "timestamp": "2026-10-08T15:08:17.323Z",
+        "id": "278d3918-e516-4bd5-8198-848af6936811",
+        "timestamp": "2026-10-08T16:27:03.527Z",
         "sesion": 1,
         "tipo": "altaJugador",
         "accion": "Alta",
@@ -2980,8 +2980,8 @@
         }
       },
       {
-        "id": "4d202988-c5ca-425b-8a8c-335a8ba8d90e",
-        "timestamp": "2026-10-08T15:08:17.462Z",
+        "id": "9ff58edc-0843-4bd2-b491-7a5be550df7e",
+        "timestamp": "2026-10-08T16:27:03.750Z",
         "sesion": 1,
         "tipo": "altaJugador",
         "accion": "Alta",
@@ -2997,8 +2997,8 @@
         }
       },
       {
-        "id": "5cf1c80e-bc49-47ee-8e83-4e380a32cdcb",
-        "timestamp": "2026-10-08T15:08:17.599Z",
+        "id": "3c9d4df0-8fce-47ab-a937-8305a9a10bcf",
+        "timestamp": "2026-10-08T16:27:04.011Z",
         "sesion": 1,
         "tipo": "altaJugador",
         "accion": "Alta",
@@ -3014,8 +3014,8 @@
         }
       },
       {
-        "id": "627548bd-0360-47f4-bf5a-2984435cdafd",
-        "timestamp": "2026-10-08T15:08:17.740Z",
+        "id": "acf594a2-60aa-4f9b-8de7-232fbbd8f053",
+        "timestamp": "2026-10-08T16:27:04.264Z",
         "sesion": 1,
         "tipo": "altaJugador",
         "accion": "Alta",
@@ -3031,8 +3031,8 @@
         }
       },
       {
-        "id": "09d11469-d092-4ed0-9d7b-5004dc59c0c4",
-        "timestamp": "2026-10-08T15:08:17.876Z",
+        "id": "43918408-a8f9-4905-ada5-d56a844c0c5a",
+        "timestamp": "2026-10-08T16:27:04.518Z",
         "sesion": 1,
         "tipo": "altaJugador",
         "accion": "Alta",
@@ -3148,7 +3148,7 @@
       "1846304": "Zaira Valentina Ariza Sierra",
       "2104350": "Susana Santana Munoz"
     },
-    "sesionActualIniciadaAt": "2026-10-08T15:07:52.149Z",
+    "sesionActualIniciadaAt": "2026-10-08T16:26:29.843Z",
     "sesionActualTiempos": {},
     "sesionActualRecursosIniciales": {},
     "fase": "pausa",
@@ -3163,8 +3163,8 @@
         "historiales": true
       }
     },
-    "createdAt": "2026-10-08T15:07:52.150Z",
-    "updatedAt": "2026-10-08T15:08:20.307Z",
+    "createdAt": "2026-10-08T16:26:29.843Z",
+    "updatedAt": "2026-10-08T16:27:26.367Z",
     "entregasAbiertas": false,
     "produccionAbierta": false
   }
