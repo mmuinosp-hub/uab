@@ -40,15 +40,15 @@ details{border:1px solid var(--border);border-radius:12px;margin:10px 0;backgrou
   <div class="actions"><button id="refreshBtn">↻ Refresh</button><button class="secondary" onclick="location.href='/'">Home</button></div>
 
   <div class="summary">
-    <div class="metric"><span>Experiments</span><strong id="totalExperiments">0</strong></div>
-    <div class="metric"><span>Completed</span><strong id="totalCompleted">0</strong></div>
-    <div class="metric"><span>Participants</span><strong id="totalParticipants">0</strong></div>
-    <div class="metric"><span>Sessions completed</span><strong id="totalSessions">0</strong></div>
+    <div class="metric"><span>Experiments</span><strong id="totalExperimentos">0</strong></div>
+    <div class="metric"><span>Completed</span><strong id="totalTerminados">0</strong></div>
+    <div class="metric"><span>Participants</span><strong id="totalParticipantes">0</strong></div>
+    <div class="metric"><span>Sessions completed</span><strong id="totalSesiones">0</strong></div>
   </div>
 
   <div id="listaCard" class="card">
     <div class="section-title"><h2>Experiments</h2><span class="mini">Select one to view its data.</span></div>
-    <table><thead><tr><th>Room / experiment</th><th>Status</th><th>Participants</th><th>Sessions</th><th>Fromliveries</th><th>Last update</th></tr></thead>
+    <table><thead><tr><th>Room / experiment</th><th>Status</th><th>Participants</th><th>Sessions</th><th>Deliveries</th><th>Last update</th></tr></thead>
     <tbody id="experimentosBody"></tbody></table>
     <div id="empty" class="empty hidden">No experiments.</div>
   </div>
@@ -69,16 +69,16 @@ function fecha(v){if(!v)return"—";const d=new Date(v);return Number.isNaN(d.ge
 function nv(n,d){return d?.nombresVisibles?.[n]||n}
 function render(lista){
  lista=Array.isArray(lista)?lista:[];
- $("totalExperiments").textContent=lista.length;
- $("totalCompleted").textContent=lista.filter(x=>x.terminado).length;
- $("totalParticipants").textContent=lista.reduce((n,x)=>n+(+x.participantes||0),0);
- $("totalSessions").textContent=lista.reduce((n,x)=>n+(+x.sesionesRealizadas||0),0);
+ $("totalExperimentos").textContent=lista.length;
+ $("totalTerminados").textContent=lista.filter(x=>x.terminado).length;
+ $("totalParticipantes").textContent=lista.reduce((n,x)=>n+(+x.participantes||0),0);
+ $("totalSesiones").textContent=lista.reduce((n,x)=>n+(+x.sesionesRealizadas||0),0);
  const body=$("experimentosBody");body.innerHTML="";$("empty").classList.toggle("hidden",lista.length>0);
  lista.forEach(x=>{
   const tr=document.createElement("tr");
   tr.innerHTML=`<td><button onclick="ver('${esc(x.sala).replace(/'/g,"\\'")}')">${esc(x.sala)}</button></td>
   <td><span class="badge ${x.terminado?"ok":"warn"}">${x.terminado?"Terminado":"En curso"}</span></td>
-  <td>${+x.participantes||0}</td><td>${+x.sesionesRealizadas||0}</td><td>${+x.totalFromliveries||0}</td><td>${fecha(x.actualizadaAt)}</td>`;
+  <td>${+x.participantes||0}</td><td>${+x.sesionesRealizadas||0}</td><td>${+x.totalEntregas||0}</td><td>${fecha(x.actualizadaAt)}</td>`;
   body.appendChild(tr);
  });
 }
@@ -98,24 +98,23 @@ socket.on("experimentoSuperadmin",d=>{
  let html=`<div class="hero"><h2>${esc(d.sala)}</h2><p>${+d.participantes||0} participantes · ${+d.sesionesRealizadas||0} sesiones realizadas</p></div>`;
  html+=`<details open><summary>📚 Session history (${sesiones.length})</summary><div class="detail">`;
  html+=sesiones.length?sesiones.slice().reverse().map((x,i)=>{
-  const n=x.numeroSesion??x.sesion??i+1,r=x.recursosIniciales||{};
-  const rr=Object.entries(r).map(([k,v])=>`<tr><td>${esc(k)}</td><td>${esc(v.nombreVisible||nv(k,d))}</td><td>${v.trigo??0}</td><td>${v.hierro??0}</td></tr>`).join("");
+  const n=x.numeroSesion??x.sesion??i+1;
   const ee=(x.entregas||[]).map(v=>`<tr><td>${esc(v.deNombreVisible||nv(v.de,d))}</td><td>${esc(v.paraNombreVisible||nv(v.para,d))}</td><td>${v.trigo??0}</td><td>${v.hierro??0}</td><td>${fecha(v.timestamp)}</td></tr>`).join("");
-  const pp=Object.entries(x.produccion||{}).map(([k,v])=>`<tr><td>${esc(v.nombreVisible||nv(k,d))}</td><td>${v.trigoHomeSesion??0}</td><td>${v.hierroHomeSesion??0}</td><td>${v.trigoFromspuesFromliveries??v.trigoInicial??0}</td><td>${v.hierroFromspuesFromliveries??v.hierroInicial??0}</td><td>${esc(v.proceso??"—")}</td><td>${v.trigoProducido??0}</td><td>${v.hierroProducido??0}</td><td>${v.trigoFinal??0}</td><td>${v.hierroFinal??0}</td></tr>`).join("");
-  return `<details><summary>Session ${esc(n)} · ${fecha(x.iniciadaAt)} → ${fecha(x.finalizadaAt)}</summary><div class="detail"><p class="mini">Fromliveries opened: ${fecha(x.entregasAbiertasAt)} · Fromliveries closed: ${fecha(x.entregasCerradasAt)} · Production opened: ${fecha(x.produccionAbiertaAt)} · Production closed: ${fecha(x.produccionCerradaAt)}</p><h4>📦 Resources at start</h4>${rr?`<table><tr><th>Username</th><th>Player</th><th>Wheat</th><th>Iron</th></tr>${rr}</table>`:"<p class='mini'>Sin datos.</p>"}<h4>📜 Fromliveries</h4>${ee?`<table><tr><th>From</th><th>To</th><th>Wheat</th><th>Iron</th><th>Time</th></tr>${ee}</table>`:"<p class='mini'>Sin entregas.</p>"}<h4>⚙️ Production</h4>${pp?`<table><tr><th>Player</th><th>Wheat at start</th><th>Iron at start</th><th>Wheat after deliveries</th><th>Iron after deliveries</th><th>Process</th><th>Wheat produced</th><th>Iron produced</th><th>Final wheat</th><th>Final iron</th></tr>${pp}</table>`:"<p class='mini'>Sin producción.</p>"}</div></details>`;
+  const pp=Object.entries(x.produccion||{}).map(([k,v])=>`<tr><td>${esc(v.nombreVisible||nv(k,d))}</td><td>${v.trigoInicioSesion??0}</td><td>${v.hierroInicioSesion??0}</td><td>${v.trigoDespuesEntregas??v.trigoInicial??0}</td><td>${v.hierroDespuesEntregas??v.hierroInicial??0}</td><td>${esc(v.proceso??"—")}</td><td>${fecha(v.produccionAt)}</td><td>${v.trigoProducido??0}</td><td>${v.hierroProducido??0}</td><td>${v.trigoFinal??0}</td><td>${v.hierroFinal??0}</td></tr>`).join("");
+  return `<details><summary>Session ${esc(n)} · ${fecha(x.iniciadaAt)} → ${fecha(x.finalizadaAt)}</summary><div class="detail"><p class="mini">Deliveries opened: ${fecha(x.entregasAbiertasAt)} · Deliveries closed: ${fecha(x.entregasCerradasAt)} · Production opened: ${fecha(x.produccionAbiertaAt)} · Production closed: ${fecha(x.produccionCerradaAt)}</p><h4>📜 Deliveries</h4>${ee?`<table><tr><th>From</th><th>To</th><th>Wheat</th><th>Iron</th><th>Time</th></tr>${ee}</table>`:"<p class='mini'>No deliveries.</p>"}<h4>⚙️ Production</h4>${pp?`<table><tr><th>Player</th><th>Wheat at start</th><th>Iron at start</th><th>Wheat after deliveries</th><th>Iron after deliveries</th><th>Process</th><th>Production time</th><th>Wheat produced</th><th>Iron produced</th><th>Final wheat</th><th>Final iron</th></tr>${pp}</table>`:"<p class='mini'>No production.</p>"}${(x.auditoria||[]).filter(a=>['altaJugador','eliminacionJugador','configuracion','fase'].includes(a.tipo)).length?`<h4>🧾 Administrator audit</h4><table><tr><th>Time</th><th>Action</th><th>User</th><th>Detail</th></tr>${(x.auditoria||[]).filter(a=>['altaJugador','eliminacionJugador','configuracion','fase'].includes(a.tipo)).map(a=>`<tr><td>${fecha(a.timestamp)}</td><td>${esc(a.accion||a.tipo)}</td><td>${esc(a.usuario||a.usuarioAnterior||'—')}</td><td>${esc(a.deFase ? `${a.deFase} → ${a.aFase}` : JSON.stringify(a.cambios||a.posterior||'').slice(0,500))}</td></tr>`).join('')}</table>`:'<p class="mini">No administrator actions recorded.</p>'}</div></details>`;
  }).join(""):"<p class='mini'>No sessions recorded.</p>";
  html+=`</div></details>`;
- const ed=ediciones.map(x=>{const a=x.anterior||{},b=x.posterior||{};return `<tr><td>${fecha(x.timestamp)}</td><td>${esc(x.sesion??"—")}</td><td>${esc(x.accion||"Edición")}</td><td>${esc(a.usuario??x.usuarioAnterior??"—")}</td><td>${esc(b.usuario??x.usuario??"—")}</td><td>${esc((a.trigo??"—")+" → "+(b.trigo??"—"))}</td><td>${esc((a.hierro??"—")+" → "+(b.hierro??"—"))}</td><td>${esc((a.proceso??"—")+" → "+(b.proceso??"—"))}</td></tr>`}).join("");
- html+=`<details><summary>✏️ Administrator edits (${ediciones.length})</summary><div class="detail">${ed?`<table><tr><th>Time</th><th>Sesión</th><th>Action</th><th>Previous username</th><th>New username</th><th>Wheat</th><th>Iron</th><th>Process</th></tr>${ed}</table>`:"<p class='mini'>No edits recorded.</p>"}</div></details>`;
+ const ed=ediciones.map(x=>{const a=x.anterior||{},b=x.posterior||{};return `<tr><td>${fecha(x.timestamp)}</td><td>${esc(x.sesion??"—")}</td><td>${esc(x.accion||"Edit")}</td><td>${esc(a.usuario??x.usuarioAnterior??"—")}</td><td>${esc(b.usuario??x.usuario??"—")}</td><td>${esc((a.trigo??"—")+" → "+(b.trigo??"—"))}</td><td>${esc((a.hierro??"—")+" → "+(b.hierro??"—"))}</td><td>${esc((a.proceso??"—")+" → "+(b.proceso??"—"))}</td></tr>`}).join("");
+ html+=`<details><summary>✏️ Administrator edits (${ediciones.length})</summary><div class="detail">${ed?`<table><tr><th>Time</th><th>Session</th><th>Action</th><th>Previous username</th><th>New username</th><th>Wheat</th><th>Iron</th><th>Process</th></tr>${ed}</table>`:"<p class='mini'>No edits recorded.</p>"}</div></details>`;
  $("detalle").innerHTML=html;
 });
 window.descargarExperimento=()=>{
  const d=window.experimentoActual;if(!d)return alert("Select an experiment first.");if(typeof XLSX==="undefined")return alert("The Excel module could not be loaded.");
  const sesiones=Array.isArray(d.sesiones)?d.sesiones:[],ediciones=Array.isArray(d.ediciones)?d.ediciones:[];
- const t=[["Sesión","Session abierta","Fromliveries abiertas","Fromliveries cerradas","Producción abierta","Producción cerrada","Session finalizada"]],e=[["Sesión","From","Visible name from","To","Visible name to","Wheat entregado","Iron entregado","Time"]],p=[["Sesión","Username","Player","Wheat inicial","Iron inicial","Wheat after deliveries","Iron after deliveries","Process","Wheat production","Iron production"]],ed=[["Time","Action","Sesión","Previous username","New username","Nombre visible anterior","Nombre visible nuevo","Wheat anterior","Wheat nuevo","Iron anterior","Iron nuevo","Fromliveries anteriores","Fromliveries nuevas","Process anterior","Process nuevo","Contraseña"]];
- sesiones.forEach((x,i)=>{const n=x.numeroSesion??x.sesion??i+1;t.push([n,x.tiempos?.sesionAbiertaAt||x.iniciadaAt,x.entregasAbiertasAt,x.entregasCerradasAt,x.produccionAbiertaAt,x.produccionCerradaAt,x.finalizadaAt]);(x.entregas||[]).forEach(v=>e.push([n,v.de,v.deNombreVisible||nv(v.de,d),v.para,v.paraNombreVisible||nv(v.para,d),v.trigo,v.hierro,v.timestamp]));Object.entries(x.produccion||{}).forEach(([k,v])=>p.push([n,k,v.nombreVisible||nv(k,d),v.trigoInicial??"",v.hierroInicial??"",v.trigoFromspuesFromliveries??"",v.hierroFromspuesFromliveries??"",v.proceso??"—",v.trigoProducido??0,v.hierroProducido??0]));});
- ediciones.forEach(x=>{const a=x.anterior||{},b=x.posterior||{};ed.push([x.timestamp,x.accion||"Edición",x.sesion??"—",a.usuario??x.usuarioAnterior??"—",b.usuario??x.usuario??"—",a.nombreVisible??x.nombreVisibleAnterior??"—",b.nombreVisible??x.nombreVisible??"—",a.trigo??"—",b.trigo??"—",a.hierro??"—",b.hierro??"—",a.entregas??"—",b.entregas??"—",a.proceso??"—",b.proceso??"—",b.contraseña??"—"])});
- const wb=XLSX.utils.book_new();XLSX.utils.book_append_sheet(wb,XLSX.utils.aoa_to_sheet(t),"Tiempos");XLSX.utils.book_append_sheet(wb,XLSX.utils.aoa_to_sheet(e),"Fromliveries");XLSX.utils.book_append_sheet(wb,XLSX.utils.aoa_to_sheet(p),"Producción");XLSX.utils.book_append_sheet(wb,XLSX.utils.aoa_to_sheet(ed),"Ediciones");XLSX.writeFile(wb,`OIKOS_superadmin_${d.sala}.xlsx`);
+ const t=[["Session","Session opened","Deliveries opened","Deliveries closed","Production opened","Production closed","Session ended"]],e=[["Session","From","Visible name from","To","Visible name to","Wheat delivered","Iron delivered","Time"]],p=[["Session","Username","Player","Initial wheat","Initial iron","Wheat after deliveries","Iron after deliveries","Process","Production time","Wheat production","Iron production"]],a=[["Session","Time","Action","User","Detail"]],ed=[["Time","Action","Session","Previous username","New username","Previous visible name","New visible name","Previous wheat","New wheat","Previous iron","New iron","Previous deliveries","New deliveries","Previous process","New process","Password"]];
+ sesiones.forEach((x,i)=>{const n=x.numeroSesion??x.sesion??i+1;t.push([n,x.tiempos?.sesionAbiertaAt||x.iniciadaAt,x.entregasAbiertasAt,x.entregasCerradasAt,x.produccionAbiertaAt,x.produccionCerradaAt,x.finalizadaAt]);(x.entregas||[]).forEach(v=>e.push([n,v.de,v.deNombreVisible||nv(v.de,d),v.para,v.paraNombreVisible||nv(v.para,d),v.trigo,v.hierro,v.timestamp]));Object.entries(x.produccion||{}).forEach(([k,v])=>p.push([n,k,v.nombreVisible||nv(k,d),v.trigoInicioSesion??v.trigoInicial??"",v.hierroInicioSesion??v.hierroInicial??"",v.trigoDespuesEntregas??"",v.hierroDespuesEntregas??"",v.proceso??"—",v.produccionAt??"",v.trigoProducido??0,v.hierroProducido??0]));(x.auditoria||[]).filter(v=>["altaJugador","eliminacionJugador","configuracion","fase"].includes(v.tipo)).forEach(v=>a.push([n,v.timestamp,v.accion||v.tipo,v.usuario||v.usuarioAnterior||"—",v.deFase?`${v.deFase} → ${v.aFase}`:JSON.stringify(v.cambios||v.posterior||"")]));});
+ ediciones.forEach(x=>{const a=x.anterior||{},b=x.posterior||{};ed.push([x.timestamp,x.accion||"Edit",x.sesion??"—",a.usuario??x.usuarioAnterior??"—",b.usuario??x.usuario??"—",a.nombreVisible??x.nombreVisibleAnterior??"—",b.nombreVisible??x.nombreVisible??"—",a.trigo??"—",b.trigo??"—",a.hierro??"—",b.hierro??"—",a.entregas??"—",b.entregas??"—",a.proceso??"—",b.proceso??"—",b.contraseña??"—"])});
+ const wb=XLSX.utils.book_new();XLSX.utils.book_append_sheet(wb,XLSX.utils.aoa_to_sheet(t),"Times");XLSX.utils.book_append_sheet(wb,XLSX.utils.aoa_to_sheet(e),"Deliveries");XLSX.utils.book_append_sheet(wb,XLSX.utils.aoa_to_sheet(p),"Production");XLSX.utils.book_append_sheet(wb,XLSX.utils.aoa_to_sheet(ed),"Edits");XLSX.utils.book_append_sheet(wb,XLSX.utils.aoa_to_sheet(a),"Audit");XLSX.writeFile(wb,`OIKOS_superadmin_${d.sala}.xlsx`);
 };
 $("downloadBtn").onclick=()=>window.descargarExperimento();
 
