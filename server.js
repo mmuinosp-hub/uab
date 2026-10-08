@@ -124,6 +124,28 @@ function copiar(obj) {
   return JSON.parse(JSON.stringify(obj));
 }
 
+function sesionObjetivoAuditoria(data) {
+  const haySesionesCerradas = Array.isArray(data?.historialSesiones) && data.historialSesiones.length > 0;
+  return data?.fase === "pausa" && haySesionesCerradas
+    ? Number(data.numeroSesion || 1) + 1
+    : Number(data?.numeroSesion || 1);
+}
+
+function registrarAuditoria(data, tipo, detalle = {}) {
+  if (!data) return;
+  data.historialAuditoria = Array.isArray(data.historialAuditoria)
+    ? data.historialAuditoria
+    : [];
+  const sesion = sesionObjetivoAuditoria(data);
+  data.historialAuditoria.push({
+    id: generarId(),
+    timestamp: ahora(),
+    sesion,
+    tipo,
+    ...copiar(detalle),
+  });
+}
+
 // -----------------------------------------------------------------------------
 // CONTRASEÑAS: scrypt nativo, sin dependencia externa
 // -----------------------------------------------------------------------------
@@ -504,6 +526,7 @@ function normalizarSala(sala) {
   s.historial = Array.isArray(s.historial) ? s.historial : [];
   s.historialSesiones = Array.isArray(s.historialSesiones) ? s.historialSesiones : [];
   s.historialEdicionesJugadores = Array.isArray(s.historialEdicionesJugadores) ? s.historialEdicionesJugadores : [];
+  s.historialAuditoria = Array.isArray(s.historialAuditoria) ? s.historialAuditoria : [];
   s.sesionActualTiempos = s.sesionActualTiempos && typeof s.sesionActualTiempos === "object" ? s.sesionActualTiempos : {};
   s.sesionActualRecursosIniciales = s.sesionActualRecursosIniciales && typeof s.sesionActualRecursosIniciales === "object" ? s.sesionActualRecursosIniciales : {};
 
@@ -620,6 +643,7 @@ function historialSesionesPublico(data, socket) {
       recursosDespuesEntregas: copiar(sesion.recursosDespuesEntregas || {}),
       entregas,
       produccion,
+      auditoria: copiar(sesion.auditoria || []),
     };
   }).filter(Boolean);
 }
@@ -865,6 +889,7 @@ function datosExperimentoSuperadmin(nombreSala) {
     producciones: JSON.parse(JSON.stringify(producciones)),
     sesiones: JSON.parse(JSON.stringify(sesiones)),
     ediciones: JSON.parse(JSON.stringify(data.historialEdicionesJugadores || [])),
+    auditoria: JSON.parse(JSON.stringify(data.historialAuditoria || [])),
     nombresVisibles: JSON.parse(JSON.stringify(data.nombresVisibles || {}))
   };
 }
@@ -985,6 +1010,7 @@ io.on("connection", (socket) => {
         historial: [],
         historialSesiones: [],
         historialEdicionesJugadores: [],
+        historialAuditoria: [],
         nombresVisibles: {},
         sesionActualIniciadaAt: ahora(),
         sesionActualTiempos: {},
@@ -1107,6 +1133,7 @@ io.on("connection", (socket) => {
         entregas: 0,
         entregasMaximoAlcanzado: false,
         proceso: null,
+        produccionAt: null,
         trigoInsumo: trigoN,
         hierroInsumo: hierroN,
         trigoProd: 0,
@@ -1114,6 +1141,11 @@ io.on("connection", (socket) => {
       };
 
       data.nombresVisibles[nombreJugador] = nombreVisibleJugador;
+      registrarAuditoria(data, "altaJugador", {
+        accion: "Alta",
+        usuario: nombreJugador,
+        posterior: snapshotJugador(nombreJugador, data.jugadores[nombreJugador], "—"),
+      });
       data.updatedAt = ahora();
 
       await encolarGuardado();
@@ -1254,6 +1286,11 @@ io.on("connection", (socket) => {
       }
 
       jugador.password = await hashPassword(nueva);
+      registrarAuditoria(data, "cambioPasswordAdministrador", {
+        accion: "Restablecimiento de contraseña",
+        usuario: nombreJugador,
+        posterior: { usuario: nombreJugador, contraseña: "actualizada" },
+      });
       data.updatedAt = ahora();
       await encolarGuardado();
       socket.emit("passwordRestablecida", { nombre: nombreJugador });
@@ -1340,6 +1377,16 @@ io.on("connection", (socket) => {
       if (nuevoNombre !== nombreOriginal) {
         delete data.jugadores[nombreOriginal];
         data.jugadores[nuevoNombre] = jugador;
+        // Si hay una sesión abierta, el recurso inicial debe seguir al jugador
+        // aunque cambie su nombre durante la sesión.
+        if (data.sesionActualRecursosIniciales?.[nombreOriginal]) {
+          data.sesionActualRecursosIniciales[nuevoNombre] = data.sesionActualRecursosIniciales[nombreOriginal];
+          delete data.sesionActualRecursosIniciales[nombreOriginal];
+        }
+        if (data.sesionActualRecursosDespuesEntregas?.[nombreOriginal]) {
+          data.sesionActualRecursosDespuesEntregas[nuevoNombre] = data.sesionActualRecursosDespuesEntregas[nombreOriginal];
+          delete data.sesionActualRecursosDespuesEntregas[nombreOriginal];
+        }
         // Conservamos el alias anterior para que el historial siga pudiendo
         // resolver correctamente las acciones realizadas con el usuario antiguo.
         data.nombresVisibles[nombreOriginal] = jugador.nombreVisible || nuevoVisible;
@@ -1356,7 +1403,7 @@ io.on("connection", (socket) => {
         data.historialEdicionesJugadores.push({
           id: generarId(),
           timestamp: data.updatedAt,
-          sesion: data.numeroSesion,
+          sesion: sesionObjetivoAuditoria(data),
           accion: "Edición",
           usuario: nuevoNombre,
           nombreVisible: nuevoVisible,
@@ -1413,7 +1460,7 @@ io.on("connection", (socket) => {
       data.historialEdicionesJugadores.push({
         id: generarId(),
         timestamp: timestampEliminacion,
-        sesion: data.numeroSesion,
+        sesion: sesionObjetivoAuditoria(data),
         accion: "Eliminación",
         usuario: "—",
         nombreVisible: "—",
@@ -1425,6 +1472,12 @@ io.on("connection", (socket) => {
           { campo: "Jugador", antes: nombreJugador, despues: "Eliminado" }
         ],
         realizadoPor: "Administrador",
+      });
+      registrarAuditoria(data, "eliminacionJugador", {
+        accion: "Eliminación",
+        usuarioAnterior: nombreJugador,
+        anterior: snapshotAnterior,
+        cambios: [{ campo: "Jugador", antes: nombreJugador, despues: "Eliminado" }],
       });
       data.updatedAt = timestampEliminacion;
       await encolarGuardado();
@@ -1489,6 +1542,11 @@ io.on("connection", (socket) => {
           hierroProd: 0,
         };
         data.nombresVisibles[nombre] = nombreVisible;
+        registrarAuditoria(data, "altaJugador", {
+          accion: "Alta",
+          usuario: nombre,
+          posterior: snapshotJugador(nombre, data.jugadores[nombre], "—"),
+        });
       }
 
       data.updatedAt = ahora();
@@ -1511,6 +1569,8 @@ io.on("connection", (socket) => {
     if (!config || typeof config !== "object") {
       return respuestaError(socket, "Configuración no válida", "CONFIG_INVALIDA");
     }
+
+    const configAntes = copiar(data.config);
 
     if (config.maxEntregas !== undefined) {
       const max = Number(config.maxEntregas);
@@ -1543,6 +1603,14 @@ io.on("connection", (socket) => {
       }
     }
 
+    const configDespues = copiar(data.config);
+    if (JSON.stringify(configAntes) !== JSON.stringify(configDespues)) {
+      registrarAuditoria(data, "configuracion", {
+        accion: "Configuración",
+        anterior: configAntes,
+        posterior: configDespues,
+      });
+    }
     data.updatedAt = ahora();
     await encolarGuardado();
     emitirEstado(sala);
@@ -1624,7 +1692,6 @@ io.on("connection", (socket) => {
         hierro: cantidadHierro,
         timestamp: ahora(),
       });
-
       data.updatedAt = ahora();
 
       await encolarGuardado();
@@ -1672,6 +1739,11 @@ io.on("connection", (socket) => {
       }
 
       data.fase = "produccion";
+      registrarAuditoria(data, "fase", {
+        accion: "Cambio de fase",
+        deFase: "entregas",
+        aFase: "produccion",
+      });
       data.updatedAt = cierreEntregasAt;
 
       await encolarGuardado();
@@ -1716,7 +1788,8 @@ io.on("connection", (socket) => {
       }
 
       jugador.proceso = procesoN;
-      data.updatedAt = ahora();
+      jugador.produccionAt = ahora();
+      data.updatedAt = jugador.produccionAt;
 
       await encolarGuardado();
       emitirEstado(sala);
@@ -1743,9 +1816,13 @@ io.on("connection", (socket) => {
         );
       }
 
+      const finalizadaAt = ahora();
       for (const jugador of Object.values(data.jugadores)) {
         // Si no eligió, la regla de OIKOS establece que utiliza el proceso 3.
         const proceso = jugador.proceso ?? 3;
+        // Si el jugador no eligió explícitamente un proceso, la producción se
+        // ejecuta al cerrar la fase y usamos ese instante como referencia.
+        if (!jugador.produccionAt) jugador.produccionAt = finalizadaAt;
 
         if (proceso === 1) {
           const factor = Math.min(
@@ -1781,11 +1858,12 @@ io.on("connection", (socket) => {
           nombreVisible: jugador.nombreVisible || nombre,
           trigoInicioSesion: data.sesionActualRecursosIniciales?.[nombre]?.trigo ?? null,
           hierroInicioSesion: data.sesionActualRecursosIniciales?.[nombre]?.hierro ?? null,
-          trigoInicial: jugador.trigoInsumo,
-          hierroInicial: jugador.hierroInsumo,
+          trigoInicial: data.sesionActualRecursosIniciales?.[nombre]?.trigo ?? null,
+          hierroInicial: data.sesionActualRecursosIniciales?.[nombre]?.hierro ?? null,
           trigoDespuesEntregas: jugador.trigoInsumo,
           hierroDespuesEntregas: jugador.hierroInsumo,
           proceso: jugador.proceso ?? 3,
+          produccionAt: jugador.produccionAt || null,
           trigoProducido: jugador.trigoProd,
           hierroProducido: jugador.hierroProd,
           trigoFinal: jugador.trigo,
@@ -1796,9 +1874,13 @@ io.on("connection", (socket) => {
       // Crear el registro histórico ANTES de modificar la sesión actual.
       // Se guarda una copia independiente para que nunca dependa del estado
       // que tengan los jugadores después de comenzar la siguiente sesión.
-      const finalizadaAt = ahora();
       data.sesionActualTiempos = data.sesionActualTiempos || {};
       data.sesionActualTiempos.produccionCerradaAt = finalizadaAt;
+      registrarAuditoria(data, "fase", {
+        accion: "Cambio de fase",
+        deFase: "produccion",
+        aFase: "pausa",
+      });
       const sesionTerminada = {
         numeroSesion: data.numeroSesion,
         iniciadaAt: data.sesionActualIniciadaAt || data.createdAt,
@@ -1812,7 +1894,11 @@ io.on("connection", (socket) => {
         recursosDespuesEntregas: copiar(data.sesionActualRecursosDespuesEntregas || {}),
         entregas: (data.historial || []).map(e => ({ ...e })),
         produccion: copiar(produccionSesion),
+        auditoria: copiar((data.historialAuditoria || []).filter(e => Number(e.sesion) === Number(data.numeroSesion))),
       };
+
+      // Añadimos al registro de la sesión únicamente la auditoría administrativa.
+      sesionTerminada.auditoria = copiar((data.historialAuditoria || []).filter(e => Number(e.sesion) === Number(data.numeroSesion)));
 
       data.historialSesiones = Array.isArray(data.historialSesiones)
         ? data.historialSesiones
@@ -1883,6 +1969,7 @@ io.on("connection", (socket) => {
         jugador.trigoProd = 0;
         jugador.hierroProd = 0;
         jugador.proceso = null;
+        jugador.produccionAt = null;
         jugador.entregas = 0;
         jugador.entregasMaximoAlcanzado = false;
       }
@@ -1907,6 +1994,11 @@ io.on("connection", (socket) => {
         (!Array.isArray(data.historialSesiones) || data.historialSesiones.length === 0) &&
         (!Array.isArray(data.historial) || data.historial.length === 0);
       if (!esPrimeraSesion) data.numeroSesion += 1;
+      registrarAuditoria(data, "fase", {
+        accion: "Cambio de fase",
+        deFase: "pausa",
+        aFase: "entregas",
+      });
       // La marca de tiempo y los recursos corresponden a la sesión que acaba de abrirse.
       data.historial = [];
       data.updatedAt = ahora();

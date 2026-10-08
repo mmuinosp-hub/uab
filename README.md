@@ -37,4 +37,4 @@ El historial de OIKOS conserva una traza común para administrador y jugadores, 
 - recursos finales de cada jugador;
 - ediciones y eliminaciones realizadas por el administrador.
 
-La descarga Excel genera hojas separadas de **Tiempos**, **Recursos iniciales**, **Entregas**, **Producción** y **Ediciones**.
+La descarga Excel genera hojas separadas de **Tiempos**, **Entregas**, **Producción**, **Ediciones** y **Auditoría**. Los recursos al inicio de la sesión aparecen en la hoja **Producción** y no como una hoja independiente.
