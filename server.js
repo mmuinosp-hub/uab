@@ -206,10 +206,17 @@ let colaGuardado = Promise.resolve();
 
 function encolarGuardado() {
   colaGuardado = colaGuardado
-    .then(() => writeAtomic(
-      estadoFile,
-      JSON.stringify(salas, null, 2)
-    ))
+    .then(() => {
+      // El historial cerrado ya tiene su propio archivo por sala. No lo
+      // duplicamos en estado_actual.json: allí solo debe quedar el estado
+      // operativo necesario para reanudar la partida.
+      const estadoCompacto = Object.create(null);
+      for (const [nombreSala, datosSala] of Object.entries(salas)) {
+        const { historialSesiones, ...estadoOperativo } = datosSala;
+        estadoCompacto[nombreSala] = estadoOperativo;
+      }
+      return writeAtomic(estadoFile, JSON.stringify(estadoCompacto));
+    })
     .catch((err) => {
       console.error("Error al guardar estado:", err);
     });
@@ -294,8 +301,13 @@ async function cargarEstado() {
     for (const [sala, valor] of Object.entries(data)) {
       salas[sala] = normalizarSala(valor);
       const historialPersistente = await cargarHistorialPersistente(sala);
-      if (historialPersistente.length > salas[sala].historialSesiones.length) {
+      const historialEnEstado = salas[sala].historialSesiones;
+      if (historialPersistente.length >= historialEnEstado.length) {
         salas[sala].historialSesiones = historialPersistente;
+      } else {
+        // Migra historiales de versiones anteriores antes de dejar de incluirlos
+        // en estado_actual.json. Así no se pierden si falta el archivo separado.
+        await guardarHistorialPersistente(sala);
       }
     }
 
